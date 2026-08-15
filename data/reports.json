@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "event_id": "flores-ntt-2026-08-15-m7.7",
+  "updated_at": "2026-08-15T15:30:00+07:00",
+  "reports": [
+    {
+      "id": "ihcp-flash-update-1",
+      "title": "Earthquake and Tsunami — Flores and Surrounding Areas",
+      "subtitle": "IHCP Flash Update No. 1",
+      "publisher": "Indonesian Humanitarian Coordination Platform",
+      "date": "15 August 2026",
+      "cutoff": "07:35 WIB / 08:35 WITA",
+      "language": "English",
+      "pages": 8,
+      "format": "PDF",
+      "size_bytes": 386264,
+      "file": "reports/IHCP_Flash_Update_1_Flores_NTT_20260815.pdf",
+      "description": "Initial consolidated update covering earthquake and tsunami parameters, timeline, observed tsunami heights, humanitarian priorities and online damage documentation.",
+      "status": "Archived source document"
+    }
+  ],
+  "briefings": [
+    {
+      "id": "bnpb-official-briefing-1",
+      "title": "Update on conditions and response following the M7.7 earthquake in Nagekeo",
+      "publisher": "BNPB Indonesia",
+      "date": "15 August 2026",
+      "duration": "36:39",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=UAAf238cC0I",
+      "embed_url": "https://www.youtube.com/embed/UAAf238cC0I",
+      "status": "Official briefing"
+    }
+  ]
+}
