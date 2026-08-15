@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
   "status_label": "Official Ministry of Health situation report dated 15 August 2026",
@@ -141,11 +141,26 @@
     }
   ],
   "workforce": [
-    { "label": "Doctors", "status": "156" },
-    { "label": "Nurses", "status": "5,979" },
-    { "label": "Midwives", "status": "4,438" },
-    { "label": "Other health workers", "status": "1,990" },
-    { "label": "Total existing health workforce", "status": "12,563" }
+    {
+      "label": "Doctors",
+      "status": "156"
+    },
+    {
+      "label": "Nurses",
+      "status": "5,979"
+    },
+    {
+      "label": "Midwives",
+      "status": "4,438"
+    },
+    {
+      "label": "Other health workers",
+      "status": "1,990"
+    },
+    {
+      "label": "Total existing health workforce",
+      "status": "12,563"
+    }
   ],
   "emergency_response": [
     "Two health crisis-management teams mobilised: one to Sikka and one to Ende.",
@@ -156,24 +171,65 @@
   "planned_logistics": {
     "dispatch_date": "16 August 2026",
     "items": [
-      { "label": "Basic medicine packages", "status": "8 packages" },
-      { "label": "Emergency kits", "status": "5 packages" },
-      { "label": "Sterile gloves", "status": "1,000 pieces" },
-      { "label": "Non-sterile gloves", "status": "20,000 pieces" },
-      { "label": "Medical surgical masks", "status": "20,000 pieces" },
-      { "label": "Oxygen concentrators", "status": "10 units" },
-      { "label": "Health-post tents", "status": "2 units; 8 additional tents on standby for fixed Type 1 EMT needs" }
+      {
+        "label": "Basic medicine packages",
+        "status": "8 packages"
+      },
+      {
+        "label": "Emergency kits",
+        "status": "5 packages"
+      },
+      {
+        "label": "Sterile gloves",
+        "status": "1,000 pieces"
+      },
+      {
+        "label": "Non-sterile gloves",
+        "status": "20,000 pieces"
+      },
+      {
+        "label": "Medical surgical masks",
+        "status": "20,000 pieces"
+      },
+      {
+        "label": "Oxygen concentrators",
+        "status": "10 units"
+      },
+      {
+        "label": "Health-post tents",
+        "status": "2 units; 8 additional tents on standby for fixed Type 1 EMT needs"
+      }
     ]
   },
   "disease_surveillance": {
     "status": "The source report does not provide verified post-disaster disease-event counts.",
     "data_available": false,
     "conditions": [
-      { "name": "Acute diarrhoeal disease", "cases": null, "status": "Not reported" },
-      { "name": "Acute respiratory infection", "cases": null, "status": "Not reported" },
-      { "name": "Febrile or vector-borne illness", "cases": null, "status": "Not reported" },
-      { "name": "Skin disease and wound infection", "cases": null, "status": "Not reported" },
-      { "name": "Other unusual public-health events", "cases": null, "status": "Not reported" }
+      {
+        "name": "Acute diarrhoeal disease",
+        "cases": null,
+        "status": "Not reported"
+      },
+      {
+        "name": "Acute respiratory infection",
+        "cases": null,
+        "status": "Not reported"
+      },
+      {
+        "name": "Febrile or vector-borne illness",
+        "cases": null,
+        "status": "Not reported"
+      },
+      {
+        "name": "Skin disease and wound infection",
+        "cases": null,
+        "status": "Not reported"
+      },
+      {
+        "name": "Other unusual public-health events",
+        "cases": null,
+        "status": "Not reported"
+      }
     ]
   },
   "monitoring_priorities": [
@@ -190,12 +246,35 @@
       "url": "https://pusatkrisis.kemkes.go.id/",
       "format": "PDF",
       "pages": 27
+    },
+    {
+      "agency": "BNPB",
+      "title": "18 affected health facilities at the 17:00 WIB damage cut-off",
+      "url": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia"
     }
   ],
   "data_quality_notes": [
     "The report gives a date but no specific data cut-off time.",
     "The puskesmas building-condition categories total 184, six fewer than the stated total of 190; these six are recorded as unclassified rather than assumed to be undamaged.",
-    "A dash in a district casualty cell is treated as no casualty report in the source table, not automatically as a verified zero."
+    "A dash in a district casualty cell is treated as no casualty report in the source table, not automatically as a verified zero.",
+    "BNPB reported 18 affected health facilities at 17:00 WIB, while the Ministry of Health report lists structural damage at 77 facilities. These are shown separately because definitions and cut-offs differ."
   ],
-  "disclaimer": "Figures are reproduced from the official Ministry of Health report and remain preliminary. The dashboard preserves source-table gaps rather than silently converting them to zero."
+  "disclaimer": "Ministry of Health figures remain the primary source for detailed health-sector status. BNPB's separate count of 18 affected health facilities at 17:00 WIB is retained for comparison and is not combined with the Ministry of Health's 77 structurally damaged facilities. All figures remain preliminary.",
+  "generated_at": "2026-08-16T00:04:55+07:00",
+  "generated_display": "16 Aug 2026 · 00:04 WIB / 01:04 WITA",
+  "cross_source_comparison": {
+    "bnpb": {
+      "source_url": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia",
+      "data_cutoff_display": "15 Aug 2026 · 17:00 WIB / 18:00 WITA",
+      "health_facilities_affected": 18
+    },
+    "ministry_of_health": {
+      "report_date": "2026-08-15",
+      "cutoff_status": "Specific time not stated",
+      "hospitals_with_structural_damage": 9,
+      "puskesmas_with_structural_damage": 68,
+      "total_facilities_with_structural_damage": 77
+    },
+    "interpretation": "Do not subtract or combine the figures. BNPB reports affected health facilities, while the Ministry of Health reports facilities classified with structural damage; definitions, source tables and cut-offs may differ."
+  }
 }
