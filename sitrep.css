@@ -73,6 +73,20 @@ a {
   text-transform: uppercase;
 }
 
+.brand span,
+.brand time {
+  display: block;
+}
+
+.brand time {
+  margin-top: 2px;
+  color: #bcd0dc;
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.035em;
+  text-transform: none;
+}
+
 .topnav {
   display: flex;
   align-items: center;
