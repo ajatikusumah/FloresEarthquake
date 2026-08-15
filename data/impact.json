@@ -1,40 +1,78 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
-  "status_label": "Ministry of Health situation report dated 15 August 2026 — verification continues",
-  "updated_at": "2026-08-15",
-  "updated_display": "15 Aug 2026 · source report does not state a cut-off time",
-  "validated_by": "Provincial and district health offices, Basarnas and BNPB; compiled by the Ministry of Health Health Crisis Center",
+  "status_label": "BNPB preliminary impact update at 18:48 WIB — verification and reconciliation continue",
+  "updated_at": "2026-08-15T18:48:00+07:00",
+  "updated_display": "15 Aug 2026 · 18:48 WIB / 19:48 WITA",
+  "validated_by": "BNPB/BPBD and field-response authorities",
   "source": {
-    "agency": "Ministry of Health — Health Crisis Center",
-    "title": "Situation Report: NTT Earthquake Disaster, 15 August 2026",
-    "url": "https://pusatkrisis.kemkes.go.id/",
-    "media_type": "official_pdf_report",
-    "pages": 27,
-    "date": "2026-08-15",
-    "cutoff_note": "The report states the reporting date but does not state a specific data cut-off time."
+    "agency": "BNPB",
+    "title": "Update — Impact of the M7.7 NTT earthquake: more than 40 deaths",
+    "url": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia",
+    "media_type": "official_written_update",
+    "publication_time": "2026-08-15T20:30:00+07:00",
+    "casualty_cutoff": "2026-08-15T18:48:00+07:00",
+    "damage_cutoff": "2026-08-15T17:00:00+07:00"
   },
   "casualties": {
-    "deaths": 46,
+    "deaths": 47,
     "injured": 113,
     "injured_serious": 36,
     "injured_minor": 77,
-    "missing": null
+    "missing": null,
+    "source_note": "Deaths are from BNPB at 18:48 WIB. Injury totals and severity are from the Ministry of Health report dated 15 August, which does not state a specific cut-off time."
   },
   "casualties_by_location": {
-    "Sikka Regency": { "deaths": 3, "injured_serious": 0, "injured_minor": 6 },
-    "Ende Regency": { "deaths": 1, "injured_serious": 0, "injured_minor": 11 },
-    "East Manggarai Regency": { "deaths": 17, "injured_serious": 1, "injured_minor": 18 },
-    "Nagekeo Regency": { "deaths": 1, "injured_serious": 1, "injured_minor": 14 },
-    "West Manggarai Regency": { "deaths": 2, "injured_serious": 9, "injured_minor": 9 },
-    "Manggarai Regency": { "deaths": 21, "injured_serious": 23, "injured_minor": 16 },
-    "Ngada Regency": { "deaths": 1, "injured_serious": 2, "injured_minor": 3 },
+    "Sikka Regency": {
+      "deaths_bnpb": 3,
+      "deaths_kemenkes": 3,
+      "injured_serious_kemenkes": 0,
+      "injured_minor_kemenkes": 6
+    },
+    "Ende Regency": {
+      "deaths_bnpb": 1,
+      "deaths_kemenkes": 1,
+      "injured_serious_kemenkes": 0,
+      "injured_minor_kemenkes": 11
+    },
+    "East Manggarai Regency": {
+      "deaths_bnpb": 17,
+      "deaths_kemenkes": 17,
+      "injured_serious_kemenkes": 1,
+      "injured_minor_kemenkes": 18
+    },
+    "Nagekeo Regency": {
+      "deaths_bnpb": null,
+      "deaths_kemenkes": 1,
+      "injured_serious_kemenkes": 1,
+      "injured_minor_kemenkes": 14,
+      "note": "Nagekeo was not listed in the BNPB death distribution at the 18:48 WIB cut-off."
+    },
+    "West Manggarai Regency": {
+      "deaths_bnpb": 1,
+      "deaths_kemenkes": 2,
+      "injured_serious_kemenkes": 9,
+      "injured_minor_kemenkes": 9
+    },
+    "Manggarai Regency": {
+      "deaths_bnpb": 24,
+      "deaths_kemenkes": 21,
+      "injured_serious_kemenkes": 23,
+      "injured_minor_kemenkes": 16
+    },
+    "Ngada Regency": {
+      "deaths_bnpb": 1,
+      "deaths_kemenkes": 1,
+      "injured_serious_kemenkes": 2,
+      "injured_minor_kemenkes": 3
+    },
     "East Flores Regency": {
-      "deaths": 0,
-      "injured_serious": 0,
-      "injured_minor": 0,
-      "note": "No casualty report available in the source table."
+      "deaths_bnpb": null,
+      "deaths_kemenkes": null,
+      "injured_serious_kemenkes": null,
+      "injured_minor_kemenkes": null,
+      "note": "No casualty report was available in the Ministry of Health table; East Flores was not listed in the BNPB death distribution."
     }
   },
   "displacement": {
@@ -58,53 +96,39 @@
     ]
   },
   "damage": {
-    "snapshot_status": "Retained from the earlier 12:30 WIB BNPB update; the Ministry of Health report does not provide updated housing totals.",
-    "houses_heavily_damaged": 54,
-    "houses_moderately_damaged": 9,
-    "houses_slightly_damaged": 11,
-    "education_facilities_damaged": 1,
-    "bulog_warehouses_affected": 1,
-    "places_of_worship_damaged": 3,
+    "snapshot_status": "BNPB preliminary damage update at 17:00 WIB on 15 August 2026.",
+    "houses_heavily_damaged": 157,
+    "houses_moderately_damaged": 41,
+    "houses_slightly_damaged": 148,
+    "education_facilities_affected": 87,
+    "health_facilities_affected_bnpb": 18,
+    "places_of_worship_affected": 5,
     "government_offices_affected": 6
   },
-  "district_damage": {
-    "Manggarai Regency": {
-      "houses_heavily_damaged": 29,
-      "houses_moderately_damaged": 9,
-      "houses_slightly_damaged": 9,
-      "education_facilities_damaged": 1
-    },
-    "East Manggarai Regency": { "houses_heavily_damaged": 23 },
-    "Nagekeo Regency": {
-      "houses_heavily_damaged": 2,
-      "houses_moderately_damaged": 1,
-      "houses_slightly_damaged": 2,
-      "places_of_worship_slightly_damaged": 2,
-      "government_offices_affected": 5
-    }
-  },
   "confirmed": [
-    "The Ministry of Health situation report records 46 deaths and 113 injured people: 36 seriously injured and 77 with minor injuries.",
-    "A total population of 2,196,745 people is listed across eight affected regencies.",
-    "Manggarai recorded the highest reported deaths (21) and serious injuries (23); East Manggarai recorded 17 deaths.",
-    "The evacuee count remains under assessment in the latest report."
+    "BNPB recorded 47 deaths at the 18:48 WIB cut-off: 24 in Manggarai, 17 in East Manggarai, 3 in Sikka and 1 each in West Manggarai, Ngada and Ende.",
+    "The Ministry of Health report dated 15 August recorded 46 deaths and 113 injured people: 36 seriously injured and 77 with minor injuries; its specific cut-off time was not stated.",
+    "The source difference of one death is preserved and not reconciled by assumption.",
+    "The Ministry of Health listed 2,196,745 people across eight affected regencies; this is a population-in-affected-areas figure, not a confirmed count of individually affected people.",
+    "The evacuee count remains under assessment in the Ministry of Health report."
   ],
   "damage_reports": [
-    "Detailed non-health damage counts remain based on the earlier 12:30 WIB BNPB update: 54 houses heavily damaged, 9 moderately damaged and 11 slightly damaged.",
-    "The latest Ministry of Health report provides separate operational and structural summaries for 21 hospitals and 190 puskesmas; these are presented in the health section.",
-    "One Bulog warehouse, three places of worship and six government offices were reported affected in the earlier BNPB snapshot.",
+    "BNPB's 17:00 WIB snapshot recorded 157 houses heavily damaged, 41 moderately damaged and 148 slightly damaged.",
+    "BNPB reported 87 education facilities, 18 health facilities, 5 places of worship and 6 offices affected at the 17:00 WIB damage cut-off.",
+    "The Ministry of Health separately reported structural damage at 9 hospitals and 68 puskesmas. This 77-facility health-sector count is retained separately because definitions and cut-offs may differ from BNPB's 18 affected health facilities.",
+    "BNPB reported that 50,000 assistance packages weighing 275 tonnes were being mobilised; 10,500 packages had arrived at the Halim base of operations. These are staging figures, not confirmed delivery to affected communities.",
     "Transport, road, electricity and telecommunications disruptions continue to be assessed by the responsible agencies."
   ],
   "information_gaps": [
     "Verified evacuee totals and evacuation-site distribution by district.",
-    "Reconciled casualty records across the Ministry of Health, BNPB, BPBD, Basarnas and district authorities.",
-    "Building-condition classification for six of the 190 puskesmas in the Ministry of Health source table.",
-    "Verified WASH, electricity, telecommunications, road and transport-service restoration status by district.",
-    "Post-disaster public-health and animal-health surveillance data and official monetary damage-and-loss estimates."
+    "Reconciled casualty records across BNPB, the Ministry of Health, BPBD, Basarnas and district authorities.",
+    "Reconciled definitions and facility-level lists for BNPB's 18 affected health facilities versus the Ministry of Health's 77 facilities with structural damage.",
+    "Verified service-restoration status for WASH, electricity, roads, transport and telecommunications.",
+    "Post-disaster disease-surveillance, animal-health and official monetary damage-and-loss estimates."
   ],
-  "disclaimer": "The Ministry of Health report is an official multi-agency field compilation dated 15 August 2026, but it does not state a specific data cut-off time. Figures remain preliminary and may change after reconciliation and validation.",
-  "generated_at": "2026-08-15T20:40:41+07:00",
-  "generated_display": "15 Aug 2026 · 20:40 WIB / 21:40 WITA",
+  "disclaimer": "BNPB's 18:48 WIB update is used for the consolidated death headline and its 17:00 WIB update for general damage. Ministry of Health figures are retained for injuries and detailed health-sector status, with the source's unstated cut-off shown explicitly. All figures remain preliminary and subject to reconciliation.",
+  "generated_at": "2026-08-16T00:04:55+07:00",
+  "generated_display": "16 Aug 2026 · 00:04 WIB / 01:04 WITA",
   "seismic_monitoring": {
     "source": {
       "agency": "BMKG",
@@ -115,7 +139,10 @@
     "data_cutoff": "2026-08-15T14:00:00+07:00",
     "data_cutoff_display": "15 Aug 2026 · 14:00 WIB / 15:00 WITA",
     "aftershocks_recorded": 235,
-    "magnitude_range": { "minimum": 2.5, "maximum": 6.2 },
+    "magnitude_range": {
+      "minimum": 2.5,
+      "maximum": 6.2
+    },
     "trend_note": "BMKG reported that the recorded aftershock sequence had not yet shown significant decay by the cut-off.",
     "latest_m5plus_observed_after_cutoff": {
       "time_display": "15 Aug 2026 · 14:39:41 WIB / 15:39:41 WITA",
@@ -146,6 +173,48 @@
       "url": "https://www.bmkg.go.id/siaran-pers/bmkg-pemerintah-pusat-dan-pemerintah-daerah-kolaborasi-percepat-pemulihan-bencana-gempa-flores",
       "publication_date": "2026-08-15",
       "data_cutoff_display": "Aftershocks: 14:00 WIB; tsunami observation cut-off not stated in the release"
+    },
+    {
+      "agency": "Ministry of Health — Health Crisis Center",
+      "title": "Situation Report: NTT Earthquake Disaster, 15 August 2026",
+      "url": "reports/Kemenkes_Laporan_Situasi_Gempa_NTT_20260815.pdf",
+      "publication_date": "2026-08-15",
+      "data_cutoff_display": "Specific cut-off time not stated"
     }
-  ]
+  ],
+  "source_reconciliation": {
+    "bnpb": {
+      "data_cutoff_display": "15 Aug 2026 · 18:48 WIB / 19:48 WITA",
+      "deaths": 47,
+      "distribution": {
+        "Manggarai Regency": 24,
+        "East Manggarai Regency": 17,
+        "Sikka Regency": 3,
+        "West Manggarai Regency": 1,
+        "Ngada Regency": 1,
+        "Ende Regency": 1
+      }
+    },
+    "ministry_of_health": {
+      "report_date": "2026-08-15",
+      "cutoff_status": "Specific time not stated",
+      "deaths": 46,
+      "injured": 113,
+      "injured_serious": 36,
+      "injured_minor": 77
+    },
+    "basarnas_qrsar": {
+      "source_update_display": "15 Aug 2026 · 16:35 (time zone not stated)",
+      "deaths_recorded": 28,
+      "scope": "Operational SAR record"
+    },
+    "interpretation": "The figures are not merged. BNPB is used for the consolidated death headline; Ministry of Health is used for injury severity and health-sector detail; QRSAR remains a separate operational count."
+  },
+  "response_logistics": {
+    "source": "BNPB update published 15 Aug 2026 at 20:30 WIB",
+    "planned_assistance_packages": 50000,
+    "total_weight_tonnes": 275,
+    "packages_arrived_at_halim_baseops": 10500,
+    "interpretation_note": "These figures describe assistance staged or arriving at the Jakarta base of operations, not confirmed delivery to affected communities."
+  }
 }
