@@ -90,8 +90,8 @@ a {
 .topnav {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 0.78rem;
+  gap: 9px;
+  font-size: 0.72rem;
 }
 
 .topnav a {
@@ -1073,13 +1073,236 @@ h2 {
   background: white;
 }
 
+
+/* SAR, animal health, and economic impact */
+.sar-source-grid,
+.sector-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sar-source-card {
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--blue);
+  border-radius: 14px;
+  background: var(--wash);
+}
+
+.sar-source-card:first-child {
+  border-top-color: var(--orange);
+}
+
+.sar-source-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.sar-source-head h3,
+.sector-monitoring h3,
+.sector-layout .panel h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.source-status {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 6px 9px;
+  font-size: 0.67rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.source-status-warning {
+  color: #785015;
+  background: var(--pale-orange);
+  border: 1px solid #f0c37a;
+}
+
+.source-status-official {
+  color: #176a5e;
+  background: var(--pale-green);
+  border: 1px solid #a8d8cd;
+}
+
+.sar-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.sar-mini-grid > div {
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.sar-mini-grid strong,
+.sar-mini-grid span {
+  display: block;
+}
+
+.sar-mini-grid strong {
+  color: var(--navy);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.sar-mini-grid span,
+.sar-source-card p,
+.sar-source-card small {
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.source-action {
+  display: inline-flex;
+  margin-top: 5px;
+  color: var(--blue);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.source-action:hover,
+.source-action:focus-visible {
+  text-decoration: underline;
+}
+
+.sector-monitoring {
+  margin-top: 16px;
+  padding: 21px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--wash);
+}
+
+.sector-monitoring ul,
+.sector-priority-list {
+  margin: 13px 0 0;
+  padding-left: 19px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.sector-monitoring li + li,
+.sector-priority-list li + li {
+  margin-top: 8px;
+}
+
+.sector-caveat {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-left: 5px solid var(--blue);
+  border-radius: 9px;
+  background: #edf6fa;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.sector-caveat strong {
+  color: var(--navy);
+}
+
+.sector-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.sector-stat {
+  min-height: 124px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--accent, var(--blue));
+  border-radius: 13px;
+  background: white;
+}
+
+.sector-stat strong {
+  display: block;
+  overflow-wrap: anywhere;
+  color: var(--navy);
+  font-size: clamp(1.35rem, 2.4vw, 2.1rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.sector-stat span {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.sector-status-list,
+.sector-impact-list {
+  display: grid;
+  gap: 10px;
+}
+
+.sector-status-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.sector-status-row strong {
+  color: var(--orange);
+  text-align: right;
+}
+
+.sector-impact-item {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+}
+
+.sector-impact-item strong {
+  color: var(--navy);
+  font-size: 0.86rem;
+}
+
+.sector-impact-item p {
+  margin: 6px 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.sector-impact-item small {
+  color: var(--blue);
+  font-size: 0.69rem;
+  font-weight: 750;
+}
+
 @media (max-width: 980px) {
-  .health-stat-grid {
+  .health-stat-grid,
+  .sector-stat-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .health-layout,
-  .briefing-grid {
+  .briefing-grid,
+  .sar-source-grid,
+  .sector-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1102,7 +1325,9 @@ h2 {
 }
 
 @media (max-width: 760px) {
-  .health-stat-grid {
+  .health-stat-grid,
+  .sector-stat-grid,
+  .sar-mini-grid {
     grid-template-columns: 1fr;
   }
 
