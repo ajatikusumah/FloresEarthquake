@@ -8,7 +8,7 @@
       content="Preliminary situation report for the M7.7 Flores earthquake on 15 August 2026. Data remain evolving and subject to BNPB validation."
     />
     <meta name="theme-color" content="#0b2545" />
-    <title>Flores Earthquake Situation Report | 15 August 2026</title>
+    <title>Flores Earthquake Situation Report 04 | 15 August 2026</title>
     <link rel="stylesheet" href="sitrep.css" />
     <script src="sitrep.js" defer></script>
   </head>
@@ -16,9 +16,9 @@
     <header class="topbar">
       <div class="topbar-inner">
         <div class="brand">
-          <span>Situation Report 03</span>
-          <time datetime="2026-08-15T17:07:24+07:00">
-            Generated: 15 August 2026 · 17:07 WIB / 18:07 WITA
+          <span>Situation Report 04</span>
+          <time datetime="2026-08-15T17:30:19+07:00">
+            Generated: 15 August 2026 · 17:30 WIB / 18:30 WITA
           </time>
         </div>
         <nav class="topnav" aria-label="Situation report sections">
@@ -26,7 +26,10 @@
           <a href="#live-data">Live data</a>
           <a href="#hazards">Hazards</a>
           <a href="#impacts">Impacts</a>
+          <a href="#sar">SAR</a>
           <a href="#health">Health</a>
+          <a href="#animal-health">Animal health</a>
+          <a href="#economic-impact">Economy</a>
           <a href="#reports">Reports</a>
           <a href="#actions">Actions</a>
           <a href="#sources">Sources</a>
@@ -60,7 +63,7 @@
         </div>
         <div class="status-row">
           <span class="status">Tsunami warning ended — aftershocks continue</span>
-          <span class="cutoff-chip" id="impact-cutoff">Impact update: 15 Aug 2026 · 12:30 WIB / 13:30 WITA</span>
+          <span class="cutoff-chip" id="impact-cutoff">Impact update: 15 Aug 2026 · 15:00 WIB / 16:00 WITA</span>
         </div>
         <div class="notice" role="note">
           <strong>Preliminary and evolving — continuing BNPB/BPBD validation.</strong>
@@ -98,7 +101,7 @@
             <div class="metric-source">BMKG update [15]</div>
           </article>
           <article class="metric" style="--accent: var(--red)">
-            <div class="metric-value" id="impact-casualties">14 | 13</div>
+            <div class="metric-value" id="impact-casualties">38 | 13</div>
             <div class="metric-label">Reported deaths | injuries</div>
             <div class="metric-source">BNPB preliminary update [5][11]</div>
           </article>
@@ -168,11 +171,12 @@
             A shallow M7.7 tectonic earthquake occurred offshore approximately 30 km northeast of
             Mbay, Nagekeo, producing shaking up to MMI VII and a locally observed tsunami at 10
             monitoring locations. The warning ended at 07:31:30 WIB. BNPB's preliminary update at
-            12:30 WIB recorded 14 deaths, 2 serious injuries, 11 minor injuries, approximately
-            2,000 evacuees or self-evacuees, 54 heavily damaged houses, 9 moderately damaged houses
-            and 11 slightly damaged houses. Five health facilities were reported damaged in
-            Manggarai. All impact figures remain subject to continuing BNPB/BPBD verification and
-            validation.
+            15:00 WIB recorded 38 deaths, 2 serious injuries, 11 minor injuries and approximately
+            2,000 evacuees or self-evacuees. Detailed housing and sectoral damage counts remain based
+            on the earlier 12:30 WIB update while field verification continues. Basarnas operational
+            figures are presented separately because their scope and cut-off differ. Animal-health
+            impacts and official monetary damage-and-loss estimates were not yet available. All
+            figures remain subject to continuing BNPB/BPBD and sector-agency validation.
           </p>
         </section>
 
@@ -280,8 +284,8 @@
               <h2>Reported impacts and remaining information gaps</h2>
             </div>
             <div class="source-note">
-              <span id="impact-validation-status">BNPB preliminary update — verification and validation continue</span><br />
-              <span id="impact-validation-time">Cut-off: 15 Aug 2026 · 12:30 WIB / 13:30 WITA</span>
+              <span id="impact-validation-status">BNPB preliminary update at 15:00 WIB — verification and validation continue</span><br />
+              <span id="impact-validation-time">Cut-off: 15 Aug 2026 · 15:00 WIB / 16:00 WITA</span>
               · <a id="impact-source-link" href="https://www.youtube.com/watch?v=UAAf238cC0I" target="_blank" rel="noopener noreferrer">BNPB</a>
             </div>
           </div>
@@ -293,30 +297,97 @@
             <article class="impact-card" style="--accent:var(--teal); --bg:var(--pale-green)">
               <h3>BNPB preliminary figures</h3><span class="confidence">Cut-off 12:30 WIB</span>
               <ul id="impact-confirmed-list">
-                <li>14 deaths: 3 in Sikka, 6 in Manggarai and 5 in East Manggarai.</li>
+                <li>38 deaths reported by BNPB across Sikka, Manggarai, East Manggarai, Ende and West Manggarai; identification continues.</li>
                 <li>13 injured people: 2 seriously injured and 11 with minor injuries.</li>
                 <li>Approximately 2,000 people undertook evacuation or self-evacuation.</li>
-                <li>Approximately 5 households were reported affected; field verification continues.</li>
+                <li>First-day casualty and affected-population figures remain under field reconciliation.</li>
               </ul>
             </article>
             <article class="impact-card" style="--accent:var(--orange); --bg:var(--pale-orange)">
-              <h3>Preliminary damage</h3><span class="confidence">Further field verification required</span>
+              <h3>Preliminary damage</h3><span class="confidence">Detailed counts retain the 12:30 WIB cut-off</span>
               <ul id="impact-damage-list">
                 <li>54 houses heavily damaged, 9 moderately damaged and 11 slightly damaged.</li>
                 <li>5 health facilities and 1 education facility damaged in Manggarai.</li>
                 <li>1 Bulog warehouse, 3 places of worship and 6 government offices affected.</li>
-                <li>Traffic disruption and electricity outages continued in Nagekeo.</li>
+                <li>Transport, road, electricity and telecommunications disruptions are assessed separately below.</li>
               </ul>
             </article>
             <article class="impact-card" style="--accent:var(--red); --bg:var(--pale-red)">
               <h3>Not yet available</h3><span class="confidence">Critical information gaps</span>
               <ul id="impact-gaps-list">
-                <li>Consolidated missing-person and affected-population figures by district.</li>
-                <li>Names, damage severity and operational status of affected health facilities.</li>
-                <li>Verified WASH, electricity and telecommunications status by district.</li>
-                <li>Post-disaster disease surveillance and public-health event data.</li>
+                <li>Consolidated missing, trapped and affected-population figures by district.</li>
+                <li>Reconciled casualty records across response agencies and districts.</li>
+                <li>Verified service-restoration status for WASH, electricity, roads and telecommunications.</li>
+                <li>Public-health, animal-health and official monetary damage-and-loss estimates.</li>
               </ul>
             </article>
+          </div>
+        </section>
+
+
+        <section class="section" id="sar">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Search and rescue operations</div>
+              <h2>Basarnas operational snapshot</h2>
+            </div>
+            <div class="source-note">
+              <span id="sar-status">SAR operations and field reconciliation ongoing</span><br />
+              Operational records are not consolidated disaster-impact figures
+            </div>
+          </div>
+
+          <div class="sar-source-grid">
+            <article class="sar-source-card">
+              <div class="sar-source-head">
+                <div>
+                  <span class="confidence">Basarnas Situation Report 4</span>
+                  <h3>Forwarded field update</h3>
+                </div>
+                <span class="source-status source-status-warning">Authentication pending</span>
+              </div>
+              <div class="sar-mini-grid">
+                <div><strong id="sar-forwarded-deaths">20</strong><span>Deaths</span></div>
+                <div><strong id="sar-forwarded-injured">6</strong><span>Injured</span></div>
+                <div><strong id="sar-forwarded-trapped">2</strong><span>Reported trapped</span></div>
+              </div>
+              <p id="sar-forwarded-cutoff">Field cut-off stated: 15 Aug 2026 · 11:30 WITA.</p>
+              <small>Received as a forwarded WhatsApp copy; the original document has not been independently authenticated.</small>
+            </article>
+
+            <article class="sar-source-card">
+              <div class="sar-source-head">
+                <div>
+                  <span class="confidence">Basarnas QRSAR</span>
+                  <h3>Official operational system record</h3>
+                </div>
+                <span class="source-status source-status-official">Official dashboard</span>
+              </div>
+              <div class="sar-mini-grid">
+                <div><strong id="sar-qrsar-deaths">18</strong><span>Deaths recorded</span></div>
+                <div><strong id="sar-qrsar-search">0</strong><span>In search</span></div>
+                <div><strong id="sar-qrsar-updated">16:35</strong><span>Source update</span></div>
+              </div>
+              <p>Operational record under the Maumere Search and Rescue Office; scope may differ from BNPB consolidation.</p>
+              <a class="source-action" href="https://qrsar.basarnas.go.id/beranda_detail" target="_blank" rel="noopener noreferrer">Open QRSAR dashboard</a>
+            </article>
+          </div>
+
+          <article class="sector-monitoring">
+            <h3>Reported SAR movements</h3>
+            <ul id="sar-movement-list">
+              <li>07:00 WITA — Maumere Rescue Team deployed with two vehicles towards Nagekeo.</li>
+              <li>07:00 WITA — Ende SAR Alert Unit deployed; movement constrained by landslide debris near Pombara.</li>
+              <li>07:30 WITA — Labuan Bajo SAR Post moved towards Reo, Manggarai.</li>
+              <li>10:30 WITA — KN SAR 250 Puntadewa deployed towards Nagekeo.</li>
+              <li>Basarnas Special Group was prepared as reinforcement for Maumere/Flores.</li>
+            </ul>
+          </article>
+
+          <div class="sector-caveat" id="sar-caveat">
+            <strong>Interpretation:</strong> Basarnas data describe SAR operations at their stated
+            cut-offs. BNPB remains the source for consolidated headline impact figures. Individual
+            names and identification numbers are not reproduced.
           </div>
         </section>
 
@@ -344,7 +415,7 @@
             </div>
             <div class="source-note">
               <span id="health-status">Health-sector verification ongoing</span><br />
-              <span id="health-updated">Cut-off: 15 Aug 2026 · 12:30 WIB / 13:30 WITA</span>
+              <span id="health-updated">Cut-off: 15 Aug 2026 · 15:00 WIB / 16:00 WITA</span>
             </div>
           </div>
 
@@ -413,6 +484,119 @@
             identified; it does not mean that no health impact or disease event occurred. Health
             figures should be updated from BNPB, BPBD, Ministry of Health, provincial/district
             health offices and verified health-facility reports.
+          </div>
+        </section>
+
+
+        <section class="section" id="animal-health">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">One Health sector update</div>
+              <h2>Animal health and livestock</h2>
+            </div>
+            <div class="source-note">
+              <span id="animal-health-status">No verified earthquake-related animal-health impact figures identified</span><br />
+              Ministry of Agriculture, NTT Livestock Service and BPS monitoring
+            </div>
+          </div>
+
+          <div class="sector-stat-grid">
+            <article class="sector-stat" style="--accent:var(--teal)">
+              <strong id="animal-cattle-baseline">622,276</strong><span>NTT cattle population baseline, 2026 — not an affected count</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--red)">
+              <strong id="animal-deaths">Not reported</strong><span>Livestock deaths, injuries or missing</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--orange)">
+              <strong id="animal-facilities">Not reported</strong><span>Damaged Puskeswan or veterinary posts</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--blue)">
+              <strong id="animal-disease-events">Not reported</strong><span>Unusual animal-disease or zoonotic events</span>
+            </article>
+          </div>
+
+          <div class="sector-layout">
+            <article class="panel">
+              <h3>Current information status</h3>
+              <div class="sector-status-list" id="animal-health-indicators">
+                <div class="sector-status-row"><span>Livestock deaths, injuries or missing</span><strong>Not reported</strong></div>
+                <div class="sector-status-row"><span>Displaced livestock and temporary shelter</span><strong>Not reported</strong></div>
+                <div class="sector-status-row"><span>Veterinary facilities and cold chain</span><strong>Not reported</strong></div>
+                <div class="sector-status-row"><span>Feed, fodder and drinking water</span><strong>Not reported</strong></div>
+                <div class="sector-status-row"><span>Carcass management and biosecurity</span><strong>Not reported</strong></div>
+              </div>
+            </article>
+            <article class="panel">
+              <h3>Priority assessment indicators</h3>
+              <ul id="animal-health-priorities" class="sector-priority-list">
+                <li>Rapid livestock census by species, village, ownership and outcome.</li>
+                <li>Animal rescue, triage, treatment, humane handling and temporary shelter.</li>
+                <li>Feed, fodder and safe drinking-water availability.</li>
+                <li>Safe carcass management, environmental hygiene and biosecurity.</li>
+                <li>Functionality of Puskeswan, medicines, vaccines and cold chain.</li>
+                <li>Event-based surveillance for zoonoses, bites and unusual mortality.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="sector-caveat" id="animal-health-caveat">
+            <strong>Interpretation:</strong> “Not reported” does not mean zero. The province-wide
+            livestock baseline provides context only and must not be interpreted as the number of
+            animals exposed or affected.
+          </div>
+        </section>
+
+        <section class="section" id="economic-impact">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Early recovery and livelihoods</div>
+              <h2>Economic and service-disruption impacts</h2>
+            </div>
+            <div class="source-note">
+              <span id="economic-status">Rapid sectoral assessment ongoing</span><br />
+              No official monetary damage-and-loss estimate available
+            </div>
+          </div>
+
+          <div class="sector-stat-grid">
+            <article class="sector-stat" style="--accent:var(--red)">
+              <strong id="economic-monetary-loss">Not available</strong><span>Official monetary damage and loss estimate</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--orange)">
+              <strong id="economic-bts">200</strong><span>BTS/sites disrupted across 10 districts/cities</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--blue)">
+              <strong id="economic-transport">4</strong><span>Named transport facilities affected</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--teal)">
+              <strong id="economic-bulog">1</strong><span>Bulog warehouse reported affected</span>
+            </article>
+          </div>
+
+          <div class="sector-layout">
+            <article class="panel">
+              <h3>Known physical and service disruptions</h3>
+              <div id="economic-impact-list" class="sector-impact-list">
+                <article class="sector-impact-item"><strong>Telecommunications</strong><p>200 BTS/sites disrupted across 10 districts/cities involving three operators.</p><small>Official Komdigi statement</small></article>
+                <article class="sector-impact-item"><strong>Transport infrastructure</strong><p>Damage reported at Laurentius Say, Reo and Nangakeo ports and Komodo Airport.</p><small>Official Ministry of Transportation statement</small></article>
+                <article class="sector-impact-item"><strong>Road access and logistics</strong><p>Landslides and rockfall disrupted several routes; consolidated reopening status remains under assessment.</p><small>BNPB and forwarded Basarnas field reporting</small></article>
+              </div>
+            </article>
+            <article class="panel">
+              <h3>Information required for recovery planning</h3>
+              <ul id="economic-gaps-list" class="sector-priority-list">
+                <li>Official monetary estimate of physical damage and economic loss.</li>
+                <li>Business interruption, tourism, fisheries, agriculture and livestock losses.</li>
+                <li>Household income loss, market access and supply-chain disruption.</li>
+                <li>Verified repair costs and restoration timelines for critical services.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="sector-caveat" id="economic-caveat">
+            <strong>Interpretation:</strong> Known physical and service disruptions are not
+            equivalent to an economic loss estimate. Monetary figures should only be added after an
+            official government damage-and-loss assessment.
           </div>
         </section>
 
@@ -490,7 +674,7 @@
               <div class="section-kicker">Validation hierarchy</div>
               <h2>Sources and methodology</h2>
             </div>
-            <div class="source-note">Live BMKG feed; impact and health data cut-off 12:30 WIB</div>
+            <div class="source-note">Live BMKG feed; BNPB impact cut-off 15:00 WIB; sector cut-offs vary</div>
           </div>
           <ol class="sources">
             <li><strong>[1] BMKG:</strong> <a href="https://www.bmkg.go.id/gempabumi/berpotensi-tsunami/20260815050954" target="_blank" rel="noopener noreferrer">M7.7 earthquake parameters and press release</a></li>
@@ -508,6 +692,13 @@
             <li><strong>[13] IHCP:</strong> <a href="reports/IHCP_Flash_Update_1_Flores_NTT_20260815.pdf" target="_blank" rel="noopener noreferrer">Flash Update No. 1, cut-off 07:35 WIB</a></li>
             <li><strong>[14] Ministry of Health:</strong> <a href="https://pusatkrisis.kemkes.go.id/" target="_blank" rel="noopener noreferrer">Health Crisis Center official information portal</a></li>
             <li><strong>[15] BMKG via ANTARA:</strong> <a href="https://sultra.antaranews.com/berita/539051/peringatan-tsunami-dicabut-111-gempa-susulan-tercatat-di-nagekeontt" target="_blank" rel="noopener noreferrer">111 aftershocks recorded by 10:00 WITA</a></li>
+            <li><strong>[16] Basarnas:</strong> <a href="https://qrsar.basarnas.go.id/beranda_detail" target="_blank" rel="noopener noreferrer">QRSAR operational monitoring dashboard</a></li>
+            <li><strong>[17] Basarnas SITREP 4:</strong> Forwarded WhatsApp copy received 15 August 2026; original document not independently authenticated.</li>
+            <li><strong>[18] Ministry of Agriculture:</strong> <a href="https://bpmsph.ditjenpkh.pertanian.go.id/berita/kementan-perkuat-ntt-sebagai-sentra-sapi-nasional-salurkan-3000-dosis-semen-beku" target="_blank" rel="noopener noreferrer">NTT livestock context and 2026 cattle baseline</a></li>
+            <li><strong>[19] NTT Livestock Service:</strong> <a href="https://puskeswan-disnak.nttprov.go.id/" target="_blank" rel="noopener noreferrer">Provincial Puskeswan and animal-health information portal</a></li>
+            <li><strong>[20] BPS NTT:</strong> <a href="https://ntt.bps.go.id/id/statistics-table/3/UzJWaVUxZHdWVGxwU1hSd1UxTXZlbmRITjA1Q2R6MDkjMw%3D%3D/populasi-ternak-menurut-kabupaten-kota-dan-jenis-ternak-di-provinsi-nusa-tenggara-timur--ekor" target="_blank" rel="noopener noreferrer">2025 livestock population by district and species</a></li>
+            <li><strong>[21] Ministry of Transportation:</strong> <a href="https://www.kemenhub.go.id/post/read/pasca-gempa-bumi-di-ntt%2C-menhub-dudy-prioritaskan-keselamatan-dan-kelancaran-operasional-transportasi" target="_blank" rel="noopener noreferrer">Affected ports, airport and transport-service status</a></li>
+            <li><strong>[22] Ministry of Communication and Digital Affairs:</strong> <a href="https://www.komdigi.go.id/berita/siaran-pers/detail/layanan-tiga-operator-seluler-terdampak-gempa-m-70-di-ntt-komdigi-pantau-pemulihan-200-bts" target="_blank" rel="noopener noreferrer">Three operators affected and 200 BTS disrupted</a></li>
           </ol>
           <div class="method">
             <strong>Method and limitations.</strong> Source priority: official technical agencies,
@@ -521,7 +712,7 @@
 
       <footer class="footer">
         <span>Preliminary open-source SitRep · Data remain evolving and subject to BNPB validation.</span>
-        <span>Version 03 · Health dashboard · Report archive · BNPB update</span>
+        <span>Version 04 · SAR · Human and animal health · Economic impacts · Report archive</span>
       </footer>
     </main>
   </body>
