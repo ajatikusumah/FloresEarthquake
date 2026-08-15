@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "event_id": "flores-ntt-2026-08-15-m7.7",
+  "generated_at": "2026-08-15T17:30:19+07:00",
+  "generated_display": "15 Aug 2026 · 17:30 WIB / 18:30 WITA",
+  "sar": {
+    "status_label": "SAR operations and field reconciliation ongoing",
+    "forwarded_sitrep": {
+      "report_label": "Basarnas Situation Report 4",
+      "source_status": "Forwarded WhatsApp copy — original document not independently authenticated",
+      "issued_display": "15 Aug 2026 · 11:45 WIB / 12:45 WITA",
+      "field_cutoff_display": "15 Aug 2026 · 11:30 WITA (as stated)",
+      "deaths": 20,
+      "injured": 6,
+      "trapped": 2,
+      "total_people_in_report": 28,
+      "movements": [
+        "07:00 WITA — Maumere Rescue Team deployed with two vehicles towards Nagekeo.",
+        "07:00 WITA — Ende SAR Alert Unit deployed towards Nagekeo; movement constrained by landslide debris near Pombara.",
+        "07:30 WITA — Labuan Bajo SAR Post moved towards Reo, Manggarai.",
+        "10:30 WITA — KN SAR 250 Puntadewa deployed towards Nagekeo.",
+        "Basarnas Special Group was prepared as reinforcement for Maumere/Flores."
+      ]
+    },
+    "qrsar": {
+      "source_status": "Official Basarnas operational monitoring dashboard",
+      "operation_office": "Maumere Search and Rescue Office",
+      "source_updated_display": "15 Aug 2026 · 16:35 (time zone not stated on dashboard)",
+      "checked_display": "15 Aug 2026 · 17:16 WIB / 18:16 WITA",
+      "deaths_recorded": 18,
+      "rescued_recorded": 0,
+      "in_search_recorded": 0,
+      "url": "https://qrsar.basarnas.go.id/beranda_detail",
+      "scope_note": "QRSAR is an operational record and may not match consolidated disaster-impact figures."
+    },
+    "disclaimer": "Basarnas figures describe operational SAR records at their stated cut-offs. BNPB remains the source for consolidated headline impact figures. Individual names and identification numbers are not reproduced."
+  },
+  "animal_health": {
+    "status_label": "No verified earthquake-related animal-health impact figures identified",
+    "assessment_status": "Rapid animal-health and livestock assessment required",
+    "baseline": {
+      "cattle_population_ntt_2026": 622276,
+      "scope_note": "Province-wide NTT baseline; this is not an estimate of livestock exposed or affected by the earthquake."
+    },
+    "indicators": [
+      {
+        "label": "Livestock deaths, injuries or missing",
+        "status": "Not reported"
+      },
+      {
+        "label": "Displaced livestock and temporary animal shelter",
+        "status": "Not reported"
+      },
+      {
+        "label": "Damaged Puskeswan, veterinary posts or cold chain",
+        "status": "Not reported"
+      },
+      {
+        "label": "Feed, fodder and animal drinking-water disruption",
+        "status": "Not reported"
+      },
+      {
+        "label": "Carcass-management and biosecurity needs",
+        "status": "Not reported"
+      },
+      {
+        "label": "Unusual zoonotic or animal-disease events",
+        "status": "Not reported"
+      }
+    ],
+    "monitoring_priorities": [
+      "Rapid livestock census by species, village, ownership and outcome.",
+      "Animal rescue, triage, treatment, humane handling and temporary shelter.",
+      "Feed, fodder and safe drinking-water availability for livestock.",
+      "Safe carcass management, environmental hygiene and biosecurity.",
+      "Functionality of Puskeswan, veterinary medicines, vaccines and cold chain.",
+      "Event-based surveillance for zoonoses, animal bites and unusual morbidity or mortality."
+    ],
+    "sources": [
+      {
+        "agency": "Ministry of Agriculture — Directorate General of Livestock and Animal Health",
+        "title": "NTT livestock context and 2026 cattle population baseline",
+        "url": "https://bpmsph.ditjenpkh.pertanian.go.id/berita/kementan-perkuat-ntt-sebagai-sentra-sapi-nasional-salurkan-3000-dosis-semen-beku"
+      },
+      {
+        "agency": "NTT Provincial Livestock Service",
+        "title": "Provincial Puskeswan and animal-health information portal",
+        "url": "https://puskeswan-disnak.nttprov.go.id/"
+      },
+      {
+        "agency": "BPS NTT",
+        "title": "2025 livestock population tables by district and species",
+        "url": "https://ntt.bps.go.id/id/statistics-table/3/UzJWaVUxZHdWVGxwU1hSd1UxTXZlbmRITjA1Q2R6MDkjMw%3D%3D/populasi-ternak-menurut-kabupaten-kota-dan-jenis-ternak-di-provinsi-nusa-tenggara-timur--ekor"
+      }
+    ],
+    "disclaimer": "Not reported does not mean zero. The provincial baseline provides context only and must not be interpreted as the number of animals exposed or affected."
+  },
+  "economic_impact": {
+    "status_label": "Rapid sectoral assessment ongoing; no official monetary loss estimate available",
+    "headline": {
+      "monetary_damage_and_loss_idr": null,
+      "telecom_sites_disrupted": 200,
+      "affected_transport_facilities_named": 4,
+      "bulog_warehouses_affected": 1
+    },
+    "known_impacts": [
+      {
+        "sector": "Telecommunications",
+        "status": "200 BTS/sites disrupted across 10 districts/cities involving three operators; restoration monitored by Komdigi.",
+        "confidence": "Official Komdigi statement"
+      },
+      {
+        "sector": "Transport infrastructure",
+        "status": "Damage reported at Laurentius Say Port, Reo Port, Nangakeo Port and Komodo Airport.",
+        "confidence": "Official Ministry of Transportation statement"
+      },
+      {
+        "sector": "Transport services",
+        "status": "Pioneer service at Nangakeo Port temporarily suspended; Komodo Airport continued operating normally with restrictions.",
+        "confidence": "Official Ministry of Transportation statement"
+      },
+      {
+        "sector": "Road access and logistics",
+        "status": "Landslides and rockfall disrupted several routes; consolidated road-damage and reopening status remain under assessment.",
+        "confidence": "BNPB and forwarded Basarnas field reporting"
+      },
+      {
+        "sector": "Electricity",
+        "status": "Power outage was reported in Nagekeo earlier in the response; the current extent and restoration status were not available.",
+        "confidence": "BNPB preliminary update"
+      },
+      {
+        "sector": "Food logistics",
+        "status": "One Bulog warehouse was reported affected; operational and stock-loss details remain under verification.",
+        "confidence": "BNPB preliminary update"
+      }
+    ],
+    "information_gaps": [
+      "Official monetary estimate of physical damage and economic loss.",
+      "Business interruption, tourism, fisheries, agriculture and livestock livelihood losses.",
+      "Household income loss, market access and supply-chain disruption.",
+      "Verified repair costs and service-restoration timelines for roads, ports, power and telecommunications."
+    ],
+    "sources": [
+      {
+        "agency": "Ministry of Transportation",
+        "title": "Post-earthquake transport infrastructure and operating status",
+        "url": "https://www.kemenhub.go.id/post/read/pasca-gempa-bumi-di-ntt%2C-menhub-dudy-prioritaskan-keselamatan-dan-kelancaran-operasional-transportasi"
+      },
+      {
+        "agency": "Ministry of Communication and Digital Affairs",
+        "title": "Three operators affected; 200 BTS disrupted",
+        "url": "https://www.komdigi.go.id/berita/siaran-pers/detail/layanan-tiga-operator-seluler-terdampak-gempa-m-70-di-ntt-komdigi-pantau-pemulihan-200-bts"
+      },
+      {
+        "agency": "BNPB",
+        "title": "Preliminary impact, logistics and service-disruption update",
+        "url": "https://www.bnpb.go.id/berita/update-gempa-m-77-ntt-kepala-bnpb-dan-menko-pmk-segera-turun-ke-lapangan-bersama-tim-dan-dukungan-darurat-dikerahkan"
+      }
+    ],
+    "disclaimer": "Known physical and service disruptions are not equivalent to an economic loss estimate. Monetary figures should only be added after an official government damage-and-loss assessment."
+  }
+}
