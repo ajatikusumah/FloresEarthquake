@@ -10,6 +10,7 @@
     <meta name="theme-color" content="#0b2545" />
     <title>Flores Earthquake Situation Report | 15 August 2026</title>
     <link rel="stylesheet" href="sitrep.css" />
+    <script src="sitrep.js" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -17,6 +18,7 @@
         <div class="brand">Situation Report 01</div>
         <nav class="topnav" aria-label="Situation report sections">
           <a href="#overview">Overview</a>
+          <a href="#live-data">Live data</a>
           <a href="#hazards">Hazards</a>
           <a href="#impacts">Impacts</a>
           <a href="#actions">Actions</a>
@@ -51,7 +53,7 @@
         </div>
         <div class="status-row">
           <span class="status">Tsunami warning ended — aftershocks continue</span>
-          <span class="cutoff-chip">Cut-off: 15 Aug 2026 · 08:45 WIB / 09:45 WITA</span>
+          <span class="cutoff-chip" id="impact-cutoff">Impact update: 15 Aug 2026 · 08:00 WIB / 09:00 WITA</span>
         </div>
         <div class="notice" role="note">
           <strong>Preliminary and evolving — BNPB validation pending.</strong>
@@ -89,10 +91,62 @@
             <div class="metric-source">Source [7]</div>
           </article>
           <article class="metric" style="--accent: var(--red)">
-            <div class="metric-value">1 | 2</div>
+            <div class="metric-value" id="impact-casualties">1 | 4</div>
             <div class="metric-label">Confirmed deaths | injuries</div>
-            <div class="metric-source">Source [5]</div>
+            <div class="metric-source">Official preliminary BNPB update [5]</div>
           </article>
+        </section>
+
+        <section class="section live-feed-section" id="live-data">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Near-real-time monitoring</div>
+              <h2>Latest regional M5+ earthquake</h2>
+            </div>
+            <div class="live-feed-meta">
+              <span class="feed-status is-loading" id="feed-status">Connecting to BMKG feed…</span>
+              <span class="source-note" id="feed-last-checked">Automatic refresh every 5 minutes</span>
+            </div>
+          </div>
+          <div class="live-feed-shell">
+            <div class="live-data-grid">
+              <article class="live-data-card">
+                <div class="live-data-value" id="live-magnitude">M5.1</div>
+                <div class="live-data-label">Latest regional magnitude</div>
+              </article>
+              <article class="live-data-card">
+                <div class="live-data-value" id="live-depth">10 km</div>
+                <div class="live-data-label">Depth</div>
+              </article>
+              <article class="live-data-card live-location-card">
+                <div class="live-data-value live-location" id="live-location">82 km northeast of Ruteng, Manggarai, NTT</div>
+                <div class="live-data-label">
+                  <span id="live-event-time">15 Aug 2026 · 14:39:41 WIB</span>
+                  · <span id="live-coordinates">-7.94,120.79</span>
+                </div>
+              </article>
+              <article class="live-data-card">
+                <div class="live-data-value live-potential" id="live-potential">Not tsunami-generating</div>
+                <div class="live-data-label">BMKG potential statement</div>
+              </article>
+            </div>
+            <div class="live-recent">
+              <div class="live-recent-head">
+                <strong>Recent regional M5+ events</strong>
+                <a href="https://data.bmkg.go.id/gempabumi/" target="_blank" rel="noopener noreferrer">Official BMKG data</a>
+              </div>
+              <div id="recent-quakes" class="recent-quakes" aria-live="polite">
+                <div class="live-quake-row"><strong>M5.1</strong><span>82 km northeast of Ruteng, Manggarai, NTT</span><time>15 Aug 2026 · 14:39:41 WIB</time></div>
+                <div class="live-quake-row"><strong>M5.0</strong><span>33 km northeast of Mbay, Nagekeo, NTT</span><time>15 Aug 2026 · 12:45:09 WIB</time></div>
+                <div class="live-quake-row"><strong>M5.0</strong><span>42 km northeast of Mbay, Nagekeo, NTT</span><time>15 Aug 2026 · 10:54:14 WIB</time></div>
+              </div>
+            </div>
+          </div>
+          <p class="live-disclaimer">
+            The feed displays BMKG's latest M5+ records for Flores and surrounding NTT. It is
+            refreshed in the viewer's browser every five minutes. BMKG remains the authoritative
+            source; impact figures below are maintained separately from official BNPB/BPBD updates.
+          </p>
         </section>
 
         <section class="section">
@@ -106,11 +160,11 @@
           <p class="summary">
             A shallow M7.7 tectonic earthquake occurred offshore approximately 30 km northeast of
             Mbay, Nagekeo, producing shaking up to MMI VII. BMKG detected tsunami waves at nine
-            observation points, with a preliminary maximum of 0.94 m at Maurole–Ende. The tsunami
-            warning has ended, but aftershock activity continues, including two M6.2 events.
-            Basarnas, as reported by ANTARA, confirmed at least one death and two injuries in
-            Maumere. Building damage has been reported from Maumere to Labuan Bajo, while
-            consolidated impact figures remain under assessment.
+            observation points, with a preliminary maximum of 0.94 m at Maurole–Ende; the tsunami
+            warning has ended. BNPB's field-validated update at 08:00 WIB recorded 1 death, 4
+            injuries, approximately 2,000 people undertaking self-evacuation in Nagekeo, and
+            preliminary damage to homes and public facilities. Aftershocks continue and all impact
+            figures remain subject to further BNPB/BPBD verification.
           </p>
         </section>
 
@@ -213,36 +267,43 @@
         <section class="section" id="impacts">
           <div class="section-head">
             <div>
-              <div class="section-kicker">Impact status at the cut-off</div>
-              <h2>Confirmed, preliminary and missing information</h2>
+              <div class="section-kicker">Official preliminary impact update</div>
+              <h2>Validated figures and remaining information gaps</h2>
             </div>
-            <div class="source-note">Headline figures exclude reports without sufficient official detail</div>
+            <div class="source-note">
+              <span id="impact-validation-status">Official preliminary update — field validation continues</span>
+              · <a id="impact-source-link" href="https://www.bnpb.go.id/berita/update-gempa-m-77-ntt-kepala-bnpb-dan-menko-pmk-segera-turun-ke-lapangan-bersama-tim-dan-dukungan-darurat-dikerahkan" target="_blank" rel="noopener noreferrer">BNPB</a>
+            </div>
+          </div>
+          <div class="impact-highlight">
+            <div><strong id="impact-displacement">2,000</strong><span>Approximate self-evacuees in Nagekeo</span></div>
+            <p>Impact figures are loaded from <code>data/impact.json</code> and can be updated without changing the page layout.</p>
           </div>
           <div class="impact-grid">
             <article class="impact-card" style="--accent:var(--teal); --bg:var(--pale-green)">
-              <h3>Confirmed</h3><span class="confidence">High confidence</span>
-              <ul>
-                <li>1 death and 2 injuries in Maumere, according to the Maumere SAR Office.</li>
-                <li>BMKG has declared the tsunami warning ended.</li>
-                <li>Tsunami waves observed at 9 locations; all available measurements were below 1 metre.</li>
-                <li>37 aftershocks by 07:07 WIB; maximum M6.2.</li>
+              <h3>Confirmed by BNPB</h3><span class="confidence">Validated at 08:00 WIB</span>
+              <ul id="impact-confirmed-list">
+                <li>1 confirmed death in Sikka Regency and 4 injured people in Sikka and Nagekeo.</li>
+                <li>Approximately 2,000 residents in Nagekeo undertook self-evacuation.</li>
+                <li>1 household (6 people) was reported affected in Bima City.</li>
+                <li>The tsunami warning ended at 07:31:30 WIB; aftershock vigilance remains necessary.</li>
               </ul>
             </article>
             <article class="impact-card" style="--accent:var(--orange); --bg:var(--pale-orange)">
-              <h3>Preliminary reports</h3><span class="confidence">Field verification required</span>
-              <ul>
-                <li>Moderate damage at Maumere Port and Hotel Jayakarta in Labuan Bajo.</li>
-                <li>Collapsed or cracked house walls in Maumere, West Manggarai and Labuan Bajo.</li>
-                <li>Damage reported at a campus/seminary and public facilities in Flores.</li>
-                <li>Coastal residents self-evacuated to higher ground.</li>
+              <h3>Preliminary damage</h3><span class="confidence">Further field verification required</span>
+              <ul id="impact-damage-list">
+                <li>2 houses heavily damaged, 1 moderately damaged and 2 slightly damaged.</li>
+                <li>1 Bulog warehouse affected.</li>
+                <li>3 public facilities slightly damaged and 6 government offices affected.</li>
+                <li>Electricity remained disrupted in Nagekeo at the time of the BNPB update.</li>
               </ul>
             </article>
             <article class="impact-card" style="--accent:var(--red); --bg:var(--pale-red)">
               <h3>Not yet available</h3><span class="confidence">Critical information gaps</span>
-              <ul>
-                <li>Numbers displaced, missing and affected by district.</li>
-                <li>Homes and facilities damaged, disaggregated by severity.</li>
-                <li>Status of hospitals, health centres, water, power and telecommunications.</li>
+              <ul id="impact-gaps-list">
+                <li>Consolidated numbers displaced, missing and affected by district.</li>
+                <li>Verified building damage by location and severity.</li>
+                <li>Operational status of hospitals, health centres, water and telecommunications.</li>
                 <li>Comprehensive status of roads, bridges, ports and airports.</li>
               </ul>
             </article>
@@ -312,14 +373,14 @@
               <div class="section-kicker">Validation hierarchy</div>
               <h2>Sources and methodology</h2>
             </div>
-            <div class="source-note">Accessed 15 Aug 2026, through 08:45 WIB</div>
+            <div class="source-note">Live BMKG feed; impact data updated from BNPB at 08:00 WIB</div>
           </div>
           <ol class="sources">
             <li><strong>[1] BMKG:</strong> <a href="https://www.bmkg.go.id/gempabumi/berpotensi-tsunami/20260815050954" target="_blank" rel="noopener noreferrer">M7.7 earthquake parameters and press release</a></li>
             <li><strong>[2] BMKG:</strong> <a href="https://www.bmkg.go.id/gempabumi/berpotensi-tsunami/20260815062839" target="_blank" rel="noopener noreferrer">Tsunami observations and PD 3.2 update</a></li>
             <li><strong>[3] BMKG:</strong> <a href="https://warning.bmkg.go.id/" target="_blank" rel="noopener noreferrer">Tsunami early warning status</a></li>
             <li><strong>[4] BMKG:</strong> <a href="https://www.bmkg.go.id/gempabumi/gempabumi-m5" target="_blank" rel="noopener noreferrer">M5+ earthquake list and significant aftershocks</a></li>
-            <li><strong>[5] ANTARA/Basarnas:</strong> <a href="https://www.antaranews.com/berita/5695605/satu-orang-di-maumere-ditemukan-meninggal-dunia-akibat-gempa" target="_blank" rel="noopener noreferrer">One death and two injuries — Maumere SAR Office</a></li>
+            <li><strong>[5] BNPB:</strong> <a href="https://www.bnpb.go.id/berita/update-gempa-m-77-ntt-kepala-bnpb-dan-menko-pmk-segera-turun-ke-lapangan-bersama-tim-dan-dukungan-darurat-dikerahkan" target="_blank" rel="noopener noreferrer">Validated update: 1 death, 4 injuries, evacuation and initial damage</a></li>
             <li><strong>[6] ANTARA/BMKG:</strong> <a href="https://www.antaranews.com/berita/5695576/bmkg-ancaman-tsunami-berstatus-siaga-05-3-meter-di-ntt-ntb-sulsel" target="_blank" rel="noopener noreferrer">BMKG statement on intensity and tsunami threat</a></li>
             <li><strong>[7] detik/BMKG:</strong> <a href="https://news.detik.com/berita/d-8619530/bmkg-rumah-kantor-pelabuhan-hingga-hotel-rusak-usai-gempa-di-mbay-labuan-bajo" target="_blank" rel="noopener noreferrer">Initial damage and 37 aftershocks</a></li>
             <li><strong>[8] detik/BMKG:</strong> <a href="https://news.detik.com/berita/d-8619469/tsunami-juga-terdeteksi-di-baubau-dan-bulukumba-usai-gempa-m-7-ntt" target="_blank" rel="noopener noreferrer">Tsunami detection in Baubau and Bulukumba</a></li>
@@ -338,7 +399,7 @@
 
       <footer class="footer">
         <span>Preliminary open-source SitRep · Data remain evolving and subject to BNPB validation.</span>
-        <span>Version 01 · 15 August 2026</span>
+        <span>Version 02 · Live BMKG feed · BNPB impact update</span>
       </footer>
     </main>
   </body>
