@@ -1,56 +1,94 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
-  "status_label": "Official preliminary update — field validation continues",
-  "updated_at": "2026-08-15T08:00:00+07:00",
-  "updated_display": "15 Aug 2026 · 08:00 WIB / 09:00 WITA",
+  "status_label": "BNPB preliminary update — verification and validation continue",
+  "updated_at": "2026-08-15T12:30:00+07:00",
+  "updated_display": "15 Aug 2026 · 12:30 WIB / 13:30 WITA",
   "validated_by": "BNPB/BPBD field verification",
   "source": {
     "agency": "BNPB",
-    "title": "[Update]: M7.7 NTT earthquake — emergency response and validated field update",
-    "url": "https://www.bnpb.go.id/berita/update-gempa-m-77-ntt-kepala-bnpb-dan-menko-pmk-segera-turun-ke-lapangan-bersama-tim-dan-dukungan-darurat-dikerahkan",
-    "published_at": "2026-08-15T09:15:00+07:00"
+    "title": "Official press conference: Update on conditions and response following the M7.7 Nagekeo earthquake",
+    "url": "https://www.youtube.com/watch?v=UAAf238cC0I",
+    "media_type": "official_video_briefing",
+    "duration": "36:39",
+    "date": "2026-08-15",
+    "written_cross_check": "https://sultra.antaranews.com/berita/539048/14-orang-meninggal-dunia-akibat-gempa-bumi-m77-di-ntt"
   },
   "casualties": {
-    "deaths": 1,
-    "injured": 4,
+    "deaths": 14,
+    "injured": 13,
+    "injured_serious": 2,
+    "injured_minor": 11,
     "missing": null
+  },
+  "casualties_by_location": {
+    "deaths": {
+      "Sikka Regency": 3,
+      "Manggarai Regency": 6,
+      "East Manggarai Regency": 5
+    },
+    "injuries_reported_in": [
+      "Sikka Regency",
+      "Nagekeo Regency",
+      "Manggarai Regency",
+      "East Manggarai Regency"
+    ]
   },
   "displacement": {
     "self_evacuated_approx": 2000,
-    "location": "Nagekeo Regency"
+    "location": "Affected areas in East Nusa Tenggara"
   },
   "affected": {
-    "households": 1,
-    "people": 6,
-    "location": "Bima City"
+    "households_approx": 5,
+    "people": null
   },
   "damage": {
-    "houses_heavily_damaged": 2,
-    "houses_moderately_damaged": 1,
-    "houses_slightly_damaged": 2,
+    "houses_heavily_damaged": 54,
+    "houses_moderately_damaged": 9,
+    "houses_slightly_damaged": 11,
+    "health_facilities_damaged": 5,
+    "education_facilities_damaged": 1,
     "bulog_warehouses_affected": 1,
-    "public_facilities_slightly_damaged": 3,
+    "places_of_worship_damaged": 3,
     "government_offices_affected": 6
   },
+  "district_damage": {
+    "Manggarai Regency": {
+      "houses_heavily_damaged": 29,
+      "houses_moderately_damaged": 9,
+      "houses_slightly_damaged": 9,
+      "health_facilities_damaged": 5,
+      "education_facilities_damaged": 1
+    },
+    "East Manggarai Regency": {
+      "houses_heavily_damaged": 23
+    },
+    "Nagekeo Regency": {
+      "houses_heavily_damaged": 2,
+      "houses_moderately_damaged": 1,
+      "houses_slightly_damaged": 2,
+      "places_of_worship_slightly_damaged": 2,
+      "government_offices_affected": 5
+    }
+  },
   "confirmed": [
-    "1 confirmed death in Sikka Regency and 4 injured people in Sikka and Nagekeo.",
-    "Approximately 2,000 residents in Nagekeo undertook self-evacuation.",
-    "1 household (6 people) was reported affected in Bima City.",
-    "The tsunami warning ended at 07:31:30 WIB; aftershock vigilance remains necessary."
+    "14 deaths: 3 in Sikka, 6 in Manggarai and 5 in East Manggarai.",
+    "13 injured people: 2 seriously injured and 11 with minor injuries.",
+    "Approximately 2,000 people undertook evacuation or self-evacuation.",
+    "Approximately 5 households were reported affected; field verification continues."
   ],
   "damage_reports": [
-    "2 houses heavily damaged, 1 moderately damaged and 2 slightly damaged.",
-    "1 Bulog warehouse affected.",
-    "3 public facilities slightly damaged and 6 government offices affected.",
-    "Electricity remained disrupted in Nagekeo at the time of the BNPB update."
+    "54 houses heavily damaged, 9 moderately damaged and 11 slightly damaged.",
+    "5 health facilities and 1 education facility damaged in Manggarai Regency.",
+    "1 Bulog warehouse, 3 places of worship and 6 government offices affected.",
+    "Traffic disruption and electricity outages continued in Nagekeo at the reporting cut-off."
   ],
   "information_gaps": [
-    "Consolidated numbers displaced, missing and affected by district.",
-    "Verified building damage by location and severity.",
-    "Operational status of hospitals, health centres, water and telecommunications.",
-    "Comprehensive status of roads, bridges, ports and airports."
+    "Consolidated missing-person and affected-population figures by district.",
+    "Names, damage severity and operational status of the 5 affected health facilities.",
+    "Verified WASH, electricity and telecommunications status by district.",
+    "Post-disaster disease surveillance and public-health event data."
   ],
   "disclaimer": "All figures remain preliminary and may change following further verification and validation by BNPB, BPBD and relevant authorities."
 }
