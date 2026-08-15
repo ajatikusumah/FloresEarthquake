@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "event_id": "flores-ntt-2026-08-15-m7.7",
+  "status": "preliminary",
+  "status_label": "Health-sector verification ongoing",
+  "updated_at": "2026-08-15T12:30:00+07:00",
+  "updated_display": "15 Aug 2026 · 12:30 WIB / 13:30 WITA",
+  "headline": {
+    "health_facilities_damaged": 5,
+    "injured_serious": 2,
+    "injured_minor": 11,
+    "post_disaster_disease_events_reported": null
+  },
+  "facilities": [
+    {
+      "name": "Five health facilities (names not yet disaggregated)",
+      "type": "Multiple health facilities",
+      "location": "Manggarai Regency",
+      "structural_status": "Damage reported; severity not yet disaggregated",
+      "operational_status": "Under verification",
+      "confidence": "BNPB preliminary update"
+    },
+    {
+      "name": "RSUD Aeramo",
+      "type": "Hospital",
+      "location": "Nagekeo Regency",
+      "structural_status": "No verified structural damage figure published",
+      "operational_status": "Patients temporarily evacuated to the hospital grounds; initial medical care continued",
+      "confidence": "BPBD NTT statement reported by detik"
+    }
+  ],
+  "disease_surveillance": {
+    "status": "No official post-disaster disease case counts were identified at the reporting cut-off.",
+    "data_available": false,
+    "conditions": [
+      {
+        "name": "Acute diarrhoeal disease",
+        "cases": null,
+        "status": "Not reported"
+      },
+      {
+        "name": "Acute respiratory infection",
+        "cases": null,
+        "status": "Not reported"
+      },
+      {
+        "name": "Febrile or vector-borne illness",
+        "cases": null,
+        "status": "Not reported"
+      },
+      {
+        "name": "Skin disease and wound infection",
+        "cases": null,
+        "status": "Not reported"
+      },
+      {
+        "name": "Other unusual public-health events",
+        "cases": null,
+        "status": "Not reported"
+      }
+    ]
+  },
+  "monitoring_priorities": [
+    "Safety and functionality of hospitals, puskesmas, laboratories and referral routes.",
+    "Trauma care, wound management, tetanus risk assessment and continuity of essential medicines.",
+    "Safe water, sanitation, hygiene and health conditions in evacuation locations.",
+    "Syndromic surveillance for diarrhoea, respiratory illness, fever, skin disease and unusual events.",
+    "Mental-health and psychosocial support, including continuity of care for vulnerable groups."
+  ],
+  "sources": [
+    {
+      "agency": "BNPB",
+      "title": "Official M7.7 Nagekeo earthquake press conference",
+      "url": "https://www.youtube.com/watch?v=UAAf238cC0I"
+    },
+    {
+      "agency": "BNPB via ANTARA",
+      "title": "12:30 WIB impact update including five damaged health facilities",
+      "url": "https://sultra.antaranews.com/berita/539048/14-orang-meninggal-dunia-akibat-gempa-bumi-m77-di-ntt"
+    },
+    {
+      "agency": "BPBD NTT via detik",
+      "title": "RSUD Aeramo patient evacuation and continued initial care",
+      "url": "https://www.detik.com/bali/nusra/d-8619926/bpbd-catat-korban-gempa-nagekeo-ntt-bertambah-jadi-13-orang"
+    },
+    {
+      "agency": "Kementerian Kesehatan",
+      "title": "Health Crisis Center — official health emergency information portal",
+      "url": "https://pusatkrisis.kemkes.go.id/"
+    }
+  ],
+  "disclaimer": "A blank or 'not reported' field means that no verified official figure was identified; it does not mean that no impact or disease event occurred."
+}
