@@ -17,6 +17,9 @@
     }
   };
 
+  const formatNumber = (value) =>
+    Number.isFinite(Number(value)) ? Number(value).toLocaleString("en-US") : "—";
+
   const fetchJson = async (url) => {
     const response = await fetch(`${url}?t=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) throw new Error(`${url} request failed: ${response.status}`);
@@ -139,9 +142,10 @@
       setText("impact-cutoff", `Impact update: ${data.updated_display}`);
       setText("impact-validation-status", data.status_label);
       setText("impact-validation-time", `Cut-off: ${data.updated_display}`);
+      const displacement = data.displacement || {};
       setText(
         "impact-displacement",
-        Number(data.displacement?.self_evacuated_approx || 0).toLocaleString("en-US")
+        displacement.status || formatNumber(displacement.self_evacuated_approx)
       );
 
       renderList("impact-confirmed-list", data.confirmed);
@@ -206,10 +210,13 @@
       const data = await fetchJson(HEALTH_URL);
       setText("health-status", data.status_label);
       setText("health-updated", `Cut-off: ${data.updated_display}`);
+      setText("health-affected-population", formatNumber(data.headline?.affected_population));
       setText("health-facilities-damaged", data.headline?.health_facilities_damaged ?? "—");
       setText("health-serious-injuries", data.headline?.injured_serious ?? "—");
       setText("health-minor-injuries", data.headline?.injured_minor ?? "—");
       setText("health-surveillance-status", data.disease_surveillance?.status);
+
+      renderList("health-district-list", data.district_impact_summary);
 
       const facilities = byId("health-facilities-list");
       if (facilities && Array.isArray(data.facilities)) {
@@ -222,6 +229,25 @@
           ...data.disease_surveillance.conditions.map(createDiseaseRow)
         );
       }
+
+      const workforce = byId("health-workforce-list");
+      if (workforce && Array.isArray(data.workforce)) {
+        workforce.replaceChildren(...data.workforce.map(createSectorStatusRow));
+      }
+
+      renderList("health-response-list", data.emergency_response);
+      setText(
+        "health-logistics-date",
+        `Planned dispatch: ${data.planned_logistics?.dispatch_date || "Not reported"}`
+      );
+      const logistics = byId("health-logistics-list");
+      if (logistics && Array.isArray(data.planned_logistics?.items)) {
+        logistics.replaceChildren(
+          ...data.planned_logistics.items.map(createSectorStatusRow)
+        );
+      }
+
+      renderList("health-data-quality-list", data.data_quality_notes);
 
       renderList("health-monitoring-list", data.monitoring_priorities);
     } catch (error) {
@@ -281,6 +307,7 @@
       const qrsarTime = String(qrsar.source_updated_display || "").match(/·\s*(\d{2}:\d{2})/);
       setText("sar-qrsar-updated", qrsarTime?.[1] || "—");
       renderList("sar-movement-list", forwarded.movements);
+      setText("sar-caveat-text", sar.disclaimer);
 
       const animal = data.animal_health || {};
       setText("animal-health-status", animal.status_label);
