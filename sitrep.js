@@ -8,6 +8,17 @@
   const REPORTS_URL = "data/reports.json";
   const REFRESH_MS = 5 * 60 * 1000;
 
+  const AFFECTED_AREA_LOCATIONS = [
+    { key: "Sikka Regency", label: "Sikka", representative: "Maumere", lat: -8.6199, lng: 122.2111 },
+    { key: "Ende Regency", label: "Ende", representative: "Ende", lat: -8.8432, lng: 121.6623 },
+    { key: "East Manggarai Regency", label: "East Manggarai", representative: "Borong", lat: -8.8125, lng: 120.6092 },
+    { key: "Nagekeo Regency", label: "Nagekeo", representative: "Mbay", lat: -8.5558, lng: 121.2711 },
+    { key: "West Manggarai Regency", label: "West Manggarai", representative: "Labuan Bajo", lat: -8.4964, lng: 119.8877 },
+    { key: "Manggarai Regency", label: "Manggarai", representative: "Ruteng", lat: -8.6114, lng: 120.4644 },
+    { key: "Ngada Regency", label: "Ngada", representative: "Bajawa", lat: -8.7848, lng: 120.9744 },
+    { key: "East Flores Regency", label: "East Flores", representative: "Larantuka", lat: -8.3436, lng: 122.9883 }
+  ];
+
   const byId = (id) => document.getElementById(id);
 
   const setText = (id, value) => {
@@ -160,6 +171,143 @@
     } catch (error) {
       console.error(error);
       setText("impact-validation-status", "Static fallback data shown");
+    }
+  };
+
+
+  const mapValue = (value) =>
+    value === undefined || value === null ? "Not reported" : formatNumber(value);
+
+  const createMapPopup = (location, impact, healthDistrict) => {
+    const casualty = impact.casualties_by_location?.[location.key] || {};
+    const injuryValues = [
+      casualty.injured_serious_kemenkes,
+      casualty.injured_minor_kemenkes
+    ].filter((value) => value !== undefined && value !== null);
+    const totalInjured =
+      injuryValues.length > 0
+        ? injuryValues.reduce((total, value) => total + Number(value || 0), 0)
+        : null;
+
+    const popup = document.createElement("div");
+    popup.className = "map-popup";
+
+    const title = document.createElement("h3");
+    title.textContent = location.label;
+
+    const representative = document.createElement("p");
+    representative.textContent = `Representative point: ${location.representative}`;
+
+    const details = document.createElement("dl");
+    const rows = [
+      ["Population listed as affected", mapValue(healthDistrict?.affected_population)],
+      ["Deaths — BNPB", mapValue(casualty.deaths_bnpb)],
+      ["Deaths — Kemenkes", mapValue(casualty.deaths_kemenkes)],
+      ["Injured — Kemenkes", mapValue(totalInjured)]
+    ];
+    rows.forEach(([label, value]) => {
+      const term = document.createElement("dt");
+      term.textContent = label;
+      const definition = document.createElement("dd");
+      definition.textContent = value;
+      details.append(term, definition);
+    });
+
+    const source = document.createElement("a");
+    source.href = impact.source?.url || "https://www.bnpb.go.id/";
+    source.target = "_blank";
+    source.rel = "noopener noreferrer";
+    source.textContent = "Open primary impact source";
+
+    popup.append(title, representative, details, source);
+    return popup;
+  };
+
+  const mapMarkerColour = (casualty) => {
+    const reported = casualty?.deaths_bnpb ?? casualty?.deaths_kemenkes;
+    if (reported === undefined || reported === null) return "#2a9d8f";
+    if (Number(reported) >= 10) return "#c83f43";
+    if (Number(reported) >= 1) return "#e58b2a";
+    return "#2a9d8f";
+  };
+
+  const loadAffectedAreaMap = async () => {
+    try {
+      if (!window.L) throw new Error("Leaflet library is unavailable.");
+
+      const mapElement = byId("disaster-map");
+      if (!mapElement) return;
+
+      const [impact, health] = await Promise.all([
+        fetchJson(IMPACT_URL),
+        fetchJson(HEALTH_URL)
+      ]);
+
+      const map = window.L.map(mapElement, {
+        scrollWheelZoom: false,
+        minZoom: 6
+      });
+
+      window.L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+      }).addTo(map);
+
+      const healthDistricts = new Map(
+        (Array.isArray(health.districts) ? health.districts : []).map((district) => [
+          district.name,
+          district
+        ])
+      );
+      const markerByArea = new Map();
+      const markerGroup = window.L.featureGroup();
+
+      AFFECTED_AREA_LOCATIONS.forEach((location) => {
+        const casualty = impact.casualties_by_location?.[location.key] || {};
+        const reported = casualty.deaths_bnpb ?? casualty.deaths_kemenkes ?? 0;
+        const marker = window.L.circleMarker([location.lat, location.lng], {
+          radius: Math.max(8, Math.min(18, 8 + Number(reported) * 0.4)),
+          color: "#ffffff",
+          weight: 2,
+          fillColor: mapMarkerColour(casualty),
+          fillOpacity: 0.88
+        });
+
+        marker.bindTooltip(location.label, {
+          direction: "top",
+          sticky: true,
+          opacity: 0.95
+        });
+        marker.bindPopup(
+          createMapPopup(location, impact, healthDistricts.get(location.key)),
+          { maxWidth: 320 }
+        );
+        marker.addTo(markerGroup);
+        markerByArea.set(location.key, marker);
+      });
+
+      markerGroup.addTo(map);
+      map.fitBounds(markerGroup.getBounds(), { padding: [30, 30], maxZoom: 8 });
+      window.L.control.scale({ imperial: false, position: "bottomleft" }).addTo(map);
+
+      document.querySelectorAll("[data-map-area]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const marker = markerByArea.get(button.dataset.mapArea);
+          if (!marker) return;
+          map.flyTo(marker.getLatLng(), 9, { duration: 0.7 });
+          marker.openPopup();
+        });
+      });
+
+      setText("map-status", "OpenStreetMap loaded · 8 affected regencies");
+      const status = byId("map-status");
+      if (status) status.className = "feed-status is-live";
+    } catch (error) {
+      console.error(error);
+      setText("map-status", "Map temporarily unavailable — affected-area list shown");
+      const status = byId("map-status");
+      if (status) status.className = "feed-status is-warning";
     }
   };
 
@@ -406,6 +554,7 @@
   };
 
   loadImpactData();
+  loadAffectedAreaMap();
   loadHealthData();
   loadSectorImpactData();
   loadReportsData();
