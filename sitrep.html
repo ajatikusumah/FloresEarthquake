@@ -15,12 +15,14 @@
   <body>
     <header class="topbar">
       <div class="topbar-inner">
-        <div class="brand">Situation Report 02</div>
+        <div class="brand">Situation Report 03</div>
         <nav class="topnav" aria-label="Situation report sections">
           <a href="#overview">Overview</a>
           <a href="#live-data">Live data</a>
           <a href="#hazards">Hazards</a>
           <a href="#impacts">Impacts</a>
+          <a href="#health">Health</a>
+          <a href="#reports">Reports</a>
           <a href="#actions">Actions</a>
           <a href="#sources">Sources</a>
           <button class="print-btn" type="button" onclick="window.print()">
@@ -53,10 +55,10 @@
         </div>
         <div class="status-row">
           <span class="status">Tsunami warning ended — aftershocks continue</span>
-          <span class="cutoff-chip" id="impact-cutoff">Impact update: 15 Aug 2026 · 08:00 WIB / 09:00 WITA</span>
+          <span class="cutoff-chip" id="impact-cutoff">Impact update: 15 Aug 2026 · 12:30 WIB / 13:30 WITA</span>
         </div>
         <div class="notice" role="note">
-          <strong>Preliminary and evolving — BNPB validation pending.</strong>
+          <strong>Preliminary and evolving — continuing BNPB/BPBD validation.</strong>
           All information and figures remain preliminary and continue to evolve. Data will be
           verified and validated by BNPB and relevant authorities. Unverified media reports are
           excluded from headline figures.
@@ -86,14 +88,14 @@
             <div class="metric-source">Source [2]</div>
           </article>
           <article class="metric" style="--accent: var(--blue)">
-            <div class="metric-value">37</div>
-            <div class="metric-label">Aftershocks by 07:07 WIB</div>
-            <div class="metric-source">Source [7]</div>
+            <div class="metric-value">111</div>
+            <div class="metric-label">Aftershocks by 09:00 WIB</div>
+            <div class="metric-source">BMKG update [15]</div>
           </article>
           <article class="metric" style="--accent: var(--red)">
-            <div class="metric-value" id="impact-casualties">1 | 4</div>
-            <div class="metric-label">Confirmed deaths | injuries</div>
-            <div class="metric-source">Official preliminary BNPB update [5]</div>
+            <div class="metric-value" id="impact-casualties">14 | 13</div>
+            <div class="metric-label">Reported deaths | injuries</div>
+            <div class="metric-source">BNPB preliminary update [5][11]</div>
           </article>
         </section>
 
@@ -155,16 +157,17 @@
               <div class="section-kicker">Situation overview</div>
               <h2>Executive summary</h2>
             </div>
-            <div class="source-note">BMKG, Basarnas/ANTARA and credible media reporting</div>
+            <div class="source-note">BMKG, BNPB, BPBD NTT and IHCP sources</div>
           </div>
           <p class="summary">
             A shallow M7.7 tectonic earthquake occurred offshore approximately 30 km northeast of
-            Mbay, Nagekeo, producing shaking up to MMI VII. BMKG detected tsunami waves at nine
-            observation points, with a preliminary maximum of 0.94 m at Maurole–Ende; the tsunami
-            warning has ended. BNPB's field-validated update at 08:00 WIB recorded 1 death, 4
-            injuries, approximately 2,000 people undertaking self-evacuation in Nagekeo, and
-            preliminary damage to homes and public facilities. Aftershocks continue and all impact
-            figures remain subject to further BNPB/BPBD verification.
+            Mbay, Nagekeo, producing shaking up to MMI VII and a locally observed tsunami at 10
+            monitoring locations. The warning ended at 07:31:30 WIB. BNPB's preliminary update at
+            12:30 WIB recorded 14 deaths, 2 serious injuries, 11 minor injuries, approximately
+            2,000 evacuees or self-evacuees, 54 heavily damaged houses, 9 moderately damaged houses
+            and 11 slightly damaged houses. Five health facilities were reported damaged in
+            Manggarai. All impact figures remain subject to continuing BNPB/BPBD verification and
+            validation.
           </p>
         </section>
 
@@ -197,7 +200,7 @@
                 <div class="timeline-time">05:27</div><div class="timeline-dot"></div><div class="timeline-label">0.94 m at Maurole</div>
               </div>
               <div class="timeline-item" style="--accent: var(--blue)">
-                <div class="timeline-time">07:41</div><div class="timeline-dot"></div><div class="timeline-label">Warning announced ended</div>
+                <div class="timeline-time">07:31</div><div class="timeline-dot"></div><div class="timeline-label">Tsunami warning ended</div>
               </div>
               <div class="timeline-item" style="--accent: var(--red)">
                 <div class="timeline-time">08:16</div><div class="timeline-dot"></div><div class="timeline-label">SAR casualty update</div>
@@ -212,7 +215,7 @@
               <div class="section-kicker">Hazard profile</div>
               <h2>Shaking and aftershock sequence</h2>
             </div>
-            <div class="source-note">BMKG shakemap estimate and M5+ earthquake records [1][4][7]</div>
+            <div class="source-note">BMKG shakemap estimate and aftershock update [1][4][15]</div>
           </div>
           <div class="two-col">
             <article class="panel">
@@ -231,7 +234,7 @@
             </article>
             <article class="panel">
               <h3>Aftershock sequence</h3>
-              <div class="aftershock-stat"><b>37</b><span><strong>events by 07:07 WIB</strong><br /><span class="small">Range M3.6–M6.2</span></span></div>
+              <div class="aftershock-stat"><b>111</b><span><strong>events by 09:00 WIB / 10:00 WITA</strong><br /><span class="small">Sequence continuing; BMKG update [15]</span></span></div>
               <div class="aftershock-list">
                 <div class="aftershock"><strong>05:13</strong><strong>M6.2</strong><span>46 km NE of Labuan Bajo</span></div>
                 <div class="aftershock"><strong>05:27</strong><strong>M5.5</strong><span>56 km NE of Ruteng</span></div>
@@ -258,6 +261,7 @@
             <div class="tsunami-row"><span>Labuan Bajo</span><div class="bar-track"><div class="bar" style="--size:36%"></div></div><strong>0.36 m</strong></div>
             <div class="tsunami-row"><span>Baubau</span><div class="bar-track"><div class="bar" style="--size:30%"></div></div><strong>0.30 m</strong></div>
             <div class="tsunami-row"><span>East Flores</span><div class="bar-track"><div class="bar" style="--size:25%; --accent:var(--blue)"></div></div><strong>0.25 m</strong></div>
+            <div class="tsunami-row"><span>Kolaka</span><div class="bar-track"><div class="bar" style="--size:23%; --accent:var(--blue)"></div></div><strong>0.23 m</strong></div>
             <div class="tsunami-row"><span>Sikka</span><div class="bar-track"><div class="bar" style="--size:19%; --accent:var(--blue)"></div></div><strong>0.19 m</strong></div>
             <div class="tsunami-row"><span>Dompu</span><div class="bar-track"><div class="bar" style="--size:17%; --accent:var(--blue)"></div></div><strong>0.17 m</strong></div>
             <div class="tsunami-row"><span>Bakalang–Alor</span><div class="bar-track"><div class="bar" style="--size:14%; --accent:var(--blue)"></div></div><strong>0.14 m</strong></div>
@@ -268,43 +272,44 @@
           <div class="section-head">
             <div>
               <div class="section-kicker">Official preliminary impact update</div>
-              <h2>Validated figures and remaining information gaps</h2>
+              <h2>Reported impacts and remaining information gaps</h2>
             </div>
             <div class="source-note">
-              <span id="impact-validation-status">Official preliminary update — field validation continues</span>
-              · <a id="impact-source-link" href="https://www.bnpb.go.id/berita/update-gempa-m-77-ntt-kepala-bnpb-dan-menko-pmk-segera-turun-ke-lapangan-bersama-tim-dan-dukungan-darurat-dikerahkan" target="_blank" rel="noopener noreferrer">BNPB</a>
+              <span id="impact-validation-status">BNPB preliminary update — verification and validation continue</span><br />
+              <span id="impact-validation-time">Cut-off: 15 Aug 2026 · 12:30 WIB / 13:30 WITA</span>
+              · <a id="impact-source-link" href="https://www.youtube.com/watch?v=UAAf238cC0I" target="_blank" rel="noopener noreferrer">BNPB</a>
             </div>
           </div>
           <div class="impact-highlight">
-            <div><strong id="impact-displacement">2,000</strong><span>Approximate self-evacuees in Nagekeo</span></div>
-            <p>Impact figures are loaded from <code>data/impact.json</code> and can be updated without changing the page layout.</p>
+            <div><strong id="impact-displacement">2,000</strong><span>Approximate evacuees or self-evacuees</span></div>
+            <p>Impact figures are loaded from <code>data/impact.json</code> and remain preliminary.</p>
           </div>
           <div class="impact-grid">
             <article class="impact-card" style="--accent:var(--teal); --bg:var(--pale-green)">
-              <h3>Confirmed by BNPB</h3><span class="confidence">Validated at 08:00 WIB</span>
+              <h3>BNPB preliminary figures</h3><span class="confidence">Cut-off 12:30 WIB</span>
               <ul id="impact-confirmed-list">
-                <li>1 confirmed death in Sikka Regency and 4 injured people in Sikka and Nagekeo.</li>
-                <li>Approximately 2,000 residents in Nagekeo undertook self-evacuation.</li>
-                <li>1 household (6 people) was reported affected in Bima City.</li>
-                <li>The tsunami warning ended at 07:31:30 WIB; aftershock vigilance remains necessary.</li>
+                <li>14 deaths: 3 in Sikka, 6 in Manggarai and 5 in East Manggarai.</li>
+                <li>13 injured people: 2 seriously injured and 11 with minor injuries.</li>
+                <li>Approximately 2,000 people undertook evacuation or self-evacuation.</li>
+                <li>Approximately 5 households were reported affected; field verification continues.</li>
               </ul>
             </article>
             <article class="impact-card" style="--accent:var(--orange); --bg:var(--pale-orange)">
               <h3>Preliminary damage</h3><span class="confidence">Further field verification required</span>
               <ul id="impact-damage-list">
-                <li>2 houses heavily damaged, 1 moderately damaged and 2 slightly damaged.</li>
-                <li>1 Bulog warehouse affected.</li>
-                <li>3 public facilities slightly damaged and 6 government offices affected.</li>
-                <li>Electricity remained disrupted in Nagekeo at the time of the BNPB update.</li>
+                <li>54 houses heavily damaged, 9 moderately damaged and 11 slightly damaged.</li>
+                <li>5 health facilities and 1 education facility damaged in Manggarai.</li>
+                <li>1 Bulog warehouse, 3 places of worship and 6 government offices affected.</li>
+                <li>Traffic disruption and electricity outages continued in Nagekeo.</li>
               </ul>
             </article>
             <article class="impact-card" style="--accent:var(--red); --bg:var(--pale-red)">
               <h3>Not yet available</h3><span class="confidence">Critical information gaps</span>
               <ul id="impact-gaps-list">
-                <li>Consolidated numbers displaced, missing and affected by district.</li>
-                <li>Verified building damage by location and severity.</li>
-                <li>Operational status of hospitals, health centres, water and telecommunications.</li>
-                <li>Comprehensive status of roads, bridges, ports and airports.</li>
+                <li>Consolidated missing-person and affected-population figures by district.</li>
+                <li>Names, damage severity and operational status of affected health facilities.</li>
+                <li>Verified WASH, electricity and telecommunications status by district.</li>
+                <li>Post-disaster disease surveillance and public-health event data.</li>
               </ul>
             </article>
           </div>
@@ -326,18 +331,83 @@
           </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="health">
           <div class="section-head">
             <div>
-              <div class="section-kicker">Health security</div>
-              <h2>Health and protection priorities</h2>
+              <div class="section-kicker">Health situation</div>
+              <h2>Health facilities, injuries and disease surveillance</h2>
+            </div>
+            <div class="source-note">
+              <span id="health-status">Health-sector verification ongoing</span><br />
+              <span id="health-updated">Cut-off: 15 Aug 2026 · 12:30 WIB / 13:30 WITA</span>
             </div>
           </div>
-          <div class="health-grid">
-            <article class="health-card"><h3>Trauma</h3><p>Crush injury, falling debris and evacuation-related injuries.</p></article>
-            <article class="health-card"><h3>Services</h3><p>Continuity of emergency care, oxygen, backup power, cold chain and referral.</p></article>
-            <article class="health-card"><h3>WASH</h3><p>Safe water, latrines, hygiene, management of the dead and medical waste.</p></article>
-            <article class="health-card"><h3>Protection</h3><p>Psychosocial support, family reunification and inclusive access.</p></article>
+
+          <div class="health-stat-grid">
+            <article class="health-stat" style="--accent:var(--red)">
+              <strong id="health-facilities-damaged">5</strong><span>Health facilities reported damaged</span>
+            </article>
+            <article class="health-stat" style="--accent:var(--orange)">
+              <strong id="health-serious-injuries">2</strong><span>Serious injuries</span>
+            </article>
+            <article class="health-stat" style="--accent:var(--gold)">
+              <strong id="health-minor-injuries">11</strong><span>Minor injuries</span>
+            </article>
+            <article class="health-stat" style="--accent:var(--teal)">
+              <strong>Not reported</strong><span>Verified post-disaster disease events</span>
+            </article>
+          </div>
+
+          <div class="health-layout">
+            <article class="panel">
+              <h3>Health-facility status</h3>
+              <div id="health-facilities-list" class="health-facilities-list">
+                <article class="health-facility-item">
+                  <div class="health-facility-head"><strong>Five health facilities</strong><span>Manggarai Regency</span></div>
+                  <p>Structural status: Damage reported; severity and facility names not yet disaggregated.</p>
+                  <p>Service status: Under verification.</p>
+                  <small>BNPB preliminary update</small>
+                </article>
+                <article class="health-facility-item">
+                  <div class="health-facility-head"><strong>RSUD Aeramo</strong><span>Nagekeo Regency</span></div>
+                  <p>Structural status: No verified structural damage figure published.</p>
+                  <p>Service status: Patients temporarily moved to hospital grounds; initial care continued.</p>
+                  <small>BPBD NTT statement [12]</small>
+                </article>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h3>Disease surveillance</h3>
+              <p class="health-surveillance-status" id="health-surveillance-status">
+                No official post-disaster disease case counts were identified at the reporting cut-off.
+              </p>
+              <div id="health-disease-list" class="health-disease-list">
+                <div class="disease-row"><span>Acute diarrhoeal disease</span><strong>Not reported</strong></div>
+                <div class="disease-row"><span>Acute respiratory infection</span><strong>Not reported</strong></div>
+                <div class="disease-row"><span>Febrile or vector-borne illness</span><strong>Not reported</strong></div>
+                <div class="disease-row"><span>Skin disease and wound infection</span><strong>Not reported</strong></div>
+                <div class="disease-row"><span>Other unusual health events</span><strong>Not reported</strong></div>
+              </div>
+            </article>
+          </div>
+
+          <article class="health-monitoring">
+            <h3>Priority health indicators to monitor</h3>
+            <ul id="health-monitoring-list">
+              <li>Safety and functionality of hospitals, puskesmas, laboratories and referral routes.</li>
+              <li>Trauma care, wound management, tetanus risk assessment and essential medicines.</li>
+              <li>Safe water, sanitation, hygiene and health conditions in evacuation locations.</li>
+              <li>Syndromic surveillance for diarrhoea, respiratory illness, fever and skin disease.</li>
+              <li>Mental-health and psychosocial support, including continuity of care.</li>
+            </ul>
+          </article>
+
+          <div class="health-caveat">
+            <strong>Interpretation:</strong> “Not reported” means that no verified official figure was
+            identified; it does not mean that no health impact or disease event occurred. Health
+            figures should be updated from BNPB, BPBD, Ministry of Health, provincial/district
+            health offices and verified health-facility reports.
           </div>
         </section>
 
@@ -367,25 +437,72 @@
           </div>
         </section>
 
+        <section class="section" id="reports">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Document repository</div>
+              <h2>Situation reports and official briefings</h2>
+            </div>
+            <div class="source-note" id="reports-status">Archived reports remain downloadable as new editions are added</div>
+          </div>
+
+          <div id="reports-list" class="reports-list">
+            <article class="report-card">
+              <div class="report-icon" aria-hidden="true">PDF</div>
+              <div class="report-content">
+                <h3>IHCP Flash Update No. 1</h3>
+                <p class="report-name">Earthquake and Tsunami — Flores and Surrounding Areas</p>
+                <div class="report-meta">Indonesian Humanitarian Coordination Platform · 15 August 2026 · 8 pages · English</div>
+                <p>Initial consolidated update covering earthquake and tsunami parameters, timeline, observed tsunami heights, humanitarian priorities and online damage documentation.</p>
+                <a class="download-button" href="reports/IHCP_Flash_Update_1_Flores_NTT_20260815.pdf" download>Download PDF</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="briefing-grid">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/UAAf238cC0I"
+                title="BNPB official press conference on the M7.7 Nagekeo earthquake"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <article class="briefing-card">
+              <span class="confidence">Official BNPB briefing · 36:39</span>
+              <h3>Update on conditions and emergency response</h3>
+              <p>Official BNPB Indonesia press conference on the M7.7 earthquake in Nagekeo. Headline figures on this website are cross-checked against the corresponding BNPB-sourced written update.</p>
+              <a class="download-button secondary" href="https://www.youtube.com/watch?v=UAAf238cC0I" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+              <button class="download-button secondary report-print" type="button" onclick="window.print()">Print current web SitRep</button>
+            </article>
+          </div>
+        </section>
+
         <section class="section" id="sources">
           <div class="section-head">
             <div>
               <div class="section-kicker">Validation hierarchy</div>
               <h2>Sources and methodology</h2>
             </div>
-            <div class="source-note">Live BMKG feed; impact data updated from BNPB at 08:00 WIB</div>
+            <div class="source-note">Live BMKG feed; impact and health data cut-off 12:30 WIB</div>
           </div>
           <ol class="sources">
             <li><strong>[1] BMKG:</strong> <a href="https://www.bmkg.go.id/gempabumi/berpotensi-tsunami/20260815050954" target="_blank" rel="noopener noreferrer">M7.7 earthquake parameters and press release</a></li>
             <li><strong>[2] BMKG:</strong> <a href="https://www.bmkg.go.id/gempabumi/berpotensi-tsunami/20260815062839" target="_blank" rel="noopener noreferrer">Tsunami observations and PD 3.2 update</a></li>
             <li><strong>[3] BMKG:</strong> <a href="https://warning.bmkg.go.id/" target="_blank" rel="noopener noreferrer">Tsunami early warning status</a></li>
             <li><strong>[4] BMKG:</strong> <a href="https://www.bmkg.go.id/gempabumi/gempabumi-m5" target="_blank" rel="noopener noreferrer">M5+ earthquake list and significant aftershocks</a></li>
-            <li><strong>[5] BNPB:</strong> <a href="https://www.bnpb.go.id/berita/update-gempa-m-77-ntt-kepala-bnpb-dan-menko-pmk-segera-turun-ke-lapangan-bersama-tim-dan-dukungan-darurat-dikerahkan" target="_blank" rel="noopener noreferrer">Validated update: 1 death, 4 injuries, evacuation and initial damage</a></li>
+            <li><strong>[5] BNPB:</strong> <a href="https://www.youtube.com/watch?v=UAAf238cC0I" target="_blank" rel="noopener noreferrer">Official press conference: conditions and response following the M7.7 Nagekeo earthquake</a></li>
             <li><strong>[6] ANTARA/BMKG:</strong> <a href="https://www.antaranews.com/berita/5695576/bmkg-ancaman-tsunami-berstatus-siaga-05-3-meter-di-ntt-ntb-sulsel" target="_blank" rel="noopener noreferrer">BMKG statement on intensity and tsunami threat</a></li>
             <li><strong>[7] detik/BMKG:</strong> <a href="https://news.detik.com/berita/d-8619530/bmkg-rumah-kantor-pelabuhan-hingga-hotel-rusak-usai-gempa-di-mbay-labuan-bajo" target="_blank" rel="noopener noreferrer">Initial damage and 37 aftershocks</a></li>
             <li><strong>[8] detik/BMKG:</strong> <a href="https://news.detik.com/berita/d-8619469/tsunami-juga-terdeteksi-di-baubau-dan-bulukumba-usai-gempa-m-7-ntt" target="_blank" rel="noopener noreferrer">Tsunami detection in Baubau and Bulukumba</a></li>
             <li><strong>[9] AP:</strong> <a href="https://apnews.com/article/c31ad3cf07fa83d2d443e8d85e5c9d84" target="_blank" rel="noopener noreferrer">Initial building-damage report from Flores</a></li>
             <li><strong>[10] Metro TV/BNPB:</strong> <a href="https://www.metrotvnews.com/read/NA0CrRrJ-gempa-laut-mbay-ntt-berpotensi-tsunami-masyarakat-diminta-menjau-dari-wilayah-pesisir" target="_blank" rel="noopener noreferrer">Initial BNPB advice to stay away from coastal areas</a></li>
+            <li><strong>[11] BNPB via ANTARA:</strong> <a href="https://sultra.antaranews.com/berita/539048/14-orang-meninggal-dunia-akibat-gempa-bumi-m77-di-ntt" target="_blank" rel="noopener noreferrer">12:30 WIB casualty, housing and sectoral damage update</a></li>
+            <li><strong>[12] BPBD NTT:</strong> <a href="https://www.detik.com/bali/nusra/d-8619926/bpbd-catat-korban-gempa-nagekeo-ntt-bertambah-jadi-13-orang" target="_blank" rel="noopener noreferrer">RSUD Aeramo patient evacuation and continued initial care</a></li>
+            <li><strong>[13] IHCP:</strong> <a href="reports/IHCP_Flash_Update_1_Flores_NTT_20260815.pdf" target="_blank" rel="noopener noreferrer">Flash Update No. 1, cut-off 07:35 WIB</a></li>
+            <li><strong>[14] Ministry of Health:</strong> <a href="https://pusatkrisis.kemkes.go.id/" target="_blank" rel="noopener noreferrer">Health Crisis Center official information portal</a></li>
+            <li><strong>[15] BMKG via ANTARA:</strong> <a href="https://sultra.antaranews.com/berita/539051/peringatan-tsunami-dicabut-111-gempa-susulan-tercatat-di-nagekeontt" target="_blank" rel="noopener noreferrer">111 aftershocks recorded by 10:00 WITA</a></li>
           </ol>
           <div class="method">
             <strong>Method and limitations.</strong> Source priority: official technical agencies,
@@ -399,7 +516,7 @@
 
       <footer class="footer">
         <span>Preliminary open-source SitRep · Data remain evolving and subject to BNPB validation.</span>
-        <span>Version 02 · Live BMKG feed · BNPB impact update</span>
+        <span>Version 03 · Health dashboard · Report archive · BNPB update</span>
       </footer>
     </main>
   </body>
