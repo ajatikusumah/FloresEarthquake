@@ -1,8 +1,8 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "generated_at": "2026-08-15T17:30:19+07:00",
-  "generated_display": "15 Aug 2026 · 17:30 WIB / 18:30 WITA",
+  "generated_at": "2026-08-15T18:00:33+07:00",
+  "generated_display": "15 Aug 2026 · 18:00 WIB / 19:00 WITA",
   "sar": {
     "status_label": "SAR operations and field reconciliation ongoing",
     "forwarded_sitrep": {
@@ -26,14 +26,14 @@
       "source_status": "Official Basarnas operational monitoring dashboard",
       "operation_office": "Maumere Search and Rescue Office",
       "source_updated_display": "15 Aug 2026 · 16:35 (time zone not stated on dashboard)",
-      "checked_display": "15 Aug 2026 · 17:16 WIB / 18:16 WITA",
-      "deaths_recorded": 18,
+      "checked_display": "15 Aug 2026 · 18:02 WIB / 19:02 WITA",
+      "deaths_recorded": 27,
       "rescued_recorded": 0,
       "in_search_recorded": 0,
       "url": "https://qrsar.basarnas.go.id/beranda_detail",
-      "scope_note": "QRSAR is an operational record and may not match consolidated disaster-impact figures."
+      "scope_note": "QRSAR displayed 27 deaths recorded for the Maumere earthquake operation at its 16:35 update. This is an operational record and may not match BNPB's consolidated disaster-impact figure."
     },
-    "disclaimer": "Basarnas figures describe operational SAR records at their stated cut-offs. BNPB remains the source for consolidated headline impact figures. Individual names and identification numbers are not reproduced."
+    "disclaimer": "Basarnas QRSAR displayed 27 deaths recorded at its stated 16:35 update, while BNPB's consolidated headline remained 38 deaths at the 15:00 WIB cut-off. The figures are retained separately because scope, reconciliation status and cut-offs differ. Individual names and identification numbers are not reproduced."
   },
   "animal_health": {
     "status_label": "No verified earthquake-related animal-health impact figures identified",
