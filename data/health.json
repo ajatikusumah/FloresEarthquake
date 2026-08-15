@@ -1,98 +1,201 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
-  "status_label": "Latest injury count available; health-facility verification ongoing",
-  "updated_at": "2026-08-15T15:00:00+07:00",
-  "updated_display": "15 Aug 2026 · 15:00 WIB / 16:00 WITA",
+  "status_label": "Official Ministry of Health situation report dated 15 August 2026",
+  "updated_at": "2026-08-15",
+  "updated_display": "15 Aug 2026 · source report does not state a cut-off time",
   "headline": {
-    "health_facilities_damaged": 5,
-    "injured_serious": 2,
-    "injured_minor": 11,
+    "affected_population": 2196745,
+    "districts_affected": 8,
+    "health_facilities_damaged": 77,
+    "hospitals_damaged": 9,
+    "puskesmas_damaged": 68,
+    "injured_serious": 36,
+    "injured_minor": 77,
     "post_disaster_disease_events_reported": null
+  },
+  "districts": [
+    {
+      "name": "Sikka Regency",
+      "affected_population": 345319,
+      "deaths": 3,
+      "injured_serious": 0,
+      "injured_minor": 6,
+      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+    },
+    {
+      "name": "Ende Regency",
+      "affected_population": 284165,
+      "deaths": 1,
+      "injured_serious": 0,
+      "injured_minor": 11,
+      "notes": "Ende–Bajawa and Ende–Maumere transport access disrupted; power outages reported."
+    },
+    {
+      "name": "East Manggarai Regency",
+      "affected_population": 301525,
+      "deaths": 17,
+      "injured_serious": 1,
+      "injured_minor": 18,
+      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+    },
+    {
+      "name": "Nagekeo Regency",
+      "affected_population": 170669,
+      "deaths": 1,
+      "injured_serious": 1,
+      "injured_minor": 14,
+      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+    },
+    {
+      "name": "West Manggarai Regency",
+      "affected_population": 281692,
+      "deaths": 2,
+      "injured_serious": 9,
+      "injured_minor": 9,
+      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+    },
+    {
+      "name": "Manggarai Regency",
+      "affected_population": 340153,
+      "deaths": 21,
+      "injured_serious": 23,
+      "injured_minor": 16,
+      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+    },
+    {
+      "name": "Ngada Regency",
+      "affected_population": 176462,
+      "deaths": 1,
+      "injured_serious": 2,
+      "injured_minor": 3,
+      "notes": "Health logistics reported sufficient for the next five days."
+    },
+    {
+      "name": "East Flores Regency",
+      "affected_population": 296760,
+      "deaths": 0,
+      "injured_serious": 0,
+      "injured_minor": 0,
+      "notes": "No casualty report was available in the source table."
+    }
+  ],
+  "district_impact_summary": [
+    "Sikka: 345,319 people affected; 3 deaths; 0 serious injuries; 6 minor injuries.",
+    "Ende: 284,165 people affected; 1 death; 0 serious injuries; 11 minor injuries.",
+    "East Manggarai: 301,525 people affected; 17 deaths; 1 serious injury; 18 minor injuries.",
+    "Nagekeo: 170,669 people affected; 1 death; 1 serious injury; 14 minor injuries.",
+    "West Manggarai: 281,692 people affected; 2 deaths; 9 serious injuries; 9 minor injuries.",
+    "Manggarai: 340,153 people affected; 21 deaths; 23 serious injuries; 16 minor injuries.",
+    "Ngada: 176,462 people affected; 1 death; 2 serious injuries; 3 minor injuries.",
+    "East Flores: 296,760 people affected; no casualty report available."
+  ],
+  "facility_summary": {
+    "hospitals": {
+      "total": 21,
+      "operating_fully": 16,
+      "operating_partially": 4,
+      "not_operating": 1,
+      "no_damage": 12,
+      "minor_damage": 6,
+      "moderate_damage": 0,
+      "severe_damage": 3
+    },
+    "puskesmas": {
+      "total": 190,
+      "operating_fully": 122,
+      "operating_partially": 49,
+      "not_operating": 19,
+      "no_damage": 116,
+      "minor_damage": 11,
+      "moderate_damage": 37,
+      "severe_damage": 20,
+      "building_condition_unclassified": 6
+    }
   },
   "facilities": [
     {
-      "name": "Five health facilities (names not yet disaggregated)",
-      "type": "Multiple health facilities",
-      "location": "Manggarai Regency",
-      "structural_status": "Damage reported; severity not yet disaggregated",
-      "operational_status": "Under verification",
-      "confidence": "BNPB preliminary update"
+      "name": "21 hospitals",
+      "type": "Aggregate hospital status",
+      "location": "Eight affected regencies",
+      "structural_status": "12 not damaged, 6 with minor damage and 3 with severe damage",
+      "operational_status": "16 operating fully, 4 operating partially and 1 not operating",
+      "confidence": "Ministry of Health situation report, 15 August 2026"
     },
     {
-      "name": "RSUD Aeramo",
-      "type": "Hospital",
-      "location": "Nagekeo Regency",
-      "structural_status": "No verified structural damage figure published",
-      "operational_status": "Patients temporarily evacuated to the hospital grounds; initial medical care continued",
-      "confidence": "BPBD NTT statement reported by detik"
+      "name": "190 puskesmas",
+      "type": "Aggregate primary-care facility status",
+      "location": "Eight affected regencies",
+      "structural_status": "116 not damaged, 11 with minor damage, 37 with moderate damage and 20 with severe damage; 6 not classified in the source table",
+      "operational_status": "122 operating fully, 49 operating partially and 19 not operating",
+      "confidence": "Ministry of Health situation report, 15 August 2026"
+    },
+    {
+      "name": "RSUD TC Hillers, RS St. Elisabeth Lela and RSU St. Gabriel Kewapante",
+      "type": "Hospitals",
+      "location": "Sikka Regency",
+      "structural_status": "Facility-level severity not marked in the detailed source slide",
+      "operational_status": "Reported operating outside the buildings",
+      "confidence": "Ministry of Health situation report, facility detail slide"
     }
   ],
+  "workforce": [
+    { "label": "Doctors", "status": "156" },
+    { "label": "Nurses", "status": "5,979" },
+    { "label": "Midwives", "status": "4,438" },
+    { "label": "Other health workers", "status": "1,990" },
+    { "label": "Total existing health workforce", "status": "12,563" }
+  ],
+  "emergency_response": [
+    "Two health crisis-management teams mobilised: one to Sikka and one to Ende.",
+    "Two Emergency Medical Teams mobilised: Team 1 for Ende, Nagekeo and West Manggarai; Team 2 for Sikka.",
+    "Health Emergency Operation Centres activated at nine locations: provincial level and the eight affected regencies.",
+    "Medicines, medical consumables, emergency kits, health-post tents and oxygen concentrators prepared for dispatch."
+  ],
+  "planned_logistics": {
+    "dispatch_date": "16 August 2026",
+    "items": [
+      { "label": "Basic medicine packages", "status": "8 packages" },
+      { "label": "Emergency kits", "status": "5 packages" },
+      { "label": "Sterile gloves", "status": "1,000 pieces" },
+      { "label": "Non-sterile gloves", "status": "20,000 pieces" },
+      { "label": "Medical surgical masks", "status": "20,000 pieces" },
+      { "label": "Oxygen concentrators", "status": "10 units" },
+      { "label": "Health-post tents", "status": "2 units; 8 additional tents on standby for fixed Type 1 EMT needs" }
+    ]
+  },
   "disease_surveillance": {
-    "status": "No verified official post-disaster disease-event counts were identified by the 15:00 WIB impact cut-off.",
+    "status": "The source report does not provide verified post-disaster disease-event counts.",
     "data_available": false,
     "conditions": [
-      {
-        "name": "Acute diarrhoeal disease",
-        "cases": null,
-        "status": "Not reported"
-      },
-      {
-        "name": "Acute respiratory infection",
-        "cases": null,
-        "status": "Not reported"
-      },
-      {
-        "name": "Febrile or vector-borne illness",
-        "cases": null,
-        "status": "Not reported"
-      },
-      {
-        "name": "Skin disease and wound infection",
-        "cases": null,
-        "status": "Not reported"
-      },
-      {
-        "name": "Other unusual public-health events",
-        "cases": null,
-        "status": "Not reported"
-      }
+      { "name": "Acute diarrhoeal disease", "cases": null, "status": "Not reported" },
+      { "name": "Acute respiratory infection", "cases": null, "status": "Not reported" },
+      { "name": "Febrile or vector-borne illness", "cases": null, "status": "Not reported" },
+      { "name": "Skin disease and wound infection", "cases": null, "status": "Not reported" },
+      { "name": "Other unusual public-health events", "cases": null, "status": "Not reported" }
     ]
   },
   "monitoring_priorities": [
-    "Safety and functionality of hospitals, puskesmas, laboratories and referral routes.",
-    "Trauma care, wound management, tetanus risk assessment and continuity of essential medicines.",
-    "Safe water, sanitation, hygiene and health conditions in evacuation locations.",
-    "Syndromic surveillance for diarrhoea, respiratory illness, fever, skin disease and unusual events.",
-    "Mental-health and psychosocial support, including continuity of care for vulnerable groups."
+    "Reconcile facility-level operational and structural status, especially the 19 non-operational puskesmas and three severely damaged hospitals.",
+    "Classify the building condition of the six puskesmas not accounted for in the source summary.",
+    "Verify referral routes and continuity of essential services where road access and electricity are disrupted.",
+    "Monitor trauma care, wound management, tetanus risk, medicines and continuity of care for vulnerable groups.",
+    "Strengthen WASH and syndromic surveillance in evacuation and affected communities."
   ],
   "sources": [
     {
-      "agency": "BNPB",
-      "title": "15:00 WIB consolidated casualty update",
-      "url": "https://www.youtube.com/watch?v=UAAf238cC0I"
-    },
-    {
-      "agency": "BNPB",
-      "title": "Official M7.7 Nagekeo earthquake press conference",
-      "url": "https://www.youtube.com/watch?v=UAAf238cC0I"
-    },
-    {
-      "agency": "BNPB via ANTARA",
-      "title": "12:30 WIB impact update including five damaged health facilities",
-      "url": "https://sultra.antaranews.com/berita/539048/14-orang-meninggal-dunia-akibat-gempa-bumi-m77-di-ntt"
-    },
-    {
-      "agency": "BPBD NTT via detik",
-      "title": "RSUD Aeramo patient evacuation and continued initial care",
-      "url": "https://www.detik.com/bali/nusra/d-8619926/bpbd-catat-korban-gempa-nagekeo-ntt-bertambah-jadi-13-orang"
-    },
-    {
-      "agency": "Kementerian Kesehatan",
-      "title": "Health Crisis Center — official health emergency information portal",
-      "url": "https://pusatkrisis.kemkes.go.id/"
+      "agency": "Ministry of Health — Health Crisis Center",
+      "title": "Situation Report: NTT Earthquake Disaster, 15 August 2026",
+      "url": "https://pusatkrisis.kemkes.go.id/",
+      "format": "PDF",
+      "pages": 27
     }
   ],
-  "disclaimer": "Injury figures use the 15:00 WIB BNPB update. Detailed facility information remains based on earlier field reporting. A blank or 'not reported' field means that no verified official figure was identified; it does not mean that no impact occurred."
+  "data_quality_notes": [
+    "The report gives a date but no specific data cut-off time.",
+    "The puskesmas building-condition categories total 184, six fewer than the stated total of 190; these six are recorded as unclassified rather than assumed to be undamaged.",
+    "A dash in a district casualty cell is treated as no casualty report in the source table, not automatically as a verified zero."
+  ],
+  "disclaimer": "Figures are reproduced from the official Ministry of Health report and remain preliminary. The dashboard preserves source-table gaps rather than silently converting them to zero."
 }
