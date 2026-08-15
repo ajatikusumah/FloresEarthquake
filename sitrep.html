@@ -9,7 +9,19 @@
     />
     <meta name="theme-color" content="#0b2545" />
     <title>Flores Earthquake Situation Report 07 | 16 August 2026</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIINfQ3ynph+8c7LHLnyf7lLH7vdC/AfM="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="sitrep.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
     <script src="sitrep.js" defer></script>
   </head>
   <body>
@@ -23,6 +35,7 @@
         </div>
         <nav class="topnav" aria-label="Situation report sections">
           <a href="#overview">Overview</a>
+          <a href="#affected-map">Map</a>
           <a href="#live-data">Live data</a>
           <a href="#hazards">Hazards</a>
           <a href="#impacts">Impacts</a>
@@ -182,6 +195,60 @@
             puskesmas; these figures are not combined because definitions and cut-offs may differ.
             Animal-health impacts and official monetary damage-and-loss estimates were not yet
             available. All figures remain subject to continuing verification and reconciliation.
+          </p>
+        </section>
+
+        <section class="section map-section" id="affected-map">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Geographic overview</div>
+              <h2>Affected regencies</h2>
+            </div>
+            <div class="live-feed-meta">
+              <span class="feed-status is-loading" id="map-status">Loading OpenStreetMap…</span>
+              <span class="source-note">BNPB [25] and Ministry of Health [24]</span>
+            </div>
+          </div>
+
+          <div class="map-layout">
+            <div class="map-frame">
+              <div
+                id="disaster-map"
+                role="application"
+                aria-label="Interactive OpenStreetMap showing eight affected regencies in Flores"
+              ></div>
+            </div>
+
+            <aside class="map-panel" aria-label="Map legend and affected-area selector">
+              <div class="map-stat">
+                <strong>8</strong>
+                <span>Affected regencies listed in the Ministry of Health report</span>
+              </div>
+
+              <div class="map-legend" aria-label="Map marker legend">
+                <strong>Reported deaths</strong>
+                <span><i class="map-swatch map-swatch-high"></i>10 or more</span>
+                <span><i class="map-swatch map-swatch-medium"></i>1–9</span>
+                <span><i class="map-swatch map-swatch-pending"></i>None listed / not reported</span>
+              </div>
+
+              <div class="map-area-list" aria-label="Select an affected regency">
+                <button type="button" data-map-area="Sikka Regency">Sikka</button>
+                <button type="button" data-map-area="Ende Regency">Ende</button>
+                <button type="button" data-map-area="East Manggarai Regency">East Manggarai</button>
+                <button type="button" data-map-area="Nagekeo Regency">Nagekeo</button>
+                <button type="button" data-map-area="West Manggarai Regency">West Manggarai</button>
+                <button type="button" data-map-area="Manggarai Regency">Manggarai</button>
+                <button type="button" data-map-area="Ngada Regency">Ngada</button>
+                <button type="button" data-map-area="East Flores Regency">East Flores</button>
+              </div>
+            </aside>
+          </div>
+
+          <p class="map-caveat">
+            Marker points use representative regency-capital locations for orientation. They do not
+            depict exact administrative boundaries, the full geographic extent of impact, or a
+            verified impact footprint. Click a marker or regency name for source-specific figures.
           </p>
         </section>
 
