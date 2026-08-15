@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
   "status_label": "BNPB preliminary update at 15:00 WIB — verification and validation continue",
@@ -93,5 +93,53 @@
     "Post-disaster public-health and animal-health surveillance data.",
     "Official monetary estimates of physical damage, economic loss and livelihood disruption."
   ],
-  "disclaimer": "All figures remain preliminary and may change following further verification and validation by BNPB, BPBD and relevant authorities."
+  "disclaimer": "All figures remain preliminary and may change following further verification and validation by BNPB, BPBD and relevant authorities.",
+  "generated_at": "2026-08-15T18:00:33+07:00",
+  "generated_display": "15 Aug 2026 · 18:00 WIB / 19:00 WITA",
+  "seismic_monitoring": {
+    "source": {
+      "agency": "BMKG",
+      "title": "BMKG, central government and local governments collaborate to accelerate Flores earthquake recovery",
+      "url": "https://www.bmkg.go.id/siaran-pers/bmkg-pemerintah-pusat-dan-pemerintah-daerah-kolaborasi-percepat-pemulihan-bencana-gempa-flores",
+      "publication_date": "2026-08-15"
+    },
+    "data_cutoff": "2026-08-15T14:00:00+07:00",
+    "data_cutoff_display": "15 Aug 2026 · 14:00 WIB / 15:00 WITA",
+    "aftershocks_recorded": 235,
+    "magnitude_range": {
+      "minimum": 2.5,
+      "maximum": 6.2
+    },
+    "trend_note": "BMKG reported that the recorded aftershock sequence had not yet shown significant decay by the cut-off.",
+    "latest_m5plus_observed_after_cutoff": {
+      "time_display": "15 Aug 2026 · 14:39:41 WIB / 15:39:41 WITA",
+      "magnitude": 5.1,
+      "depth_km": 10,
+      "location": "82 km northeast of Ruteng, Manggarai, NTT",
+      "tsunami_statement": "Not tsunami-generating",
+      "source_url": "https://warning.bmkg.go.id/"
+    }
+  },
+  "tsunami_monitoring": {
+    "warning_status": "Ended",
+    "warning_ended_display": "15 Aug 2026 · 07:30 WIB / 08:30 WITA",
+    "latest_peak_observation_m": 1.61,
+    "latest_peak_location": "Reo, Manggarai and the East Manggarai coastal area",
+    "source": {
+      "agency": "BMKG",
+      "title": "BMKG recovery-coordination press release",
+      "url": "https://www.bmkg.go.id/siaran-pers/bmkg-pemerintah-pusat-dan-pemerintah-daerah-kolaborasi-percepat-pemulihan-bencana-gempa-flores",
+      "publication_date": "2026-08-15"
+    },
+    "interpretation_note": "This is a measured sea-level observation reported by BMKG, not a verified maximum run-up or inland inundation depth. It supersedes the earlier 0.94 m value as the highest observation displayed in this SitRep."
+  },
+  "supplementary_sources": [
+    {
+      "agency": "BMKG",
+      "title": "235 aftershocks by 14:00 WIB and updated 1.61 m peak tsunami observation",
+      "url": "https://www.bmkg.go.id/siaran-pers/bmkg-pemerintah-pusat-dan-pemerintah-daerah-kolaborasi-percepat-pemulihan-bencana-gempa-flores",
+      "publication_date": "2026-08-15",
+      "data_cutoff_display": "Aftershocks: 14:00 WIB; tsunami observation cut-off not stated in the release"
+    }
+  ]
 }
