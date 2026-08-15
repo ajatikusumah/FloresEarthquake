@@ -1297,6 +1297,192 @@ h2 {
   font-weight: 750;
 }
 
+
+/* Affected-area OpenStreetMap */
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(250px, 0.55fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.map-frame {
+  overflow: hidden;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #dfe9ed;
+  box-shadow: var(--shadow);
+}
+
+#disaster-map {
+  width: 100%;
+  height: 480px;
+  min-height: 360px;
+  background: #dfe9ed;
+}
+
+.map-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 21px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: var(--wash);
+}
+
+.map-stat {
+  padding-bottom: 17px;
+  border-bottom: 1px solid var(--line);
+}
+
+.map-stat strong,
+.map-stat span {
+  display: block;
+}
+
+.map-stat strong {
+  color: var(--navy);
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.map-stat span {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.map-legend {
+  display: grid;
+  gap: 8px;
+}
+
+.map-legend > strong {
+  margin-bottom: 2px;
+  color: var(--navy);
+  font-size: 0.82rem;
+}
+
+.map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 0.73rem;
+}
+
+.map-swatch {
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(11, 37, 69, 0.2);
+}
+
+.map-swatch-high {
+  background: var(--red);
+}
+
+.map-swatch-medium {
+  background: var(--orange);
+}
+
+.map-swatch-pending {
+  background: var(--teal);
+}
+
+.map-area-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.map-area-list button {
+  min-width: 0;
+  border: 1px solid #cbd8e0;
+  border-radius: 8px;
+  padding: 8px 9px;
+  color: var(--navy);
+  background: white;
+  font: inherit;
+  font-size: 0.69rem;
+  font-weight: 750;
+  text-align: left;
+  cursor: pointer;
+}
+
+.map-area-list button:hover,
+.map-area-list button:focus-visible {
+  border-color: var(--blue);
+  color: white;
+  background: var(--blue);
+  outline: none;
+}
+
+.map-caveat {
+  margin: 13px 0 0;
+  padding: 12px 14px;
+  border-left: 5px solid var(--teal);
+  border-radius: 9px;
+  color: var(--muted);
+  background: var(--pale-green);
+  font-size: 0.74rem;
+}
+
+.map-popup {
+  min-width: 215px;
+}
+
+.map-popup h3 {
+  margin: 0 0 3px;
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
+.map-popup > p {
+  margin: 0 0 9px;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.map-popup dl {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 13px;
+  margin: 0;
+  font-size: 0.72rem;
+}
+
+.map-popup dt {
+  color: var(--muted);
+}
+
+.map-popup dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 800;
+  text-align: right;
+}
+
+.map-popup a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-control-attribution {
+  font-size: 0.62rem;
+}
+
 @media (max-width: 980px) {
   .health-stat-grid,
   .sector-stat-grid {
@@ -1306,7 +1492,8 @@ h2 {
   .health-layout,
   .briefing-grid,
   .sar-source-grid,
-  .sector-layout {
+  .sector-layout,
+  .map-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1430,6 +1617,15 @@ h2 {
 }
 
 @media (max-width: 540px) {
+  #disaster-map {
+    height: 390px;
+    min-height: 320px;
+  }
+
+  .map-area-list {
+    grid-template-columns: 1fr;
+  }
+
   .metrics,
   .area-grid,
   .health-grid {
@@ -1446,7 +1642,8 @@ h2 {
   .topbar,
   .print-btn,
   .download-button,
-  .video-frame {
+  .video-frame,
+  .map-area-list {
     display: none !important;
   }
 
