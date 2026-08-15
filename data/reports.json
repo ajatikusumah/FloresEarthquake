@@ -1,8 +1,23 @@
 {
   "schema_version": 1,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "updated_at": "2026-08-15T15:30:00+07:00",
+  "updated_at": "2026-08-15T21:09:04+07:00",
   "reports": [
+    {
+      "id": "kemenkes-sitrep-ntt-20260815",
+      "title": "Laporan Situasi Bencana Gempa Bumi NTT",
+      "subtitle": "Kemenkes Situation Report — 15 August 2026",
+      "publisher": "Ministry of Health — Health Crisis Center",
+      "date": "15 August 2026",
+      "cutoff": "Specific data cut-off time not stated",
+      "language": "Indonesian",
+      "pages": 27,
+      "format": "PDF",
+      "size_bytes": 349181,
+      "file": "reports/Kemenkes_Laporan_Situasi_Gempa_NTT_20260815.pdf",
+      "description": "Official health-sector situation report covering the affected population and casualties by regency, hospital and puskesmas operational status, existing health workforce, emergency response mobilisation, planned health-logistics dispatch and field photographs.",
+      "status": "Archived official source document — web-optimised copy"
+    },
     {
       "id": "ihcp-flash-update-1",
       "title": "Earthquake and Tsunami — Flores and Surrounding Areas",
