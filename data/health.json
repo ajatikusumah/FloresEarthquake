@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
-  "status_label": "Health-sector verification ongoing",
-  "updated_at": "2026-08-15T12:30:00+07:00",
-  "updated_display": "15 Aug 2026 · 12:30 WIB / 13:30 WITA",
+  "status_label": "Latest injury count available; health-facility verification ongoing",
+  "updated_at": "2026-08-15T15:00:00+07:00",
+  "updated_display": "15 Aug 2026 · 15:00 WIB / 16:00 WITA",
   "headline": {
     "health_facilities_damaged": 5,
     "injured_serious": 2,
@@ -30,7 +30,7 @@
     }
   ],
   "disease_surveillance": {
-    "status": "No official post-disaster disease case counts were identified at the reporting cut-off.",
+    "status": "No verified official post-disaster disease-event counts were identified by the 15:00 WIB impact cut-off.",
     "data_available": false,
     "conditions": [
       {
@@ -70,6 +70,11 @@
   "sources": [
     {
       "agency": "BNPB",
+      "title": "15:00 WIB consolidated casualty update",
+      "url": "https://www.youtube.com/watch?v=UAAf238cC0I"
+    },
+    {
+      "agency": "BNPB",
       "title": "Official M7.7 Nagekeo earthquake press conference",
       "url": "https://www.youtube.com/watch?v=UAAf238cC0I"
     },
@@ -89,5 +94,5 @@
       "url": "https://pusatkrisis.kemkes.go.id/"
     }
   ],
-  "disclaimer": "A blank or 'not reported' field means that no verified official figure was identified; it does not mean that no impact or disease event occurred."
+  "disclaimer": "Injury figures use the 15:00 WIB BNPB update. Detailed facility information remains based on earlier field reporting. A blank or 'not reported' field means that no verified official figure was identified; it does not mean that no impact occurred."
 }
