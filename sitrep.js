@@ -4,6 +4,7 @@
   const BMKG_URL = "https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json";
   const IMPACT_URL = "data/impact.json";
   const HEALTH_URL = "data/health.json";
+  const SECTOR_IMPACT_URL = "data/sector-impact.json";
   const REPORTS_URL = "data/reports.json";
   const REFRESH_MS = 5 * 60 * 1000;
 
@@ -229,6 +230,104 @@
     }
   };
 
+  const createSectorStatusRow = (item) => {
+    const row = document.createElement("div");
+    row.className = "sector-status-row";
+
+    const label = document.createElement("span");
+    label.textContent = item.label || "Indicator";
+
+    const status = document.createElement("strong");
+    status.textContent = item.status ?? "Not reported";
+
+    row.append(label, status);
+    return row;
+  };
+
+  const createSectorImpactItem = (item) => {
+    const article = document.createElement("article");
+    article.className = "sector-impact-item";
+
+    const sector = document.createElement("strong");
+    sector.textContent = item.sector || "Sector";
+
+    const status = document.createElement("p");
+    status.textContent = item.status || "Status under assessment";
+
+    const confidence = document.createElement("small");
+    confidence.textContent = item.confidence || "Verification ongoing";
+
+    article.append(sector, status, confidence);
+    return article;
+  };
+
+  const loadSectorImpactData = async () => {
+    try {
+      const data = await fetchJson(SECTOR_IMPACT_URL);
+      const sar = data.sar || {};
+      const forwarded = sar.forwarded_sitrep || {};
+      const qrsar = sar.qrsar || {};
+
+      setText("sar-status", sar.status_label);
+      setText("sar-forwarded-deaths", forwarded.deaths);
+      setText("sar-forwarded-injured", forwarded.injured);
+      setText("sar-forwarded-trapped", forwarded.trapped);
+      setText(
+        "sar-forwarded-cutoff",
+        `Field cut-off stated: ${forwarded.field_cutoff_display || "Not reported"}.`
+      );
+      setText("sar-qrsar-deaths", qrsar.deaths_recorded);
+      setText("sar-qrsar-search", qrsar.in_search_recorded);
+      const qrsarTime = String(qrsar.source_updated_display || "").match(/·\s*(\d{2}:\d{2})/);
+      setText("sar-qrsar-updated", qrsarTime?.[1] || "—");
+      renderList("sar-movement-list", forwarded.movements);
+
+      const animal = data.animal_health || {};
+      setText("animal-health-status", animal.status_label);
+      setText(
+        "animal-cattle-baseline",
+        Number(animal.baseline?.cattle_population_ntt_2026 || 0).toLocaleString("en-US")
+      );
+
+      const indicators = Array.isArray(animal.indicators) ? animal.indicators : [];
+      const indicatorStatus = (pattern) =>
+        indicators.find((item) => pattern.test(String(item.label || "")))?.status || "Not reported";
+      setText("animal-deaths", indicatorStatus(/deaths|injuries|missing/i));
+      setText("animal-facilities", indicatorStatus(/Puskeswan|veterinary/i));
+      setText("animal-disease-events", indicatorStatus(/zoonotic|disease/i));
+
+      const animalList = byId("animal-health-indicators");
+      if (animalList) {
+        animalList.replaceChildren(...indicators.map(createSectorStatusRow));
+      }
+      renderList("animal-health-priorities", animal.monitoring_priorities);
+
+      const economic = data.economic_impact || {};
+      const economicHeadline = economic.headline || {};
+      setText("economic-status", economic.status_label);
+      setText(
+        "economic-monetary-loss",
+        economicHeadline.monetary_damage_and_loss_idr ?? "Not available"
+      );
+      setText("economic-bts", economicHeadline.telecom_sites_disrupted);
+      setText("economic-transport", economicHeadline.affected_transport_facilities_named);
+      setText("economic-bulog", economicHeadline.bulog_warehouses_affected);
+
+      const economicList = byId("economic-impact-list");
+      if (economicList && Array.isArray(economic.known_impacts)) {
+        economicList.replaceChildren(
+          ...economic.known_impacts.map(createSectorImpactItem)
+        );
+      }
+      renderList("economic-gaps-list", economic.information_gaps);
+    } catch (error) {
+      console.error(error);
+      setText("sar-status", "Static SAR snapshot shown");
+      setText("animal-health-status", "Static animal-health assessment fields shown");
+      setText("economic-status", "Static economic-impact assessment fields shown");
+    }
+  };
+
   const createReportCard = (report) => {
     const article = document.createElement("article");
     article.className = "report-card";
@@ -281,6 +380,7 @@
 
   loadImpactData();
   loadHealthData();
+  loadSectorImpactData();
   loadReportsData();
   loadBmkgFeed();
   window.setInterval(loadBmkgFeed, REFRESH_MS);
