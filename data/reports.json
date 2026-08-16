@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "updated_at": "2026-08-15T21:09:04+07:00",
+  "updated_at": "2026-08-16T10:15:00+07:00",
   "reports": [
     {
       "id": "kemenkes-sitrep-ntt-20260815",
@@ -32,6 +32,21 @@
       "file": "reports/IHCP_Flash_Update_1_Flores_NTT_20260815.pdf",
       "description": "Initial consolidated update covering earthquake and tsunami parameters, timeline, observed tsunami heights, humanitarian priorities and online damage documentation.",
       "status": "Archived source document"
+    },
+    {
+      "id": "scidn-external-update-20260815",
+      "title": "Flores Earthquake Response Update",
+      "subtitle": "Protecting East Nusa Tenggara Children's Futures Amid Repeated Disasters",
+      "publisher": "Save the Children Indonesia (SCIDN)",
+      "date": "15 August 2026",
+      "cutoff": "BNPB figures cited as of 17:00 WIB, 15 August",
+      "language": "English",
+      "pages": 2,
+      "format": "PDF",
+      "size_bytes": 362506,
+      "file": "reports/SCIDN_Flores_Earthquake_External_Update_20260815.pdf",
+      "description": "Child-focused response update: reports over 8,000 children affected by disrupted education and heightened protection risks; sets the earthquake against compounding hazards (El Nino-influenced drought, Mount Lewotobi eruption activity); outlines SCIDN's priority response sectors (child protection, education in emergencies, health and nutrition, MHPSS, WASH) and its partnership with local implementer CIS Timor.",
+      "status": "Archived official source document — web-optimised copy"
     }
   ],
   "briefings": [
@@ -45,6 +60,89 @@
       "url": "https://www.youtube.com/watch?v=UAAf238cC0I",
       "embed_url": "https://www.youtube.com/embed/UAAf238cC0I",
       "status": "Official briefing"
+    }
+  ],
+  "media_updates": [
+    {
+      "id": "liputan6-47-meninggal-5000-mengungsi",
+      "title": "Update Gempa NTT: 47 Meninggal, Lebih dari 5.000 Orang Mengungsi",
+      "publisher": "Liputan6.com",
+      "date": "16 August 2026, 09:01 WIB",
+      "language": "Indonesian",
+      "url": "https://www.liputan6.com/news/read/8270875/update-gempa-ntt-47-meninggal-lebih-dari-5000-orang-mengungsi",
+      "description": "Carries BNPB's 00:00 WIB, 16 August update: revised district death distribution, first detailed evacuee counts by site, and province-wide damage figures. Primary source for this SitRep's latest impact.json update."
+    },
+    {
+      "id": "liputan6-611-gempa-susulan",
+      "title": "611 Gempa Susulan Guncang NTT",
+      "publisher": "Liputan6.com",
+      "date": "16 August 2026",
+      "language": "Indonesian",
+      "url": "https://www.liputan6.com/regional/read/8270852/611-gempa-susulan-guncang-ntt",
+      "description": "BMKG aftershock count as of 02:00 WIB, 16 August: 611 aftershocks, M1.9-M6.2, 16 above M5, 30 felt. Quotes BMKG Head Prof. Ir. Teuku Faisal Fathani on the sequence not yet decaying."
+    },
+    {
+      "id": "tempo-likuefaksi",
+      "title": "Badan Geologi: Ada Indikasi Likuefaksi pada Gempa di NTT",
+      "publisher": "Tempo.co",
+      "date": "15 August 2026, 20:36 WIB",
+      "language": "Indonesian",
+      "url": "https://www.tempo.co/sains/badan-geologi-ada-indikasi-likuefaksi-pada-gempa-di-ntt-2282185",
+      "description": "Badan Geologi (ESDM) preliminary indication of liquefaction (sand boils) at Waekokak, Mbay, Nagekeo; low-to-moderate assessed severity."
+    },
+    {
+      "id": "kompas-tanggap-darurat",
+      "title": "NTT Berstatus Tanggap Darurat Bencana Pascagempa M 7,7",
+      "publisher": "Kompas.com",
+      "date": "16 August 2026, 08:58 WIB",
+      "language": "Indonesian",
+      "url": "https://nasional.kompas.com/read/2026/08/16/08584861/ntt-berstatus-tanggap-darurat-bencana-pascagempa-m-77",
+      "description": "NTT provincial 14-day emergency-response decree in process; Manggarai Regency's 90-day declaration confirmed."
+    },
+    {
+      "id": "liputan6-pln-88-persen",
+      "title": "PLN Sebut 88 Persen Kelistrikan di Pulau Flores Sudah Normal Usai Gempa",
+      "publisher": "Liputan6.com",
+      "date": "16 August 2026",
+      "language": "Indonesian",
+      "url": "https://www.liputan6.com/news/read/8270863/pln-sebut-88-persen-kelistrikan-di-pulau-flores-sudah-normal-usai-gempa",
+      "description": "PLN President Director Darmawan Prasodjo on electricity restoration progress across Flores."
+    },
+    {
+      "id": "poskupang-bpbd-ntt",
+      "title": "Gempa Flores, BPBD NTT Rinci Kerusakan Awal Pelabuhan Maumere Hingga Rumah Warga",
+      "publisher": "Pos Kupang / Tribunnews",
+      "date": "15 August 2026",
+      "language": "Indonesian",
+      "url": "https://kupang.tribunnews.com/provinsi-ntt/975755/gempa-flores-bpbd-ntt-rinci-kerusakan-awal-pelabuhan-maumere-hingga-rumah-warga",
+      "description": "BPBD NTT (Mahadin Sibarani) initial infrastructure damage assessment across Flores."
+    },
+    {
+      "id": "antara-bpbd-ntb",
+      "title": "BPBD NTB mencatat sejumlah kerusakan bangunan akibat gempa NTT",
+      "publisher": "ANTARA News Mataram",
+      "date": "15 August 2026",
+      "language": "Indonesian",
+      "url": "https://mataram.antaranews.com/berita/566180/bpbd-ntb-mencatat-sejumlah-kerusakan-bangunan-akibat-gempa-ntt",
+      "description": "Cross-province damage in Bima City and Bima Regency, West Nusa Tenggara, reported by BPBD NTB (Sadimin)."
+    },
+    {
+      "id": "aljazeera-international",
+      "title": "Magnitude 7.7 quake hits Indonesia, killing at least 47",
+      "publisher": "Al Jazeera",
+      "date": "15 August 2026",
+      "language": "English",
+      "url": "https://www.aljazeera.com/news/2026/8/15/at-least-two-killed-as-magnitude-7-7-quake-hits-indonesia",
+      "description": "International coverage citing USGS shaking-exposure estimates and Reuters eyewitness reporting."
+    },
+    {
+      "id": "ap-nbc-international",
+      "title": "Magnitude-7.7 quake hits off coast of Indonesia, killing at least 47",
+      "publisher": "Associated Press (via NBC News)",
+      "date": "15 August 2026",
+      "language": "English",
+      "url": "https://www.nbcnews.com/world/indonesia/earthquake-indonesia-rcna592638",
+      "description": "AP wire coverage including comparison to the December 1992 Flores earthquake and tsunami (~2,500 deaths)."
     }
   ]
 }

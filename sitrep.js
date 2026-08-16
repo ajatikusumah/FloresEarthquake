@@ -168,6 +168,82 @@
         sourceLink.href = data.source.url;
         sourceLink.textContent = data.source.agency || "Official source";
       }
+
+      const seismic = data.seismic_monitoring || {};
+      if (seismic.aftershocks_recorded !== undefined) {
+        setText("hero-aftershocks", formatNumber(seismic.aftershocks_recorded));
+        setText("aftershock-total", formatNumber(seismic.aftershocks_recorded));
+      }
+      if (seismic.data_cutoff_display) {
+        setText("hero-aftershocks-label", `Aftershocks by ${seismic.data_cutoff_display.split("·")[0].trim()}`);
+        setText("aftershock-window", `events by ${seismic.data_cutoff_display}`);
+      }
+      const range = seismic.magnitude_range || {};
+      if (range.minimum !== undefined && range.maximum !== undefined) {
+        const extra = [];
+        if (seismic.aftershocks_above_m5 !== undefined) extra.push(`${seismic.aftershocks_above_m5} above M5`);
+        if (seismic.aftershocks_felt_by_residents !== undefined) extra.push(`${seismic.aftershocks_felt_by_residents} felt`);
+        const extraText = extra.length ? `; ${extra.join("; ")}` : "";
+        setText(
+          "aftershock-range",
+          `M${range.minimum}\u2013M${range.maximum}${extraText}; ${seismic.trend_note || "sequence ongoing"}`
+        );
+      }
+
+      const emergencyStatus = data.emergency_status;
+      const emergencyList = byId("emergency-status-list");
+      if (emergencyStatus && emergencyList) {
+        const rows = [];
+        if (emergencyStatus.provincial) {
+          rows.push([emergencyStatus.provincial.region, `${emergencyStatus.provincial.status}${emergencyStatus.provincial.planned_duration_days ? ` — ${emergencyStatus.provincial.planned_duration_days} days` : ""}`]);
+        }
+        (emergencyStatus.regency_level || []).forEach((entry) => {
+          rows.push([entry.region, `${entry.status} — ${entry.duration || ""}`]);
+        });
+        emergencyList.replaceChildren(
+          ...rows.map(([label, value]) => {
+            const row = document.createElement("div");
+            row.className = "sector-status-row";
+            const span = document.createElement("span");
+            span.textContent = label;
+            const strong = document.createElement("strong");
+            strong.textContent = value;
+            row.append(span, strong);
+            return row;
+          })
+        );
+      }
+      if (emergencyStatus?.provincial?.note) {
+        setText("emergency-status-note", emergencyStatus.provincial.note);
+      }
+
+      const bpbd = data.bpbd_reports;
+      const bpbdList = byId("bpbd-reports-list");
+      if (bpbd && bpbdList) {
+        const rows = [
+          bpbd.bpbd_ntt && ["BPBD NTT", bpbd.bpbd_ntt.spokesperson || "Reported"],
+          bpbd.bpbd_ntb && ["BPBD NTB (Bima)", bpbd.bpbd_ntb.spokesperson || "Reported"],
+          bpbd.bpbd_kota_bima && ["BPBD Kota Bima", "Field verification ongoing"],
+        ].filter(Boolean);
+        bpbdList.replaceChildren(
+          ...rows.map(([label, value]) => {
+            const row = document.createElement("div");
+            row.className = "sector-status-row";
+            const span = document.createElement("span");
+            span.textContent = label;
+            const strong = document.createElement("strong");
+            strong.textContent = value;
+            row.append(span, strong);
+            return row;
+          })
+        );
+      }
+
+      const crossProvince = data.cross_province_impact;
+      const ntbList = byId("cross-province-ntb-list");
+      if (crossProvince?.west_nusa_tenggara?.damage && ntbList) {
+        renderList("cross-province-ntb-list", crossProvince.west_nusa_tenggara.damage);
+      }
     } catch (error) {
       console.error(error);
       setText("impact-validation-status", "Static fallback data shown");
@@ -495,6 +571,31 @@
         );
       }
       renderList("economic-gaps-list", economic.information_gaps);
+
+      const childProtection = data.child_protection;
+      if (childProtection) {
+        const sectorList = byId("child-protection-sectors");
+        if (sectorList && Array.isArray(childProtection.priority_response_sectors)) {
+          sectorList.replaceChildren(
+            ...childProtection.priority_response_sectors.map((entry) => {
+              const row = document.createElement("div");
+              row.className = "sector-status-row";
+              const span = document.createElement("span");
+              span.textContent = entry.sector;
+              const strong = document.createElement("strong");
+              strong.textContent = entry.focus;
+              row.append(span, strong);
+              return row;
+            })
+          );
+        }
+        setText(
+          "child-protection-hazards",
+          [childProtection.compounding_hazards?.note, childProtection.response_status]
+            .filter(Boolean)
+            .join(" ")
+        );
+      }
     } catch (error) {
       console.error(error);
       setText("sar-status", "Static SAR snapshot shown");

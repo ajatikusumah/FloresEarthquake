@@ -1,8 +1,8 @@
 {
-  "schema_version": 4,
+  "schema_version": 6,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "generated_at": "2026-08-16T00:04:55+07:00",
-  "generated_display": "16 Aug 2026 · 00:04 WIB / 01:04 WITA",
+  "generated_at": "2026-08-16T10:15:00+07:00",
+  "generated_display": "16 Aug 2026 · 10:15 WIB / 11:15 WITA",
   "sar": {
     "status_label": "SAR operations and field reconciliation ongoing",
     "forwarded_sitrep": {
@@ -33,10 +33,11 @@
       "url": "https://qrsar.basarnas.go.id/beranda_detail",
       "scope_note": "QRSAR displayed 28 deaths recorded for the Maumere earthquake operation at its stated 16:35 update. This is an operational record and may not match consolidated disaster-impact figures."
     },
-    "disclaimer": "Basarnas QRSAR displayed 28 deaths recorded at its stated 16:35 update; BNPB recorded 47 deaths at 18:48 WIB; and the Ministry of Health report dated 15 August recorded 46 deaths without a stated cut-off time. The figures remain separate because scope, source systems and reconciliation status differ. Individual names and identification numbers are not reproduced."
+    "disclaimer": "Basarnas QRSAR displayed 28 deaths recorded at its stated 16:35 update; BNPB recorded 47 deaths at 18:48 WIB; and the Ministry of Health report dated 15 August recorded 46 deaths without a stated cut-off time. The figures remain separate because scope, source systems and reconciliation status differ. Individual names and identification numbers are not reproduced.",
+    "coordination_note": "Manggarai Regency's 90-day disaster emergency-response declaration and NTT province's 14-day declaration in process (see impact.json > emergency_status) are intended to speed up unified command and resourcing for SAR and other response operations. No Basarnas/QRSAR count newer than the 16:35 update below was found as of this SitRep update."
   },
   "animal_health": {
-    "status_label": "No verified earthquake-related animal-health impact figures identified",
+    "status_label": "No verified earthquake-related animal-health impact figures identified (actively re-checked 16 August 2026; still nothing published)",
     "assessment_status": "Rapid animal-health and livestock assessment required",
     "baseline": {
       "cattle_population_ntt_2026": 622276,
@@ -93,15 +94,19 @@
         "url": "https://ntt.bps.go.id/id/statistics-table/3/UzJWaVUxZHdWVGxwU1hSd1UxTXZlbmRITjA1Q2R6MDkjMw%3D%3D/populasi-ternak-menurut-kabupaten-kota-dan-jenis-ternak-di-provinsi-nusa-tenggara-timur--ekor"
       }
     ],
-    "disclaimer": "Not reported does not mean zero. The provincial baseline provides context only and must not be interpreted as the number of animals exposed or affected."
+    "disclaimer": "Not reported does not mean zero. The provincial baseline provides context only and must not be interpreted as the number of animals exposed or affected.",
+    "check_note": "This update specifically searched for a Ministry of Agriculture (Kementan) or Directorate General of Livestock and Animal Health statement on earthquake-related livestock or crop impact in NTT. None was found as of 16 August 2026. The only Kementan-related material located is the pre-existing NTT cattle baseline/artificial-insemination programme announcement already cited below, which is not earthquake-related."
   },
   "economic_impact": {
     "status_label": "Rapid sectoral assessment ongoing; no official monetary loss estimate available",
     "headline": {
       "monetary_damage_and_loss_idr": null,
       "telecom_sites_disrupted": 200,
-      "affected_transport_facilities_named": 4,
-      "bulog_warehouses_affected": 1
+      "affected_transport_facilities_named": 6,
+      "bulog_warehouses_affected": 1,
+      "airports_affected": 5,
+      "ports_affected": 2,
+      "electricity_customers_restored_pct": 88
     },
     "known_impacts": [
       {
@@ -111,8 +116,8 @@
       },
       {
         "sector": "Transport infrastructure",
-        "status": "Damage reported at Laurentius Say Port, Reo Port, Nangakeo Port and Komodo Airport.",
-        "confidence": "Official Ministry of Transportation statement"
+        "status": "Damage reported at 5 airports and 2 ports (Reo Port and Maumere/Laurentius Say Port); named facilities include Laurentius Say Port, Reo Port, Nangakeo Port and Komodo Airport.",
+        "confidence": "Official Ministry of Transportation statement; corroborated by BNPB and media reporting of '5 bandara dan 2 pelabuhan'"
       },
       {
         "sector": "Transport services",
@@ -126,20 +131,27 @@
       },
       {
         "sector": "Electricity",
-        "status": "Power outage was reported in Nagekeo earlier in the response; the current extent and restoration status were not available.",
-        "confidence": "BNPB preliminary update"
+        "status": "PLN reported 88% of affected customers in Flores had power restored as of its early-morning 16 August briefing (Darmawan Prasodjo, PLN President Director). All 11 affected primary substations (100%) and 58 of 59 feeders (98.3%) were back in operation; 2,723 of 3,478 affected distribution substations, serving roughly 441,000 customers, were restored as of an earlier 15 August, 18:30 WITA update. Repairs are concentrated on landslide-affected areas where poles collapsed. Hospitals (e.g. RSUD Bajawa) and airports were prioritised.",
+        "confidence": "Official PLN statement (Direktur Utama PT PLN, Darmawan Prasodjo; General Manager PLN UIW NTT, F. Eko Sulistyono)"
       },
       {
         "sector": "Food logistics",
         "status": "One Bulog warehouse was reported affected; operational and stock-loss details remain under verification.",
         "confidence": "BNPB preliminary update"
+      },
+      {
+        "sector": "Fuel distribution",
+        "status": "Pertamina temporarily suspended operations at a number of fuel stations (SPBU) in the affected area as a safety precaution; scope and duration not detailed in sources reviewed.",
+        "confidence": "Media reporting (Liputan6), not yet corroborated by an official Pertamina statement located in this update"
       }
     ],
     "information_gaps": [
       "Official monetary estimate of physical damage and economic loss.",
       "Business interruption, tourism, fisheries, agriculture and livestock livelihood losses.",
       "Household income loss, market access and supply-chain disruption.",
-      "Verified repair costs and service-restoration timelines for roads, ports, power and telecommunications."
+      "Verified repair costs and service-restoration timelines for roads, ports, power and telecommunications.",
+      "Full list and repair timeline for the 5 affected airports (Komodo Airport is the only one specifically named in sources reviewed).",
+      "Scope and duration of the Pertamina fuel-station suspension."
     ],
     "sources": [
       {
@@ -156,8 +168,61 @@
         "agency": "BNPB",
         "title": "Preliminary impact, logistics and service-disruption update",
         "url": "https://www.bnpb.go.id/berita/update-gempa-m-77-ntt-kepala-bnpb-dan-menko-pmk-segera-turun-ke-lapangan-bersama-tim-dan-dukungan-darurat-dikerahkan"
+      },
+      {
+        "agency": "PT PLN (Persero)",
+        "title": "PLN Sebut 88 Persen Kelistrikan di Pulau Flores Sudah Normal Usai Gempa",
+        "url": "https://www.liputan6.com/news/read/8270863/pln-sebut-88-persen-kelistrikan-di-pulau-flores-sudah-normal-usai-gempa"
       }
     ],
     "disclaimer": "Known physical and service disruptions are not equivalent to an economic loss estimate. Monetary figures should only be added after an official government damage-and-loss assessment."
+  },
+  "child_protection": {
+    "status_label": "NGO response update — Save the Children Indonesia (SCIDN), 15 August 2026",
+    "headline": {
+      "children_affected_approx": 8000,
+      "children_affected_note": "SCIDN reports more than 8,000 children in NTT facing disrupted education and heightened protection risks. This is an NGO field estimate, not a BNPB or Ministry of Social Affairs figure, and is shown separately.",
+      "local_implementing_partner": "CIS Timor"
+    },
+    "compounding_hazards": {
+      "status_label": "The earthquake response is layered on pre-existing regional hazards",
+      "hazards": [
+        "Ongoing El Nino-influenced drought",
+        "Recurring eruption hazard from Mount Lewotobi"
+      ],
+      "note": "SCIDN's update frames the earthquake as compounding these existing vulnerabilities rather than an isolated event, with cumulative effects on health, protection, education, psychosocial well-being and long-term child development."
+    },
+    "priority_response_sectors": [
+      {
+        "sector": "Child Protection",
+        "focus": "Preventing violence, exploitation and family separation; monitoring unaccompanied children, family tracing and reunification, institutionalisation/orphanage risk, and heightened child-trafficking risk during disasters."
+      },
+      {
+        "sector": "Education in Emergencies (EiE)",
+        "focus": "Ensuring continuous, safe learning for every child given severe disruption at damaged education facilities."
+      },
+      {
+        "sector": "Health and Nutrition",
+        "focus": "Critical care focused on children aged 0-23 months and pregnant/lactating mothers."
+      },
+      {
+        "sector": "Mental Health and Psychosocial Support (MHPSS)",
+        "focus": "Helping children process trauma, build resilience and cope with distress."
+      },
+      {
+        "sector": "WASH",
+        "focus": "Preventing disease outbreaks in evacuation sites and temporary shelters."
+      }
+    ],
+    "response_status": "SCIDN has established contact with CIS Timor in NTT; a joint assessment has been agreed to gather detailed data on children's needs and vulnerabilities to guide priority response actions.",
+    "sources": [
+      {
+        "agency": "Save the Children Indonesia (SCIDN)",
+        "title": "Flores Earthquake Response Update — Protecting East Nusa Tenggara Children's Futures Amid Repeated Disasters",
+        "url": "reports/SCIDN_Flores_Earthquake_External_Update_20260815.pdf",
+        "publication_date": "2026-08-15"
+      }
+    ],
+    "disclaimer": "Figures in this section come from an NGO field update, not a government source, and are shown separately from BNPB/Ministry of Health figures rather than combined with them."
   }
 }

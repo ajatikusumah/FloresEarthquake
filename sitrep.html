@@ -104,14 +104,14 @@
             <div class="metric-source">BMKG update [23]</div>
           </article>
           <article class="metric" style="--accent: var(--blue)">
-            <div class="metric-value">235</div>
-            <div class="metric-label">Aftershocks by 14:00 WIB</div>
-            <div class="metric-source">BMKG update [23]</div>
+            <div class="metric-value" id="hero-aftershocks">611</div>
+            <div class="metric-label" id="hero-aftershocks-label">Aftershocks by 02:00 WIB, 16 Aug</div>
+            <div class="metric-source">BMKG update [23][26]</div>
           </article>
           <article class="metric" style="--accent: var(--red)">
-            <div class="metric-value" id="impact-casualties">47 | 113</div>
-            <div class="metric-label">BNPB deaths | Kemenkes injuries</div>
-            <div class="metric-source">Source-specific figures [24][25]</div>
+            <div class="metric-value" id="impact-casualties">47 | 101</div>
+            <div class="metric-label">BNPB deaths | BNPB injured (Kemenkes: 46 deaths, 113 injured)</div>
+            <div class="metric-source">Source-specific figures [24][25][27]</div>
           </article>
         </section>
 
@@ -291,7 +291,7 @@
               <div class="section-kicker">Hazard profile</div>
               <h2>Shaking and aftershock sequence</h2>
             </div>
-            <div class="source-note">BMKG shakemap estimate and aftershock updates [1][4][15][23]</div>
+            <div class="source-note">BMKG shakemap estimate and aftershock updates [1][4][15][23][26]</div>
           </div>
           <div class="two-col">
             <article class="panel">
@@ -310,14 +310,47 @@
             </article>
             <article class="panel">
               <h3>Aftershock sequence</h3>
-              <div class="aftershock-stat"><b>235</b><span><strong>events by 14:00 WIB / 15:00 WITA</strong><br /><span class="small">M2.5–M6.2; no significant decay yet reported · BMKG [23]</span></span></div>
+              <div class="aftershock-stat"><b id="aftershock-total">611</b><span><strong id="aftershock-window">events by 02:00 WIB, 16 Aug / 03:00 WITA</strong><br /><span class="small" id="aftershock-range">M1.9–M6.2; 16 events above M5; 30 felt by residents; sequence not yet showing clear decay · BMKG [26]</span></span></div>
               <div class="aftershock-list">
                 <div class="aftershock"><strong>05:13</strong><strong>M6.2</strong><span>46 km NE of Labuan Bajo</span></div>
                 <div class="aftershock"><strong>05:27</strong><strong>M5.5</strong><span>56 km NE of Ruteng</span></div>
                 <div class="aftershock"><strong>05:28</strong><strong>M6.2</strong><span>45 km NE of Mbay</span></div>
                 <div class="aftershock"><strong>05:37</strong><strong>M5.6</strong><span>49 km NE of Labuan Bajo</span></div>
-                <div class="aftershock"><strong>05:53</strong><strong>M5.3</strong><span>51 km NW of Ruteng</span></div>
+                <div class="aftershock"><strong>19:14</strong><strong>M5.1</strong><span>47 km NW of Mbay, Nagekeo</span></div>
               </div>
+              <p class="small" style="margin-top:10px">BMKG estimates typical decay for a sequence like this at 2–3 weeks, based on comparison with a recent North Maluku sequence.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="geohazards">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Secondary hazards</div>
+              <h2>Liquefaction and fault context</h2>
+            </div>
+            <div class="source-note">Badan Geologi, Ministry of Energy and Mineral Resources (ESDM) [28][29]</div>
+          </div>
+          <div class="two-col">
+            <article class="panel">
+              <h3>Liquefaction indication</h3>
+              <div class="sector-status-list">
+                <div class="sector-status-row"><span>Evidence</span><strong>Sand boils reported at Waekokak, Mbay, Nagekeo</strong></div>
+                <div class="sector-status-row"><span>Assessed severity</span><strong>Low to moderate</strong></div>
+                <div class="sector-status-row"><span>Comparison</span><strong>Not Palu-type (2018); limited lateral spreading expected</strong></div>
+                <div class="sector-status-row"><span>Verification</span><strong>Preliminary — field team dispatched</strong></div>
+              </div>
+              <p class="small" style="margin-top:12px">Badan Geologi also flagged ground movement/landslides and ground cracking as hazards requiring continued monitoring, in addition to the tsunami observations above.</p>
+            </article>
+            <article class="panel">
+              <h3>Fault and historical context</h3>
+              <p class="small">Source parameters associate the mainshock with the Flores Back-Arc Thrust, assessed capable of up to M7.8–M7.9.</p>
+              <ul class="sector-priority-list">
+                <li>1961 North Flores earthquake</li>
+                <li>1992 Flores earthquake and tsunami — widely cited at roughly 2,500 deaths, one of Indonesia's deadliest modern tsunami disasters</li>
+                <li>1982 Solor earthquake</li>
+                <li>2003 Manggarai earthquake</li>
+              </ul>
             </article>
           </div>
         </section>
@@ -328,10 +361,11 @@
               <div class="section-kicker">Sea-level observations</div>
               <h2>Observed tsunami</h2>
             </div>
-            <div class="source-note">Measured sea-level observation, not run-up or inundation depth · BMKG [2][8][23]</div>
+            <div class="source-note">Measured sea-level observation, not run-up or inundation depth · BMKG [2][8][23]; Pota observation via Badan Geologi [29]</div>
           </div>
           <div class="panel tsunami-list">
             <div class="tsunami-row"><strong>Reo/Manggarai coast</strong><div class="bar-track"><div class="bar" style="--size:100%; --accent:var(--red)"></div></div><strong>1.61 m</strong></div>
+            <div class="tsunami-row"><strong>Pota, East Manggarai</strong><div class="bar-track"><div class="bar" style="--size:100%; --accent:var(--red)"></div></div><strong>1.67 m</strong></div>
             <div class="tsunami-row"><strong>Maurole–Ende</strong><div class="bar-track"><div class="bar" style="--size:58%; --accent:var(--orange)"></div></div><strong>0.94 m</strong></div>
             <div class="tsunami-row"><span>Bulukumba</span><div class="bar-track"><div class="bar" style="--size:34%; --accent:var(--red)"></div></div><strong>0.54 m</strong></div>
             <div class="tsunami-row"><span>Kewapante Port–Sikka</span><div class="bar-track"><div class="bar" style="--size:24%"></div></div><strong>0.38 m</strong></div>
@@ -395,6 +429,64 @@
           </div>
         </section>
 
+        <section class="section" id="emergency-status">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Administrative response</div>
+              <h2>Emergency status, BPBD reports and cross-province impact</h2>
+            </div>
+            <div class="source-note" id="emergency-status-source-note">Reported 16 August 2026 · [27][30][31][33]</div>
+          </div>
+          <div class="sector-layout">
+            <article class="panel">
+              <h3>Emergency-response (tanggap darurat) status</h3>
+              <div class="sector-status-list" id="emergency-status-list">
+                <div class="sector-status-row"><span>NTT Province</span><strong>14-day decree in process</strong></div>
+                <div class="sector-status-row"><span>Manggarai Regency</span><strong>Declared — 90 days, 15 Aug–13 Nov 2026</strong></div>
+              </div>
+              <p class="small" style="margin-top:12px" id="emergency-status-note">
+                Manggarai's declaration (decree 300.2.2/130/VIII/2026, issued by Regent Herybertus G. L. Nabit)
+                enabled temporary field hospitals at RSUD Ruteng, RS Pratama Reo and RS Santo Rafael Cancar.
+                BNPB's Head urged other affected regencies to declare emergency status to speed up unified
+                command and emergency-fund access; this SitRep does not yet have confirmed decree details
+                beyond Manggarai.
+              </p>
+            </article>
+            <article class="panel">
+              <h3>Regional agency (BPBD) reports</h3>
+              <div class="sector-status-list" id="bpbd-reports-list">
+                <div class="sector-status-row"><span>BPBD NTT</span><strong>Early damage confirmed; verification ongoing</strong></div>
+                <div class="sector-status-row"><span>BPBD NTB (Bima)</span><strong>Building damage documented, see below</strong></div>
+                <div class="sector-status-row"><span>BPBD Kota Bima</span><strong>Field data collection ongoing</strong></div>
+              </div>
+              <p class="small" style="margin-top:12px">
+                No separate, independently reconciled BPBD NTT casualty/damage dataset has been published
+                beyond the BNPB and Ministry of Health figures already shown above.
+              </p>
+            </article>
+          </div>
+
+          <div class="sector-layout" style="margin-top:16px">
+            <article class="panel">
+              <h3>Cross-province impact — West Nusa Tenggara (Bima)</h3>
+              <ul class="sector-priority-list" id="cross-province-ntb-list">
+                <li>One house moderately damaged, Kelurahan Rabangodu Selatan, Kecamatan Raba, Bima City</li>
+                <li>Wall damage at a Bulog food-logistics warehouse; stored rice sacks fell</li>
+                <li>Ceiling damage at the Mutmainnah Hotel mosque</li>
+                <li>Light wall cracking at the Lambitu district office, Bima Regency</li>
+              </ul>
+              <p class="small" style="margin-top:10px">Conditions described by BPBD NTB as generally conducive. Urgent needs: ready-to-eat food, bottled water, blankets, tarpaulins, mattresses, family kits.</p>
+            </article>
+            <article class="panel">
+              <h3>Cross-province impact — South Sulawesi</h3>
+              <p class="small">Shaking and small tsunami observations were reported in Kepulauan Selayar Regency. Neither BNPB's 00:00 WIB update nor the sources reviewed for this SitRep detail structural damage there.</p>
+              <div class="sector-caveat" style="margin-top:14px">
+                <strong>Note:</strong> displacement was also reported in Bima and Kepulauan Selayar
+                (see the impacts section above); this SitRep does not have a confirmed count for either.
+              </div>
+            </article>
+          </div>
+        </section>
 
         <section class="section" id="sar">
           <div class="section-head">
@@ -623,6 +715,60 @@
           </div>
         </section>
 
+        <section class="section" id="child-protection">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">NGO field update</div>
+              <h2>Children and vulnerable groups</h2>
+            </div>
+            <div class="source-note">Save the Children Indonesia (SCIDN), 15 August 2026 [34]</div>
+          </div>
+
+          <div class="sector-stat-grid">
+            <article class="sector-stat" style="--accent:var(--red)">
+              <strong>8,000+</strong><span>Children reported facing disrupted education and heightened protection risk (SCIDN estimate)</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--orange)">
+              <strong>2</strong><span>Compounding regional hazards: El Ni&ntilde;o-influenced drought and Mount Lewotobi eruption activity</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--teal)">
+              <strong>CIS Timor</strong><span>Local implementing partner contacted in NTT; joint needs assessment agreed</span>
+            </article>
+            <article class="sector-stat" style="--accent:var(--blue)">
+              <strong>5</strong><span>Priority response sectors identified by SCIDN</span>
+            </article>
+          </div>
+
+          <div class="sector-layout">
+            <article class="panel">
+              <h3>Priority response sectors</h3>
+              <div class="sector-status-list" id="child-protection-sectors">
+                <div class="sector-status-row"><span>Child Protection</span><strong>Family separation, trafficking risk</strong></div>
+                <div class="sector-status-row"><span>Education in Emergencies</span><strong>Damaged-facility disruption</strong></div>
+                <div class="sector-status-row"><span>Health &amp; Nutrition</span><strong>Focus: U-2 children, pregnant/lactating mothers</strong></div>
+                <div class="sector-status-row"><span>MHPSS</span><strong>Trauma and psychosocial support</strong></div>
+                <div class="sector-status-row"><span>WASH</span><strong>Disease-outbreak prevention at shelters</strong></div>
+              </div>
+            </article>
+            <article class="panel">
+              <h3>Compounding hazards and protection risks</h3>
+              <p class="small" id="child-protection-hazards">
+                SCIDN frames the earthquake as layering on top of pre-existing vulnerabilities rather
+                than an isolated event: an ongoing El Ni&ntilde;o-influenced drought and recurring eruption
+                hazard from Mount Lewotobi. Flagged protection risks during the response include
+                unaccompanied children, family separation, institutionalisation/orphanage risk, and
+                heightened child-trafficking risk.
+              </p>
+            </article>
+          </div>
+
+          <div class="sector-caveat">
+            <strong>Interpretation:</strong> These figures come from an NGO field update, not a
+            government source, and are shown separately from the BNPB and Ministry of Health figures
+            elsewhere in this SitRep rather than combined with them.
+          </div>
+        </section>
+
 
         <section class="section" id="animal-health">
           <div class="section-head">
@@ -792,6 +938,16 @@
                 <a class="download-button" href="reports/IHCP_Flash_Update_1_Flores_NTT_20260815.pdf" download>Download PDF</a>
               </div>
             </article>
+            <article class="report-card">
+              <div class="report-icon" aria-hidden="true">PDF</div>
+              <div class="report-content">
+                <h3>Flores Earthquake Response Update</h3>
+                <p class="report-name">Protecting East Nusa Tenggara Children's Futures Amid Repeated Disasters</p>
+                <div class="report-meta">Save the Children Indonesia (SCIDN) · 15 August 2026 · 2 pages · English</div>
+                <p>Child-focused response update: over 8,000 children affected by disrupted education and heightened protection risks; sets the earthquake against compounding hazards (El Ni&ntilde;o-influenced drought, Mount Lewotobi eruption activity); outlines priority response sectors and the partnership with local implementer CIS Timor.</p>
+                <a class="download-button" href="reports/SCIDN_Flores_Earthquake_External_Update_20260815.pdf" download>Download PDF</a>
+              </div>
+            </article>
           </div>
 
           <div class="briefing-grid">
@@ -812,6 +968,19 @@
               <button class="download-button secondary report-print" type="button" onclick="window.print()">Print current web SitRep</button>
             </article>
           </div>
+
+          <h3 style="margin:28px 0 10px; color:var(--navy)">Related media coverage</h3>
+          <p class="small" id="media-updates-status" style="margin-bottom:12px">Indonesian and international reporting cross-referenced for this update.</p>
+          <ol class="sources" id="media-updates-list">
+            <li><strong>Liputan6:</strong> <a href="https://www.liputan6.com/news/read/8270875/update-gempa-ntt-47-meninggal-lebih-dari-5000-orang-mengungsi" target="_blank" rel="noopener noreferrer">Update Gempa NTT: 47 Meninggal, Lebih dari 5.000 Orang Mengungsi</a></li>
+            <li><strong>Liputan6:</strong> <a href="https://www.liputan6.com/regional/read/8270852/611-gempa-susulan-guncang-ntt" target="_blank" rel="noopener noreferrer">611 Gempa Susulan Guncang NTT</a></li>
+            <li><strong>Tempo:</strong> <a href="https://www.tempo.co/sains/badan-geologi-ada-indikasi-likuefaksi-pada-gempa-di-ntt-2282185" target="_blank" rel="noopener noreferrer">Badan Geologi: Ada Indikasi Likuefaksi pada Gempa di NTT</a></li>
+            <li><strong>Kompas.com:</strong> <a href="https://nasional.kompas.com/read/2026/08/16/08584861/ntt-berstatus-tanggap-darurat-bencana-pascagempa-m-77" target="_blank" rel="noopener noreferrer">NTT Berstatus Tanggap Darurat Bencana Pascagempa M 7,7</a></li>
+            <li><strong>ANTARA Mataram:</strong> <a href="https://mataram.antaranews.com/berita/566180/bpbd-ntb-mencatat-sejumlah-kerusakan-bangunan-akibat-gempa-ntt" target="_blank" rel="noopener noreferrer">BPBD NTB mencatat sejumlah kerusakan bangunan akibat gempa NTT</a></li>
+            <li><strong>Al Jazeera:</strong> <a href="https://www.aljazeera.com/news/2026/8/15/at-least-two-killed-as-magnitude-7-7-quake-hits-indonesia" target="_blank" rel="noopener noreferrer">Magnitude 7.7 quake hits Indonesia, killing at least 47</a></li>
+            <li><strong>AP via NBC News:</strong> <a href="https://www.nbcnews.com/world/indonesia/earthquake-indonesia-rcna592638" target="_blank" rel="noopener noreferrer">Magnitude-7.7 quake hits off coast of Indonesia, killing at least 47</a></li>
+            <li><strong>PLN via Liputan6:</strong> <a href="https://www.liputan6.com/news/read/8270863/pln-sebut-88-persen-kelistrikan-di-pulau-flores-sudah-normal-usai-gempa" target="_blank" rel="noopener noreferrer">PLN Sebut 88 Persen Kelistrikan di Pulau Flores Sudah Normal Usai Gempa</a></li>
+          </ol>
         </section>
 
         <section class="section" id="sources">
@@ -848,6 +1017,15 @@
             <li><strong>[23] BMKG:</strong> <a href="https://www.bmkg.go.id/siaran-pers/bmkg-pemerintah-pusat-dan-pemerintah-daerah-kolaborasi-percepat-pemulihan-bencana-gempa-flores" target="_blank" rel="noopener noreferrer">235 aftershocks by 14:00 WIB and updated peak tsunami observation of 1.61 m</a></li>
             <li><strong>[24] Ministry of Health — Health Crisis Center:</strong> <a href="reports/Kemenkes_Laporan_Situasi_Gempa_NTT_20260815.pdf" target="_blank" rel="noopener noreferrer">Situation Report: NTT Earthquake Disaster, 15 August 2026 (27 pages)</a>; archived official source document.</li>
             <li><strong>[25] BNPB:</strong> <a href="https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia" target="_blank" rel="noopener noreferrer">47 deaths at 18:48 WIB; housing and public-facility damage at 17:00 WIB; emergency assistance mobilisation</a></li>
+            <li><strong>[26] BMKG via Liputan6:</strong> <a href="https://www.liputan6.com/regional/read/8270852/611-gempa-susulan-guncang-ntt" target="_blank" rel="noopener noreferrer">611 aftershocks by 02:00 WIB, 16 August; M1.9–M6.2, 16 above M5, 30 felt</a></li>
+            <li><strong>[27] BNPB via Liputan6/ANTARA:</strong> <a href="https://www.liputan6.com/news/read/8270875/update-gempa-ntt-47-meninggal-lebih-dari-5000-orang-mengungsi" target="_blank" rel="noopener noreferrer">00:00 WIB, 16 August update: revised death distribution, 101 injured, 5,000+ evacuees, province-wide damage figures</a></li>
+            <li><strong>[28] Badan Geologi via Tempo:</strong> <a href="https://www.tempo.co/sains/badan-geologi-ada-indikasi-likuefaksi-pada-gempa-di-ntt-2282185" target="_blank" rel="noopener noreferrer">Preliminary indication of liquefaction at Waekokak, Mbay, Nagekeo</a></li>
+            <li><strong>[29] Badan Geologi via ANTARA:</strong> <a href="https://www.antaranews.com/berita/5696483/secara-historis-sesar-flores-beberapa-kali-hasilkan-gempa-merusak" target="_blank" rel="noopener noreferrer">Flores Back-Arc Thrust historical context; 1.67 m tsunami observation at Pota, East Manggarai</a></li>
+            <li><strong>[30] Kompas.com:</strong> <a href="https://nasional.kompas.com/read/2026/08/16/08584861/ntt-berstatus-tanggap-darurat-bencana-pascagempa-m-77" target="_blank" rel="noopener noreferrer">NTT provincial and Manggarai Regency emergency-response (tanggap darurat) status</a></li>
+            <li><strong>[31] BPBD NTT via Pos Kupang/Tribunnews:</strong> <a href="https://kupang.tribunnews.com/provinsi-ntt/975755/gempa-flores-bpbd-ntt-rinci-kerusakan-awal-pelabuhan-maumere-hingga-rumah-warga" target="_blank" rel="noopener noreferrer">Initial infrastructure damage assessment across Flores</a></li>
+            <li><strong>[32] PT PLN (Persero) via Liputan6:</strong> <a href="https://www.liputan6.com/news/read/8270863/pln-sebut-88-persen-kelistrikan-di-pulau-flores-sudah-normal-usai-gempa" target="_blank" rel="noopener noreferrer">88% of affected Flores customers restored; substation and feeder recovery detail</a></li>
+            <li><strong>[33] BPBD NTB via ANTARA Mataram:</strong> <a href="https://mataram.antaranews.com/berita/566180/bpbd-ntb-mencatat-sejumlah-kerusakan-bangunan-akibat-gempa-ntt" target="_blank" rel="noopener noreferrer">Cross-province building damage in Bima City and Bima Regency</a></li>
+            <li><strong>[34] Save the Children Indonesia (SCIDN):</strong> <a href="reports/SCIDN_Flores_Earthquake_External_Update_20260815.pdf" target="_blank" rel="noopener noreferrer">Flores Earthquake Response Update, 15 August 2026 &mdash; child protection, education and compounding-hazards context</a></li>
           </ol>
           <div class="method">
             <strong>Method and limitations.</strong> Source priority: official technical agencies,
@@ -861,7 +1039,7 @@
 
       <footer class="footer">
         <span>Preliminary open-source SitRep · Data remain evolving and subject to BNPB validation.</span>
-        <span>Version 07 · BNPB 18:48 WIB update · Health · SAR · Animal health · Economic impacts</span>
+        <span>Version 09 · BNPB 00:00 WIB, 16 Aug update · Health · SAR · Child protection · Animal health · Economic impacts · Emergency status</span>
       </footer>
     </main>
   </body>

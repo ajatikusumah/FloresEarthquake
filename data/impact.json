@@ -1,34 +1,49 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
-  "status_label": "BNPB preliminary impact update at 18:48 WIB — verification and reconciliation continue",
-  "updated_at": "2026-08-15T18:48:00+07:00",
-  "updated_display": "15 Aug 2026 · 18:48 WIB / 19:48 WITA",
+  "status_label": "BNPB update reported 16 August 2026, 00:00 WIB (via BNPB statement carried by Liputan6 and Antara at 09:01 WIB) — revised district death toll, first detailed evacuee distribution, and a substantially larger province-wide damage count. Verification and reconciliation continue.",
+  "updated_at": "2026-08-16T00:00:00+07:00",
+  "updated_display": "16 Aug 2026 · 00:00 WIB / 01:00 WITA (reported 09:01 WIB)",
   "validated_by": "BNPB/BPBD and field-response authorities",
   "source": {
     "agency": "BNPB",
-    "title": "Update — Impact of the M7.7 NTT earthquake: more than 40 deaths",
-    "url": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia",
-    "media_type": "official_written_update",
-    "publication_time": "2026-08-15T20:30:00+07:00",
-    "casualty_cutoff": "2026-08-15T18:48:00+07:00",
-    "damage_cutoff": "2026-08-15T17:00:00+07:00"
+    "title": "Update Gempa NTT: 47 Meninggal, Lebih dari 5.000 Orang Mengungsi",
+    "url": "https://www.liputan6.com/news/read/8270875/update-gempa-ntt-47-meninggal-lebih-dari-5000-orang-mengungsi",
+    "media_type": "media_report_of_official_statement",
+    "publication_time": "2026-08-16T09:01:00+07:00",
+    "casualty_cutoff": "2026-08-16T00:00:00+07:00",
+    "damage_cutoff": "2026-08-16T00:00:00+07:00",
+    "spokesperson": "Berton SP Panjaitan, Plt. Kepala Pusat Data, Informasi, dan Komunikasi Kebencanaan BNPB",
+    "corroborating_sources": [
+      {
+        "agency": "ANTARA News",
+        "title": "Korban jiwa gempa NTT capai 47, 157 rumah rusak berat",
+        "url": "https://kalsel.antaranews.com/amp/berita/530508/korban-jiwa-gempa-ntt-capai-47-157-rumah-rusak-berat"
+      },
+      {
+        "agency": "ANTARA News",
+        "title": "Dirut PLN: Pemulihan kelistrikan pascagempa Flores berjalan cepat (independently confirms the same 00:00 WIB BNPB cut-off)",
+        "url": "https://www.antaranews.com/berita/5696745/dirut-pln-pemulihan-kelistrikan-pascagempa-flores-berjalan-cepat"
+      }
+    ],
+    "previous_source_url_20260815_1848wib": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia"
   },
   "casualties": {
     "deaths": 47,
-    "injured": 113,
+    "injured": 101,
     "injured_serious": 36,
     "injured_minor": 77,
     "missing": null,
-    "source_note": "Deaths are from BNPB at 18:48 WIB. Injury totals and severity are from the Ministry of Health report dated 15 August, which does not state a specific cut-off time."
+    "source_note": "Deaths (47) and the 101-injured total are both from BNPB's 00:00 WIB, 16 August update. The 101 figure supersedes BNPB's earlier 113-injured figure. The 36 serious / 77 minor severity split still comes only from the Ministry of Health report dated 15 August (which totalled 113 injured and did not state a cut-off time). BNPB's 101 and the Ministry of Health's 113 are different counts from different agencies — do not add them together or assume one supersedes the other."
   },
   "casualties_by_location": {
     "Sikka Regency": {
-      "deaths_bnpb": 3,
+      "deaths_bnpb": 4,
       "deaths_kemenkes": 3,
       "injured_serious_kemenkes": 0,
-      "injured_minor_kemenkes": 6
+      "injured_minor_kemenkes": 6,
+      "note": "BNPB's 00:00 WIB, 16 August update revised Sikka from 3 to 4 deaths."
     },
     "Ende Regency": {
       "deaths_bnpb": 1,
@@ -43,11 +58,11 @@
       "injured_minor_kemenkes": 18
     },
     "Nagekeo Regency": {
-      "deaths_bnpb": null,
+      "deaths_bnpb": 1,
       "deaths_kemenkes": 1,
       "injured_serious_kemenkes": 1,
       "injured_minor_kemenkes": 14,
-      "note": "Nagekeo was not listed in the BNPB death distribution at the 18:48 WIB cut-off."
+      "note": "BNPB's 00:00 WIB, 16 August update lists 1 death in Nagekeo for the first time; Nagekeo was absent from the earlier 18:48 WIB BNPB distribution. The Ministry of Health report separately lists 1 death for Nagekeo."
     },
     "West Manggarai Regency": {
       "deaths_bnpb": 1,
@@ -56,16 +71,18 @@
       "injured_minor_kemenkes": 9
     },
     "Manggarai Regency": {
-      "deaths_bnpb": 24,
+      "deaths_bnpb": 23,
       "deaths_kemenkes": 21,
       "injured_serious_kemenkes": 23,
-      "injured_minor_kemenkes": 16
+      "injured_minor_kemenkes": 16,
+      "note": "BNPB's 00:00 WIB, 16 August update revised Manggarai from 24 to 23 deaths. The national total stayed at 47 because Sikka (+1) and Nagekeo (+1, newly listed) increased while Manggarai (-1) and Ngada (no longer listed, see below) changed. This SitRep treats it as a reported field revision rather than assuming which breakdown is more accurate."
     },
     "Ngada Regency": {
-      "deaths_bnpb": 1,
+      "deaths_bnpb": null,
       "deaths_kemenkes": 1,
       "injured_serious_kemenkes": 2,
-      "injured_minor_kemenkes": 3
+      "injured_minor_kemenkes": 3,
+      "note": "Ngada appeared with 1 BNPB-attributed death in the 18:48 WIB, 15 August distribution, but is absent from BNPB's 00:00 WIB, 16 August breakdown (which lists Manggarai 23, East Manggarai 17, Sikka 4, West Manggarai 1, Ende 1 and Nagekeo 1 — summing exactly to the stated total of 47 without Ngada). This SitRep shows Ngada's BNPB figure as not stated in the newer update rather than assuming it is zero; the Ministry of Health report independently still lists 1 death for Ngada, shown below."
     },
     "East Flores Regency": {
       "deaths_bnpb": null,
@@ -76,10 +93,26 @@
     }
   },
   "displacement": {
-    "status": "Under assessment",
-    "self_evacuated_approx": null,
+    "status": "More than 5,000 people displaced as of BNPB's 00:00 WIB, 16 August update; detailed site-level distribution is now available for three regencies.",
+    "total_reported_approx": 5000,
+    "by_location": {
+      "Sikka Regency": {
+        "total": 3356,
+        "detail": "1,356 people at the GOR Samador stadium shelter; 2,000 people self-evacuated across 10 sites."
+      },
+      "Manggarai Regency": {
+        "total": 2078
+      },
+      "Nagekeo Regency": {
+        "total": 500
+      }
+    },
+    "cross_province_reports": [
+      "Bima City and Bima Regency, West Nusa Tenggara (NTB) — see cross_province_impact",
+      "Kepulauan Selayar Regency, South Sulawesi — see cross_province_impact"
+    ],
     "earlier_preliminary_approx": 2000,
-    "note": "The latest Ministry of Health report lists the evacuee count as still under assessment; the earlier BNPB estimate is retained only as historical context."
+    "note": "The BNPB figures above are the first detailed, site-level evacuee counts published for this event; they supersede the earlier 'under assessment' status and the ~2,000 self-evacuated estimate, which is retained only as historical context."
   },
   "affected": {
     "people": 2196745,
@@ -96,35 +129,52 @@
     ]
   },
   "damage": {
-    "snapshot_status": "BNPB preliminary damage update at 17:00 WIB on 15 August 2026.",
-    "houses_heavily_damaged": 157,
-    "houses_moderately_damaged": 41,
-    "houses_slightly_damaged": 148,
-    "education_facilities_affected": 87,
-    "health_facilities_affected_bnpb": 18,
+    "snapshot_status": "BNPB preliminary damage update, most recently updated 00:00 WIB on 16 August 2026 (reported by media at 09:01 WIB). Figures rose substantially from the 17:00 WIB, 15 August snapshot as the assessment expanded to cover the province more fully.",
+    "houses_heavily_damaged": 914,
+    "houses_moderately_damaged": 126,
+    "houses_slightly_damaged": 317,
+    "education_facilities_affected": 93,
+    "health_facilities_affected_bnpb": 36,
     "places_of_worship_affected": 5,
-    "government_offices_affected": 6
+    "government_offices_affected": 38,
+    "places_of_worship_note": "Not explicitly restated in the 00:00 WIB source snippet available to this SitRep; the last confirmed figure (5, from the 17:00 WIB snapshot) is retained rather than assumed unchanged.",
+    "previous_snapshot_20260815_1700wib": {
+      "houses_heavily_damaged": 157,
+      "houses_moderately_damaged": 41,
+      "houses_slightly_damaged": 148,
+      "education_facilities_affected": 87,
+      "health_facilities_affected_bnpb": 18,
+      "places_of_worship_affected": 5,
+      "government_offices_affected": 6
+    }
   },
   "confirmed": [
-    "BNPB recorded 47 deaths at the 18:48 WIB cut-off: 24 in Manggarai, 17 in East Manggarai, 3 in Sikka and 1 each in West Manggarai, Ngada and Ende.",
-    "The Ministry of Health report dated 15 August recorded 46 deaths and 113 injured people: 36 seriously injured and 77 with minor injuries; its specific cut-off time was not stated.",
-    "The source difference of one death is preserved and not reconciled by assumption.",
-    "The Ministry of Health listed 2,196,745 people across eight affected regencies; this is a population-in-affected-areas figure, not a confirmed count of individually affected people.",
-    "The evacuee count remains under assessment in the Ministry of Health report."
+    "BNPB recorded 47 deaths at the 00:00 WIB, 16 August cut-off: 23 in Manggarai, 17 in East Manggarai, 4 in Sikka, and 1 each in West Manggarai, Ende and Nagekeo — a revised distribution from the earlier 18:48 WIB count (see casualties_by_location for the full comparison).",
+    "The Ministry of Health report dated 15 August recorded 46 deaths and 113 injured people (36 seriously injured, 77 minor); its cut-off time was not stated. BNPB's 16 August update separately gives 101 injured; the two injury totals are not combined.",
+    "More than 5,000 people are displaced, with the largest concentration in Sikka Regency (3,356), followed by Manggarai Regency (2,078) and Nagekeo Regency (500); smaller numbers were also reported in Bima (NTB) and Kepulauan Selayar (South Sulawesi).",
+    "Province-wide preliminary damage as of the 00:00 WIB update: 914 houses heavily damaged, 126 moderately damaged and 317 lightly damaged; 93 education facilities, 36 health facilities and 38 government offices affected.",
+    "BMKG recorded 611 aftershocks by 02:00 WIB, 16 August, ranging from M1.9 to M6.2, with 16 above M5 and 30 felt by residents; activity was still concentrated in northern Flores and had not shown clear decay.",
+    "PLN reported 88% of affected customers in Flores had power restored as of its early-morning 16 August briefing, with 58 of 59 feeders (98.3%) and all 11 affected primary substations back in operation.",
+    "Badan Geologi (Ministry of Energy and Mineral Resources) reported a preliminary, low-confidence indication of liquefaction (sand boils) at Waekokak, Mbay, Nagekeo, assessed as low-to-moderate impact pending field verification.",
+    "Manggarai Regency has formally declared a 90-day disaster emergency-response status (15 August–13 November 2026); NTT province was processing a 14-day provincial emergency-response decree as of the 16 August update."
   ],
   "damage_reports": [
-    "BNPB's 17:00 WIB snapshot recorded 157 houses heavily damaged, 41 moderately damaged and 148 slightly damaged.",
-    "BNPB reported 87 education facilities, 18 health facilities, 5 places of worship and 6 offices affected at the 17:00 WIB damage cut-off.",
-    "The Ministry of Health separately reported structural damage at 9 hospitals and 68 puskesmas. This 77-facility health-sector count is retained separately because definitions and cut-offs may differ from BNPB's 18 affected health facilities.",
-    "BNPB reported that 50,000 assistance packages weighing 275 tonnes were being mobilised; 10,500 packages had arrived at the Halim base of operations. These are staging figures, not confirmed delivery to affected communities.",
-    "Transport, road, electricity and telecommunications disruptions continue to be assessed by the responsible agencies."
+    "BNPB's 00:00 WIB, 16 August snapshot recorded 914 houses heavily damaged, 126 moderately damaged and 317 slightly damaged province-wide, up substantially from the 17:00 WIB, 15 August snapshot (157 / 41 / 148).",
+    "BNPB reported 93 education facilities, 36 health facilities and 38 government offices affected at the 00:00 WIB cut-off, up from 87 / 18 / 6 at the earlier snapshot; the places-of-worship count (5) was not explicitly restated.",
+    "The Ministry of Health separately reported structural damage at 9 hospitals and 68 puskesmas (77 facilities total). This health-sector count is retained separately from BNPB's affected-health-facility figures because definitions and cut-offs differ.",
+    "BNPB reported that 50,000 assistance packages weighing 275 tonnes were being mobilised; 10,500 packages (from the Cabinet Secretariat) had arrived at the Halim base of operations. These are staging figures, not confirmed delivery to affected communities.",
+    "Manggarai Regency specifically requested 30 tonnes of rice, medicines, dozens of emergency tents, 1,000 folding beds, 1,000 blankets, 1,000 mats, clean-water tanks and generators, after its Bulog food-logistics warehouse was damaged.",
+    "PLN identified 3,478 distribution substations and 11 primary substations affected; by its 16 August briefing all 11 primary substations and 58 of 59 feeders (98.3%) were restored, with 88% of affected customers back on supply and priority given to hospitals and airports.",
+    "Badan Geologi flagged landslides/ground movement, ground cracking, tsunami and a preliminary liquefaction indication as hazards requiring continued monitoring; a field team was dispatched to verify the liquefaction report.",
+    "Transport, road, electricity and telecommunications disruptions continue to be assessed; five airports and two ports (Reo and Maumere/Laurentius Say) were reported affected, and roughly 200 telecom towers (BTS) across 10 districts/cities were disrupted."
   ],
   "information_gaps": [
-    "Verified evacuee totals and evacuation-site distribution by district.",
-    "Reconciled casualty records across BNPB, the Ministry of Health, BPBD, Basarnas and district authorities.",
-    "Reconciled definitions and facility-level lists for BNPB's 18 affected health facilities versus the Ministry of Health's 77 facilities with structural damage.",
-    "Verified service-restoration status for WASH, electricity, roads, transport and telecommunications.",
-    "Post-disaster disease-surveillance, animal-health and official monetary damage-and-loss estimates."
+    "A single, reconciled evacuee total and full site-by-site distribution across all eight affected NTT regencies (currently detailed for three).",
+    "Reconciled casualty records across BNPB, the Ministry of Health, BPBD, Basarnas/QRSAR and district authorities — the Ngada/Nagekeo discrepancy between BNPB's two updates is not yet resolved.",
+    "Reconciled definitions and facility-level lists for BNPB's affected-health-facility figures versus the Ministry of Health's 77 facilities with structural damage.",
+    "Field confirmation of the preliminary liquefaction indication at Waekokak, Mbay.",
+    "Verified, earthquake-specific agricultural and livestock impact data from the Ministry of Agriculture (Kementan) — none has been published as of this update; see sector-impact.json.",
+    "Official monetary damage-and-loss estimate, and a reconciled district-by-district road/bridge damage list from the Ministry of Public Works (Kementerian PU)."
   ],
   "disclaimer": "BNPB's 18:48 WIB update is used for the consolidated death headline and its 17:00 WIB update for general damage. Ministry of Health figures are retained for injuries and detailed health-sector status, with the source's unstated cut-off shown explicitly. All figures remain preliminary and subject to reconciliation.",
   "generated_at": "2026-08-16T00:04:55+07:00",
@@ -132,25 +182,35 @@
   "seismic_monitoring": {
     "source": {
       "agency": "BMKG",
-      "title": "BMKG, central government and local governments collaborate to accelerate Flores earthquake recovery",
-      "url": "https://www.bmkg.go.id/siaran-pers/bmkg-pemerintah-pusat-dan-pemerintah-daerah-kolaborasi-percepat-pemulihan-bencana-gempa-flores",
-      "publication_date": "2026-08-15"
+      "title": "611 Gempa Susulan Guncang NTT / Gempa M 7,7 NTT Dipicu 611 Gempa Susulan",
+      "url": "https://www.liputan6.com/regional/read/8270852/611-gempa-susulan-guncang-ntt",
+      "publication_date": "2026-08-16",
+      "spokesperson": "Prof. Ir. Teuku Faisal Fathani, Head of BMKG"
     },
-    "data_cutoff": "2026-08-15T14:00:00+07:00",
-    "data_cutoff_display": "15 Aug 2026 · 14:00 WIB / 15:00 WITA",
-    "aftershocks_recorded": 235,
+    "data_cutoff": "2026-08-16T02:00:00+07:00",
+    "data_cutoff_display": "16 Aug 2026 · 02:00 WIB / 03:00 WITA",
+    "aftershocks_recorded": 611,
     "magnitude_range": {
-      "minimum": 2.5,
+      "minimum": 1.9,
       "maximum": 6.2
     },
-    "trend_note": "BMKG reported that the recorded aftershock sequence had not yet shown significant decay by the cut-off.",
-    "latest_m5plus_observed_after_cutoff": {
-      "time_display": "15 Aug 2026 · 14:39:41 WIB / 15:39:41 WITA",
+    "aftershocks_above_m5": 16,
+    "aftershocks_felt_by_residents": 30,
+    "concentration": "Still concentrated in the northern part of Flores Island.",
+    "trend_note": "BMKG reported the aftershock sequence had not yet shown a clear decline; typical decay for this type of sequence is estimated at 2–3 weeks, drawing a comparison to a recent North Maluku sequence.",
+    "previous_snapshot_20260815_1400wib": {
+      "aftershocks_recorded": 235,
+      "magnitude_range": {
+        "minimum": 2.5,
+        "maximum": 6.2
+      }
+    },
+    "latest_m5plus_observed": {
+      "time_display": "15 Aug 2026 · 19:14:41 WIB / 20:14:41 WITA",
       "magnitude": 5.1,
       "depth_km": 10,
-      "location": "82 km northeast of Ruteng, Manggarai, NTT",
-      "tsunami_statement": "Not tsunami-generating",
-      "source_url": "https://warning.bmkg.go.id/"
+      "location": "47 km northwest of Mbay, Nagekeo, NTT",
+      "source_url": "https://www.bmkg.go.id/gempabumi"
     }
   },
   "tsunami_monitoring": {
@@ -164,7 +224,14 @@
       "url": "https://www.bmkg.go.id/siaran-pers/bmkg-pemerintah-pusat-dan-pemerintah-daerah-kolaborasi-percepat-pemulihan-bencana-gempa-flores",
       "publication_date": "2026-08-15"
     },
-    "interpretation_note": "This is a measured sea-level observation reported by BMKG, not a verified maximum run-up or inland inundation depth. It supersedes the earlier 0.94 m value as the highest observation displayed in this SitRep."
+    "interpretation_note": "This is a measured sea-level observation reported by BMKG, not a verified maximum run-up or inland inundation depth. It supersedes the earlier 0.94 m value as the highest observation displayed in this SitRep.",
+    "alternate_peak_observation": {
+      "agency": "Badan Geologi (Ministry of Energy and Mineral Resources)",
+      "peak_observation_m": 1.67,
+      "location": "Pota, East Manggarai",
+      "note": "Badan Geologi separately reported a 1.67 m peak observation at Pota, East Manggarai, a different measurement point from BMKG's 1.61 m figure for Reo/East Manggarai already shown above. Both are retained rather than treating one as superseding the other.",
+      "source_url": "https://www.antaranews.com/berita/5696483/secara-historis-sesar-flores-beberapa-kali-hasilkan-gempa-merusak"
+    }
   },
   "supplementary_sources": [
     {
@@ -180,20 +247,46 @@
       "url": "reports/Kemenkes_Laporan_Situasi_Gempa_NTT_20260815.pdf",
       "publication_date": "2026-08-15",
       "data_cutoff_display": "Specific cut-off time not stated"
+    },
+    {
+      "agency": "Badan Geologi (Ministry of Energy and Mineral Resources)",
+      "title": "Indication of liquefaction (sand boils) at Waekokak, Mbay, Nagekeo; low-to-moderate assessed impact",
+      "url": "https://www.tempo.co/sains/badan-geologi-ada-indikasi-likuefaksi-pada-gempa-di-ntt-2282185",
+      "publication_date": "2026-08-15"
+    },
+    {
+      "agency": "PT PLN (Persero)",
+      "title": "88% of affected Flores customers restored; all 11 primary substations and 58/59 feeders back in service",
+      "url": "https://www.liputan6.com/news/read/8270863/pln-sebut-88-persen-kelistrikan-di-pulau-flores-sudah-normal-usai-gempa",
+      "publication_date": "2026-08-16"
+    },
+    {
+      "agency": "Kompas.com",
+      "title": "NTT declares 14-day provincial emergency-response status in process; Manggarai declares 90-day status",
+      "url": "https://nasional.kompas.com/read/2026/08/16/08584861/ntt-berstatus-tanggap-darurat-bencana-pascagempa-m-77",
+      "publication_date": "2026-08-16"
+    },
+    {
+      "agency": "Al Jazeera",
+      "title": "Magnitude 7.7 quake hits Indonesia, killing at least 47 — international context and USGS shaking-exposure estimate",
+      "url": "https://www.aljazeera.com/news/2026/8/15/at-least-two-killed-as-magnitude-7-7-quake-hits-indonesia",
+      "publication_date": "2026-08-15"
     }
   ],
   "source_reconciliation": {
     "bnpb": {
-      "data_cutoff_display": "15 Aug 2026 · 18:48 WIB / 19:48 WITA",
+      "data_cutoff_display": "16 Aug 2026 · 00:00 WIB / 01:00 WITA",
       "deaths": 47,
       "distribution": {
-        "Manggarai Regency": 24,
+        "Manggarai Regency": 23,
         "East Manggarai Regency": 17,
-        "Sikka Regency": 3,
+        "Sikka Regency": 4,
         "West Manggarai Regency": 1,
-        "Ngada Regency": 1,
-        "Ende Regency": 1
-      }
+        "Ende Regency": 1,
+        "Nagekeo Regency": 1
+      },
+      "distribution_note": "Ngada Regency (1 death in the earlier 18:48 WIB BNPB distribution) is not listed in this newer breakdown; see casualties_by_location for the full discrepancy note.",
+      "injured": 101
     },
     "ministry_of_health": {
       "report_date": "2026-08-15",
@@ -208,13 +301,178 @@
       "deaths_recorded": 28,
       "scope": "Operational SAR record"
     },
-    "interpretation": "The figures are not merged. BNPB is used for the consolidated death headline; Ministry of Health is used for injury severity and health-sector detail; QRSAR remains a separate operational count."
+    "interpretation": "The figures are not merged. BNPB is used for the consolidated death headline; Ministry of Health is used for injury severity and health-sector detail; QRSAR remains a separate operational count.",
+    "previous_bnpb_snapshot_20260815_1848wib": {
+      "deaths": 47,
+      "distribution": {
+        "Manggarai Regency": 24,
+        "East Manggarai Regency": 17,
+        "Sikka Regency": 3,
+        "West Manggarai Regency": 1,
+        "Ngada Regency": 1,
+        "Ende Regency": 1
+      }
+    }
   },
   "response_logistics": {
     "source": "BNPB update published 15 Aug 2026 at 20:30 WIB",
     "planned_assistance_packages": 50000,
     "total_weight_tonnes": 275,
     "packages_arrived_at_halim_baseops": 10500,
-    "interpretation_note": "These figures describe assistance staged or arriving at the Jakarta base of operations, not confirmed delivery to affected communities."
+    "interpretation_note": "These figures describe assistance staged or arriving at the Jakarta base of operations, not confirmed delivery to affected communities.",
+    "manggarai_priority_needs": [
+      "30 tonnes of rice",
+      "Medicines",
+      "Dozens of emergency tents",
+      "12 command-post tents",
+      "20 platoon tents",
+      "1,000 folding beds (velbed)",
+      "1,000 blankets",
+      "1,000 mats",
+      "500 kitchen-equipment packages",
+      "12 clean-water tanks (2,200 L capacity each)",
+      "10 generator units (5 kVA)",
+      "Handheld radios and flashlights"
+    ],
+    "manggarai_priority_needs_source": "https://rmol.id/nusantara/read/2026/08/15/718383/gempa-ntt-gudang-bulog-hancur-manggarai-butuh-30-ton-beras"
+  },
+  "geological_hazards": {
+    "status_label": "Badan Geologi (Geological Agency, Ministry of Energy and Mineral Resources/ESDM) rapid assessment",
+    "fault_source": "Flores Back-Arc Thrust (sesar naik Busur Belakang Flores); BMKG assessed the fault capable of up to M7.8–M7.9.",
+    "liquefaction": {
+      "indication": "Preliminary, low-confidence indication of liquefaction",
+      "evidence": "Sand boils (sand- and mud-laden water emerging from the ground) reported at Waekokak, Mbay, Nagekeo Regency, shortly after the mainshock",
+      "assessed_severity": "Estimated low-to-moderate impact on foundation soil; officials stated it does not show the far-travelling characteristics of the 2018 Palu liquefaction disaster",
+      "verification_status": "Preliminary — a Badan Geologi field team was dispatched to confirm through direct site investigation",
+      "spokesperson": "Lana Saria, Head of Badan Geologi"
+    },
+    "other_flagged_hazards": [
+      "Ground movement / landslides",
+      "Ground cracking",
+      "Tsunami (see tsunami_monitoring)"
+    ],
+    "historical_context": {
+      "similar_fault_events": [
+        "1961 North Flores earthquake",
+        "1992 Flores earthquake and tsunami (widely cited at roughly 2,500 deaths — one of Indonesia's deadliest modern tsunami disasters)",
+        "1982 Solor earthquake",
+        "2003 Manggarai earthquake"
+      ],
+      "note": "Both Badan Geologi and international outlets (e.g. AP/NBC) drew comparisons to the December 1992 Flores earthquake and tsunami."
+    },
+    "sources": [
+      {
+        "agency": "Tempo",
+        "title": "Badan Geologi: Ada Indikasi Likuefaksi pada Gempa di NTT",
+        "url": "https://www.tempo.co/sains/badan-geologi-ada-indikasi-likuefaksi-pada-gempa-di-ntt-2282185"
+      },
+      {
+        "agency": "ANTARA News",
+        "title": "Secara historis sesar Flores beberapa kali hasilkan gempa merusak",
+        "url": "https://www.antaranews.com/berita/5696483/secara-historis-sesar-flores-beberapa-kali-hasilkan-gempa-merusak"
+      },
+      {
+        "agency": "Republika",
+        "title": "Badan Geologi Kemen ESDM Temukan Indikasi Likuifaksi Kategori Rendah Usai Gempa Flores Magnitudo 7,7",
+        "url": "https://rejabar.republika.co.id/berita/tjt9uv282/badan-geologi-kemen-esdm-temukan-indikasi-likuifaksi-kategori-rendah-usai-gempa-flores-magnitudo-77"
+      }
+    ]
+  },
+  "emergency_status": {
+    "status_label": "Formal disaster emergency-response status declarations, reported 16 August 2026",
+    "provincial": {
+      "region": "East Nusa Tenggara (NTT) Province",
+      "status": "Decree in process (not yet confirmed issued)",
+      "planned_duration_days": 14,
+      "note": "BNPB reported the provincial government was processing a decree for a 14-day tanggap darurat (emergency response) status as of the 16 August update. BNPB's Head had separately urged local governments to declare emergency status to speed up bureaucratic access, unified command, and emergency-fund use."
+    },
+    "regency_level": [
+      {
+        "region": "Manggarai Regency",
+        "status": "Declared",
+        "decree_number": "300.2.2/130/VIII/2026",
+        "duration": "90 days, 15 August – 13 November 2026",
+        "issued_by": "Regent (Bupati) of Manggarai, Herybertus G. L. Nabit",
+        "field_hospitals": [
+          "RSUD Ruteng (temporary tents)",
+          "RS Pratama Reo (temporary tents)",
+          "RS Santo Rafael Cancar (temporary tents)"
+        ]
+      }
+    ],
+    "other_regencies_note": "BNPB stated several other NTT regencies were also in the process of declaring emergency-response status; this SitRep only has confirmed decree details for Manggarai.",
+    "sources": [
+      {
+        "agency": "Kompas.com",
+        "title": "NTT Berstatus Tanggap Darurat Bencana Pascagempa M 7,7",
+        "url": "https://nasional.kompas.com/read/2026/08/16/08584861/ntt-berstatus-tanggap-darurat-bencana-pascagempa-m-77"
+      },
+      {
+        "agency": "Tribunnews / Pos Kupang",
+        "title": "Pasca-Gempa di NTT, Bupati Manggarai Tetapkan Status Bencana, Akses Jalan dan RS Jadi Perhatian",
+        "url": "https://www.tribunnews.com/regional/7869059/pasca-gempa-di-ntt-bupati-manggarai-tetapkan-status-bencana-akses-jalan-dan-rs-jadi-perhatian"
+      },
+      {
+        "agency": "IDN Times",
+        "title": "BNPB Desak Status Darurat",
+        "url": "https://www.idntimes.com/news/indonesia/top-5-korban-meninggal-gempa-ntt-sentuh-47-jiwa-bnpb-desak-status-darurat-00-rygnv-vlv81w"
+      }
+    ]
+  },
+  "bpbd_reports": {
+    "status_label": "Regional disaster management agency (BPBD) statements, 15–16 August 2026",
+    "bpbd_ntt": {
+      "spokesperson": "Mahadin Sibarani, Kepala Pelaksana (Head of Operations), BPBD NTT",
+      "summary": "Confirmed early infrastructure damage across Flores, including public facilities, government offices, a campus and banking buildings; said casualty and damage figures were preliminary and still being verified together with district/city governments and other agencies.",
+      "source": {
+        "agency": "Pos Kupang / Tribunnews",
+        "title": "Gempa Flores, BPBD NTT Rinci Kerusakan Awal Pelabuhan Maumere Hingga Rumah Warga",
+        "url": "https://kupang.tribunnews.com/provinsi-ntt/975755/gempa-flores-bpbd-ntt-rinci-kerusakan-awal-pelabuhan-maumere-hingga-rumah-warga"
+      }
+    },
+    "bpbd_ntb": {
+      "spokesperson": "Sadimin, Kepala BPBD NTB (West Nusa Tenggara)",
+      "summary": "Documented building damage in neighbouring Bima City and Bima Regency (NTB) caused by shaking from the NTT earthquake. Full detail is in cross_province_impact.west_nusa_tenggara."
+    },
+    "bpbd_kota_bima": {
+      "summary": "Conducting its own field data collection and verification for Bima City."
+    },
+    "note": "As of this update, BPBD NTT's public statements corroborate the same event covered by BNPB and the Ministry of Health above, but no separate, independently reconciled BPBD NTT casualty/damage dataset has been published."
+  },
+  "cross_province_impact": {
+    "status_label": "Shaking and minor damage reported outside NTT province",
+    "west_nusa_tenggara": {
+      "locations": [
+        "Bima City",
+        "Bima Regency"
+      ],
+      "reported_by": "BPBD NTB",
+      "conditions": "Generally described by BPBD NTB as conducive / under control",
+      "damage": [
+        "One house with moderate damage in Kelurahan Rabangodu Selatan, Kecamatan Raba, Bima City",
+        "Wall damage at a Bulog (state food-logistics) warehouse, causing stored rice sacks to fall",
+        "Ceiling damage at the Mutmainnah Hotel mosque",
+        "Light cracking at the Lambitu district office, Bima Regency"
+      ],
+      "urgent_needs": [
+        "Ready-to-eat food",
+        "Bottled water",
+        "Blankets",
+        "Tarpaulins",
+        "Mattresses",
+        "Family kits"
+      ],
+      "source": {
+        "agency": "ANTARA News Mataram",
+        "title": "BPBD NTB mencatat sejumlah kerusakan bangunan akibat gempa NTT",
+        "url": "https://mataram.antaranews.com/berita/566180/bpbd-ntb-mencatat-sejumlah-kerusakan-bangunan-akibat-gempa-ntt"
+      }
+    },
+    "south_sulawesi": {
+      "locations": [
+        "Kepulauan Selayar Regency"
+      ],
+      "note": "Shaking and small tsunami observations were reported in this area. Neither BNPB's 00:00 WIB update nor this SitRep's sources detail structural damage here."
+    }
   }
 }
