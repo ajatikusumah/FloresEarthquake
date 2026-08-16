@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "updated_at": "2026-08-16T13:00:00+07:00",
+  "updated_at": "2026-08-16T15:00:00+07:00",
   "reports": [
     {
       "id": "kemenkes-sitrep-ntt-20260815",
@@ -158,8 +158,44 @@
       "language": "English",
       "url": "https://www.nbcnews.com/world/indonesia/earthquake-indonesia-rcna592638",
       "description": "AP wire coverage including comparison to the December 1992 Flores earthquake and tsunami (~2,500 deaths)."
+    },
+    {
+      "id": "bnpb-delapan-langkah-strategis",
+      "title": "Tangani Gempa M 7,7 Flores, Kepala BNPB Instruksikan Delapan Langkah Strategis Penanganan Darurat",
+      "publisher": "BNPB",
+      "date": "16 August 2026, 10:26 WIB",
+      "language": "Indonesian",
+      "url": "https://www.bnpb.go.id/berita/tangani-gempa-m-77-flores-kepala-bnpb-instruksikan-delapan-langkah-strategis-penanganan-darurat",
+      "description": "BNPB Head Letjen TNI Dr. Suharyanto's eight-point directive from a Manggarai Barat coordination meeting: emergency-status declarations, posko command structure (Labuan Bajo/Maumere), the Halim Perdanakusuma national logistics posko, Basarnas-led SAR, a 7-day basic-service restoration target, cross-agency air/sea assets, and daily 17:00 WITA media briefings. Primary source for this SitRep's response_coordination update."
+    },
+    {
+      "id": "antara-kemenkes-rsud-sepekan",
+      "title": "Kemenkes targetkan RSUD terdampak gempa NTT pulih dalam sepekan",
+      "publisher": "ANTARA News",
+      "date": "16 August 2026, 10:28 WIB",
+      "language": "Indonesian",
+      "url": "https://www.antaranews.com/berita/5696832/kemenkes-targetkan-rsud-terdampak-gempa-ntt-pulih-dalam-sepekan",
+      "description": "Kepala Pusat Krisis Kesehatan Kemenkes Agus Jamaludin on hospital and puskesmas recovery targets: RSUD basic services within a week (trauma, maternal-child, haemodialysis), a mobile hospital for RSUD Nagekeo, and damaged puskesmas resuming at least minimum operation (maternal health, childbirth, immunisation) within two weeks. Primary source for this SitRep's health.json recovery_targets update."
+    },
+    {
+      "id": "detikhealth-menkes-6-puskesmas",
+      "title": "Dampak Gempa NTT, Menkes: 6 Puskesmas dan 2 RS Rusak Berat",
+      "publisher": "detikHealth",
+      "date": "16 August 2026",
+      "language": "Indonesian",
+      "url": "https://health.detik.com/berita-detikhealth/d-8620609/dampak-gempa-ntt-menkes-6-puskesmas-dan-2-rs-rusak-berat",
+      "description": "Menteri Kesehatan Budi Gunadi Sadikin's verbal facility-damage estimate, retained separately from the Health Crisis Center's tabulated figures (see health.json's puskesmas_severe_damage_discrepancy)."
+    },
+    {
+      "id": "tribunnews-ngada-fasilitas-kesehatan",
+      "title": "14 Fasilitas Kesehatan di Kabupaten Ngada Terdampak Gempa NTT, Puskesmas Butuh Tenda Darurat",
+      "publisher": "Tribunnews / Pos Kupang",
+      "date": "16 August 2026, 11:48 WIB",
+      "language": "Indonesian",
+      "url": "https://www.tribunnews.com/regional/7869247/14-fasilitas-kesehatan-di-kabupaten-ngada-terdampak-gempa-ntt-puskesmas-butuh-tenda-darurat",
+      "description": "BPBD Ngada Pusdalops district-level detail: 14 health facilities affected (puskesmas, RSUD, posyandu), including Puskesmas Maronggela reported in need of an emergency tent."
     }
   ],
-  "report_number": 8,
-  "report_label": "Situation Report 08"
+  "report_number": 9,
+  "report_label": "Situation Report 09"
 }

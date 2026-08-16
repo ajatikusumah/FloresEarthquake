@@ -160,7 +160,8 @@
     "BMKG recorded 611 aftershocks by 02:00 WIB, 16 August, ranging from M1.9 to M6.2, with 16 above M5 and 30 felt by residents; activity was still concentrated in northern Flores and had not shown clear decay.",
     "PLN reported 88% of affected customers in Flores had power restored as of its early-morning 16 August briefing, with 58 of 59 feeders (98.3%) and all 11 affected primary substations back in operation.",
     "Badan Geologi (Ministry of Energy and Mineral Resources) reported a preliminary, low-confidence indication of liquefaction (sand boils) at Waekokak, Mbay, Nagekeo, assessed as low-to-moderate impact pending field verification.",
-    "Manggarai Regency has formally declared a 90-day disaster emergency-response status (15 August–13 November 2026); NTT province was processing a 14-day provincial emergency-response decree as of the 16 August update."
+    "Manggarai Regency has formally declared a 90-day disaster emergency-response status (15 August–13 November 2026); NTT province was processing a 14-day provincial emergency-response decree as of the 16 August update.",
+    "At a 16 August coordination meeting in Manggarai Barat, BNPB's Head set out an eight-point strategic directive: same-day emergency-status declarations for six priority regencies, a posko command structure split between Labuan Bajo (national) and Maumere (tactical), a national logistics posko at Halim Perdanakusuma, Basarnas-led SAR, a 7-day basic-service restoration target with parallel house-damage data collection, cross-agency air/sea logistics assets, and daily 17:00 WITA media briefings (see response_coordination)."
   ],
   "damage_reports": [
     "BNPB's 00:00 WIB, 16 August snapshot recorded 914 houses heavily damaged, 126 moderately damaged and 317 slightly damaged province-wide, up substantially from the 17:00 WIB, 15 August snapshot (157 / 41 / 148).",
@@ -281,6 +282,12 @@
       "title": "Magnitude 7.7 quake hits Indonesia, killing at least 47 — international context and USGS shaking-exposure estimate",
       "url": "https://www.aljazeera.com/news/2026/8/15/at-least-two-killed-as-magnitude-7-7-quake-hits-indonesia",
       "publication_date": "2026-08-15"
+    },
+    {
+      "agency": "BNPB",
+      "title": "Kepala BNPB's eight-point strategic directive for emergency response coordination",
+      "url": "https://www.bnpb.go.id/berita/tangani-gempa-m-77-flores-kepala-bnpb-instruksikan-delapan-langkah-strategis-penanganan-darurat",
+      "publication_date": "2026-08-16"
     }
   ],
   "source_reconciliation": {
@@ -411,7 +418,7 @@
         "decree_number_note": "Sources differ on the decree number: Pos Kupang/Tribunnews (15 Aug) cited 300.2.2/130/VIII/2026, while later reporting from Kompas, CNN Indonesia and Viva (16 Aug morning, all citing BNPB's Berton SP Panjaitan) cited 'Keputusan Bupati No. 319 Tahun 2026'. Both are shown as reported; this SitRep does not assume which is correct or whether they refer to the same decree."
       }
     ],
-    "other_regencies_note": "BNPB stated several other NTT regencies were also in the process of declaring emergency-response status; this SitRep only has confirmed decree details for Manggarai.",
+    "other_regencies_note": "At a 16 August coordination meeting, BNPB's Head named six regencies \u2014 Manggarai, East Manggarai, Ngada, Ende, Nagekeo and Sikka \u2014 plus NTT Province, and urged them to issue emergency-status decrees that same day, stating the legal status is required before BNPB and other agencies can channel budget and technical support at full capacity (see response_coordination, step 1). This SitRep only has confirmed decree details for Manggarai; other regencies' decree status remains unconfirmed.",
     "sources": [
       {
         "agency": "Kompas.com",
@@ -486,7 +493,69 @@
       "note": "Shaking and small tsunami observations were reported in this area. Neither BNPB's 00:00 WIB update nor this SitRep's sources detail structural damage here."
     }
   },
-  "report_number": 8,
-  "report_label": "Situation Report 08",
-  "compiled_note": "This SitRep was compiled 16 August 2026, 12:30 WIB. The underlying casualty and damage figures below still reflect BNPB's 00:00 WIB, 16 August cut-off (the latest verified official figures at compile time); seismic and a few other fields have been refreshed further where a clearly newer, well-corroborated official figure was found."
+  "response_coordination": {
+    "status_label": "BNPB Head's eight-point strategic directive for emergency response, issued 16 August 2026 at a coordination meeting with ministries/agencies and local government",
+    "source": {
+      "agency": "BNPB",
+      "title": "Tangani Gempa M 7,7 Flores, Kepala BNPB Instruksikan Delapan Langkah Strategis Penanganan Darurat",
+      "url": "https://www.bnpb.go.id/berita/tangani-gempa-m-77-flores-kepala-bnpb-instruksikan-delapan-langkah-strategis-penanganan-darurat",
+      "publication_time": "2026-08-16T10:26:00+07:00",
+      "spokesperson": "Letjen TNI Dr. Suharyanto, S.Sos., M.M., Head of BNPB",
+      "venue": "Coordination meeting, Manggarai Barat Regent's Office, Labuan Bajo, NTT"
+    },
+    "priority_regencies": ["Manggarai Regency", "East Manggarai Regency", "Ngada Regency", "Ende Regency", "Nagekeo Regency", "Sikka Regency"],
+    "priority_regencies_note": "BNPB's Head named these six regencies (plus NTT Province) as the focus for immediate emergency-status declaration. West Manggarai and East Flores were not named in this list, though both are part of this SitRep's eight-regency affected area elsewhere.",
+    "posko_structure": {
+      "national_posko": {
+        "location": "Labuan Bajo",
+        "coverage": "Western Flores",
+        "note": "Commanded directly by BNPB's Head; described as the Main National Assistance Posko (Posko Utama Pendampingan Nasional)."
+      },
+      "tactical_posko": {
+        "location": "Maumere",
+        "coverage": "Sikka, Nagekeo and Ngada Regencies (eastern Flores)"
+      },
+      "national_logistics_posko": {
+        "location": "Halim Perdanakusuma air base, Jakarta",
+        "role": "Central receiving point for assistance from ministries, agencies, state-owned enterprises, the private sector and the public, dispatched onward by air to Labuan Bajo and Maumere.",
+        "cross_reference": "See response_logistics above for package/tonnage figures staged at Halim as of the 15 August update."
+      },
+      "regency_provincial_posko": "BNPB's Head instructed rapid formation of regency/city and provincial posko, with TNI and Polri unit commanders serving as field commanders under one integrated command."
+    },
+    "sar_command": "Joint SAR teams (TNI, Polri, volunteers) placed under Basarnas' direct command until no trapped or missing victims remain \u2014 consistent with the sar section of sector-impact.json.",
+    "restoration_target": {
+      "services": ["Electricity", "Clean water", "Fuel", "Communications"],
+      "target_days": 7,
+      "scope_note": "Described by BNPB's Head as limited/normal function within 7 days, not full restoration.",
+      "parallel_instruction": "House-damage data collection is to proceed in parallel rather than waiting for the emergency-response period to end, so temporary-shelter (Huntara) or repair-scheme decisions can be made as soon as figures are confirmed."
+    },
+    "assets_deployed": {
+      "tni": "4 helicopters plus naval vessels",
+      "basarnas": "Ships and aircraft",
+      "bnpb": "2 wide-body aircraft plus 1 helicopter",
+      "focus": "Reaching isolated areas to deliver food, blankets and tents.",
+      "as_of": "16 August 2026, per this coordination briefing"
+    },
+    "media_center": {
+      "status": "Operating from 16 August 2026",
+      "briefing_schedule": "Daily press briefing at 17:00 WITA",
+      "purpose": "Transparent day-to-day data updates intended to reduce misinformation."
+    },
+    "steps": [
+      { "number": 1, "title": "Accelerate formal emergency-status declarations", "detail": "Urged the six priority regencies and NTT Province to issue tanggap darurat status decrees the same day, stating this legal status is required before BNPB, the Ministry of Public Works and other agencies can channel budget and technical support at full capacity." },
+      { "number": 2, "title": "Stand up unified command posts (posko)", "detail": "Regency/city and provincial posko to be formed rapidly, commanded by TNI and Polri unit commanders so evacuee management and logistics distribution run under one integrated command." },
+      { "number": 3, "title": "National and tactical posko locations", "detail": "A Main National Assistance Posko in Labuan Bajo (western Flores), commanded directly by BNPB's Head, and a Tactical Posko in Maumere (Sikka, Nagekeo, Ngada)." },
+      { "number": 4, "title": "National logistics posko at Halim Perdanakusuma", "detail": "Centralised posko at Halim Perdanakusuma air base, Jakarta, receiving assistance from ministries, agencies, SOEs, the private sector and the public, then routing it by air to Labuan Bajo and Maumere." },
+      { "number": 5, "title": "Basarnas-led search and rescue", "detail": "Joint teams under Basarnas' direct command, with TNI, Polri and volunteers integrated under the Basarnas Head's leadership, continue SAR until no trapped or missing victims remain." },
+      { "number": 6, "title": "7-day basic-service restoration target; parallel damage-data collection", "detail": "Target of limited normal function for electricity, clean water, fuel and communications within 7 days. House-damage data collection is to proceed in parallel, without waiting for the emergency-response period to end, so Huntara/repair planning can begin as soon as figures are confirmed." },
+      { "number": 7, "title": "Cross-agency air and sea assets for isolated areas", "detail": "TNI (4 helicopters plus ships), Basarnas (ships and aircraft) and BNPB (2 wide-body aircraft plus 1 helicopter) focused on reaching isolated areas with food, blankets and tents." },
+      { "number": 8, "title": "Daily official Media Center briefings", "detail": "An official Media Center began operating 16 August with daily press briefings at 17:00 WITA, intended to give transparent day-to-day updates and reduce misinformation." }
+    ],
+    "scope_note": "This directive sets out national command-and-logistics coordination structure. It does not itself set out sector-specific recovery plans (e.g. for health facilities); see health.json's recovery_targets for Kemenkes' separately reported hospital and puskesmas restoration targets."
+  },
+  "report_number": 9,
+  "report_label": "Situation Report 09",
+  "generated_at": "2026-08-16T15:00:00+07:00",
+  "generated_display": "16 Aug 2026 \u00b7 15:00 WIB / 16:00 WITA",
+  "compiled_note": "This SitRep was compiled 16 August 2026, 12:30 WIB, and updated 16 August 2026, 15:00 WIB to add BNPB's eight-point national coordination directive (response_coordination) and Kemenkes' hospital/puskesmas recovery targets (see health.json's recovery_targets). The underlying casualty and damage figures below still reflect BNPB's 00:00 WIB, 16 August cut-off (the latest verified official figures at compile time); seismic and a few other fields have been refreshed further where a clearly newer, well-corroborated official figure was found."
 }

@@ -262,6 +262,56 @@
       if (crossProvince?.west_nusa_tenggara?.damage && ntbList) {
         renderList("cross-province-ntb-list", crossProvince.west_nusa_tenggara.damage);
       }
+
+      const responseCoordination = data.response_coordination;
+      if (responseCoordination) {
+        setText(
+          "response-coordination-priority-regencies",
+          String((responseCoordination.priority_regencies || []).length || "\u2014")
+        );
+        if (responseCoordination.restoration_target?.target_days !== undefined) {
+          setText("response-coordination-restoration-days", `${responseCoordination.restoration_target.target_days} days`);
+        }
+        const briefingSchedule = responseCoordination.media_center?.briefing_schedule || "";
+        const briefingTimeMatch = briefingSchedule.match(/\d{1,2}:\d{2}\s*WITA/);
+        if (briefingTimeMatch) setText("response-coordination-briefing-time", briefingTimeMatch[0]);
+
+        const posko = responseCoordination.posko_structure || {};
+        const poskoRows = [
+          posko.national_posko && { label: `National posko \u2014 ${posko.national_posko.location}`, status: posko.national_posko.coverage },
+          posko.tactical_posko && { label: `Tactical posko \u2014 ${posko.tactical_posko.location}`, status: posko.tactical_posko.coverage },
+          posko.national_logistics_posko && { label: `National logistics posko \u2014 ${posko.national_logistics_posko.location}`, status: "Central receiving point, routed by air" },
+          posko.regency_provincial_posko && { label: "Regency/provincial posko", status: "TNI\u2013Polri unit commanders as field commanders" }
+        ].filter(Boolean);
+        const poskoList = byId("response-coordination-posko-list");
+        if (poskoList && poskoRows.length) poskoList.replaceChildren(...poskoRows.map(createSectorStatusRow));
+
+        const assets = responseCoordination.assets_deployed || {};
+        const assetRows = [
+          assets.tni && { label: "TNI", status: assets.tni },
+          assets.basarnas && { label: "Basarnas", status: assets.basarnas },
+          assets.bnpb && { label: "BNPB", status: assets.bnpb }
+        ].filter(Boolean);
+        const assetsList = byId("response-coordination-assets-list");
+        if (assetsList && assetRows.length) assetsList.replaceChildren(...assetRows.map(createSectorStatusRow));
+
+        if (responseCoordination.restoration_target?.parallel_instruction) {
+          setText("response-coordination-restoration-note", responseCoordination.restoration_target.parallel_instruction);
+        }
+
+        const stepsContainer = byId("response-coordination-steps");
+        if (stepsContainer && Array.isArray(responseCoordination.steps)) {
+          stepsContainer.replaceChildren(
+            ...responseCoordination.steps.map((step) =>
+              createSectorImpactItem({
+                sector: `${step.number}. ${step.title}`,
+                status: step.detail,
+                confidence: "BNPB coordination directive"
+              })
+            )
+          );
+        }
+      }
     } catch (error) {
       console.error(error);
       setText("impact-validation-status", "Static fallback data shown");
@@ -487,6 +537,53 @@
         logistics.replaceChildren(
           ...data.planned_logistics.items.map(createSectorStatusRow)
         );
+      }
+
+      const recovery = data.recovery_targets;
+      if (recovery) {
+        const hospital = recovery.hospital_restoration || {};
+        const hospitalRows = [
+          hospital.target_days !== undefined && {
+            label: "RSUD basic-service target",
+            status: `${hospital.target_days} days \u2014 ${(hospital.focus_services || []).join(", ")}`
+          },
+          hospital.rsud_nagekeo && { label: "RSUD Nagekeo (worst-hit)", status: "Mobile hospital + OR unit dispatched" },
+          Array.isArray(hospital.referral_hospitals_for_nagekeo) && hospital.referral_hospitals_for_nagekeo.length && {
+            label: "Nagekeo referral hospitals",
+            status: hospital.referral_hospitals_for_nagekeo.join(", ")
+          }
+        ].filter(Boolean);
+        const hospitalList = byId("health-recovery-hospital-list");
+        if (hospitalList && hospitalRows.length) hospitalList.replaceChildren(...hospitalRows.map(createSectorStatusRow));
+
+        const puskesmasTarget = recovery.puskesmas_restoration || {};
+        const puskesmasRows = [
+          puskesmasTarget.target_days !== undefined && { label: "Puskesmas minimum-operation target", status: `${puskesmasTarget.target_days} days` },
+          Array.isArray(puskesmasTarget.focus_services) && puskesmasTarget.focus_services.length && {
+            label: "Puskesmas priority services",
+            status: puskesmasTarget.focus_services.join(", ")
+          }
+        ].filter(Boolean);
+        const puskesmasList = byId("health-recovery-puskesmas-list");
+        if (puskesmasList && puskesmasRows.length) puskesmasList.replaceChildren(...puskesmasRows.map(createSectorStatusRow));
+
+        const recoverySources = Array.isArray(recovery.sources)
+          ? recovery.sources.map((source) => source.spokesperson || source.agency).filter(Boolean)
+          : [];
+        if (recoverySources.length) setText("health-recovery-source-note", recoverySources.join(" \u00b7 "));
+
+        if (recovery.heoc_status?.formation) {
+          setText("health-recovery-heoc-formation", recovery.heoc_status.formation);
+        }
+        const heocRows = [
+          recovery.heoc_status?.structure_status && { label: "HEOC command structure", status: recovery.heoc_status.structure_status },
+          recovery.heoc_status?.needs_mapping_promised_by && {
+            label: "Detailed needs map",
+            status: `Promised by ${recovery.heoc_status.needs_mapping_promised_by}`
+          }
+        ].filter(Boolean);
+        const heocList = byId("health-recovery-heoc-list");
+        if (heocList && heocRows.length) heocList.replaceChildren(...heocRows.map(createSectorStatusRow));
       }
 
       renderList("health-data-quality-list", data.data_quality_notes);
