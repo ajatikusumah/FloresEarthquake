@@ -146,6 +146,18 @@
   const loadImpactData = async () => {
     try {
       const data = await fetchJson(IMPACT_URL);
+
+      if (data.report_number !== undefined) {
+        const label = `Situation Report ${String(data.report_number).padStart(2, "0")}`;
+        setText("topbar-report-number", label);
+        document.title = document.title.replace(/Situation Report \d+/, label);
+      }
+      const generatedTime = byId("topbar-generated-time");
+      if (generatedTime && data.generated_display) {
+        generatedTime.textContent = `Generated: ${data.generated_display}`;
+        if (data.generated_at) generatedTime.setAttribute("datetime", data.generated_at);
+      }
+
       setText(
         "impact-casualties",
         `${data.casualties?.deaths ?? "—"} | ${data.casualties?.injured ?? "—"}`

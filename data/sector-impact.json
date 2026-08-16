@@ -1,8 +1,8 @@
 {
   "schema_version": 6,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "generated_at": "2026-08-16T12:30:00+07:00",
-  "generated_display": "16 Aug 2026 · 12:30 WIB / 13:30 WITA",
+  "generated_at": "2026-08-16T13:00:00+07:00",
+  "generated_display": "16 Aug 2026 · 13:00 WIB / 14:00 WITA",
   "sar": {
     "status_label": "SAR operations and field reconciliation ongoing",
     "forwarded_sitrep": {
@@ -226,5 +226,5 @@
     "disclaimer": "Figures in this section come from an NGO field update, not a government source, and are shown separately from BNPB/Ministry of Health figures rather than combined with them."
   },
   "report_number": 8,
-  "report_label": "Situation Report No. 8"
+  "report_label": "Situation Report 08"
 }

@@ -181,8 +181,8 @@
     "Official monetary damage-and-loss estimate, and a reconciled district-by-district road/bridge damage list from the Ministry of Public Works (Kementerian PU)."
   ],
   "disclaimer": "BNPB's 18:48 WIB update is used for the consolidated death headline and its 17:00 WIB update for general damage. Ministry of Health figures are retained for injuries and detailed health-sector status, with the source's unstated cut-off shown explicitly. All figures remain preliminary and subject to reconciliation.",
-  "generated_at": "2026-08-16T12:30:00+07:00",
-  "generated_display": "16 Aug 2026 · 12:30 WIB / 13:30 WITA",
+  "generated_at": "2026-08-16T13:00:00+07:00",
+  "generated_display": "16 Aug 2026 · 13:00 WIB / 14:00 WITA",
   "seismic_monitoring": {
     "source": {
       "agency": "BMKG",
@@ -487,6 +487,6 @@
     }
   },
   "report_number": 8,
-  "report_label": "Situation Report No. 8",
+  "report_label": "Situation Report 08",
   "compiled_note": "This SitRep was compiled 16 August 2026, 12:30 WIB. The underlying casualty and damage figures below still reflect BNPB's 00:00 WIB, 16 August cut-off (the latest verified official figures at compile time); seismic and a few other fields have been refreshed further where a clearly newer, well-corroborated official figure was found."
 }

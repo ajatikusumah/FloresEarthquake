@@ -359,8 +359,8 @@
     "Several figures in the 16 August V1 report's per-district table carry an asterisk in the source document with no visible footnote legend in the pages reviewed; this SitRep reproduces the numeric values without being able to confirm what the asterisk denotes."
   ],
   "disclaimer": "Ministry of Health figures remain the primary source for detailed health-sector status. BNPB's separate count of 18 affected health facilities at 17:00 WIB is retained for comparison and is not combined with the Ministry of Health's 77 structurally damaged facilities. All figures remain preliminary.",
-  "generated_at": "2026-08-16T12:30:00+07:00",
-  "generated_display": "16 Aug 2026 · 12:30 WIB / 13:30 WITA",
+  "generated_at": "2026-08-16T13:00:00+07:00",
+  "generated_display": "16 Aug 2026 · 13:00 WIB / 14:00 WITA",
   "cross_source_comparison": {
     "bnpb": {
       "source_url": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia",
@@ -377,7 +377,7 @@
     "interpretation": "Do not subtract or combine the figures. BNPB reports affected health facilities, while the Ministry of Health reports facilities classified with structural damage; definitions, source tables and cut-offs may differ."
   },
   "report_number": 8,
-  "report_label": "Situation Report No. 8",
+  "report_label": "Situation Report 08",
   "source_document": "Kemenkes SITUATION REPORT V1 — Penanganan Bencana Gempa Bumi dan Tsunami di Nusa Tenggara Timur",
   "hospitals_by_district": [
     {
