@@ -189,6 +189,12 @@
           `M${range.minimum}\u2013M${range.maximum}${extraText}; ${seismic.trend_note || "sequence ongoing"}`
         );
       }
+      if (seismic.bnpb_briefing_aftershock_count?.count !== undefined) {
+        setText(
+          "aftershock-bnpb-note",
+          `BNPB's own 00:00 WIB briefing separately cited ${seismic.bnpb_briefing_aftershock_count.count} aftershocks \u2014 lower than BMKG's technical count above; both are shown rather than reconciled.`
+        );
+      }
 
       const emergencyStatus = data.emergency_status;
       const emergencyList = byId("emergency-status-list");

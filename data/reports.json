@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "updated_at": "2026-08-16T10:15:00+07:00",
+  "updated_at": "2026-08-16T12:30:00+07:00",
   "reports": [
     {
       "id": "kemenkes-sitrep-ntt-20260815",
@@ -46,6 +46,21 @@
       "size_bytes": 362506,
       "file": "reports/SCIDN_Flores_Earthquake_External_Update_20260815.pdf",
       "description": "Child-focused response update: reports over 8,000 children affected by disrupted education and heightened protection risks; sets the earthquake against compounding hazards (El Nino-influenced drought, Mount Lewotobi eruption activity); outlines SCIDN's priority response sectors (child protection, education in emergencies, health and nutrition, MHPSS, WASH) and its partnership with local implementer CIS Timor.",
+      "status": "Archived official source document — web-optimised copy"
+    },
+    {
+      "id": "kemenkes-sitrep-v1-ntt-20260816",
+      "title": "Situation Report V1: Penanganan Bencana Gempa Bumi dan Tsunami di NTT",
+      "subtitle": "Kemenkes Situation Report V1 — 16 August 2026, 07:30 WIB",
+      "publisher": "Ministry of Health — Health Crisis Center",
+      "date": "16 August 2026",
+      "cutoff": "07:30 WIB",
+      "language": "Indonesian",
+      "pages": 24,
+      "format": "PDF",
+      "size_bytes": 3199601,
+      "file": "reports/Kemenkes_SitRep_V1_NTT_20260816_0730WIB.pdf",
+      "description": "Updated official health-sector situation report: revised injury totals, full district-level hospital and puskesmas operational/structural status, district-level existing health workforce, province-wide health-system baseline, reserve/standby workforce mobilised, professional-association surgical support (PABI, PABOI), a two-source dated logistics dispatch plan, and field photographs of damaged facilities including RSUD Aeramo and RSUD Ruteng.",
       "status": "Archived official source document — web-optimised copy"
     }
   ],
@@ -144,5 +159,7 @@
       "url": "https://www.nbcnews.com/world/indonesia/earthquake-indonesia-rcna592638",
       "description": "AP wire coverage including comparison to the December 1992 Flores earthquake and tsunami (~2,500 deaths)."
     }
-  ]
+  ],
+  "report_number": 8,
+  "report_label": "Situation Report No. 8"
 }

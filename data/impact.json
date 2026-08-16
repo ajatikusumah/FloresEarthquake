@@ -146,6 +146,10 @@
       "health_facilities_affected_bnpb": 18,
       "places_of_worship_affected": 5,
       "government_offices_affected": 6
+    },
+    "total_houses_damaged_check": {
+      "computed_total": 1357,
+      "note": "914+126+317=1,357, matching the total independently reported in Kompas.com's '1.357 Rumah Rusak' headline (16 Aug morning) — a useful cross-check that the province-wide snapshot figures are being reported consistently across outlets."
     }
   },
   "confirmed": [
@@ -177,8 +181,8 @@
     "Official monetary damage-and-loss estimate, and a reconciled district-by-district road/bridge damage list from the Ministry of Public Works (Kementerian PU)."
   ],
   "disclaimer": "BNPB's 18:48 WIB update is used for the consolidated death headline and its 17:00 WIB update for general damage. Ministry of Health figures are retained for injuries and detailed health-sector status, with the source's unstated cut-off shown explicitly. All figures remain preliminary and subject to reconciliation.",
-  "generated_at": "2026-08-16T00:04:55+07:00",
-  "generated_display": "16 Aug 2026 · 00:04 WIB / 01:04 WITA",
+  "generated_at": "2026-08-16T12:30:00+07:00",
+  "generated_display": "16 Aug 2026 · 12:30 WIB / 13:30 WITA",
   "seismic_monitoring": {
     "source": {
       "agency": "BMKG",
@@ -206,11 +210,17 @@
       }
     },
     "latest_m5plus_observed": {
-      "time_display": "15 Aug 2026 · 19:14:41 WIB / 20:14:41 WITA",
-      "magnitude": 5.1,
+      "time_display": "16 Aug 2026 · 06:12:54 WIB / 07:12:54 WITA",
+      "magnitude": 5.2,
       "depth_km": 10,
-      "location": "47 km northwest of Mbay, Nagekeo, NTT",
-      "source_url": "https://www.bmkg.go.id/gempabumi"
+      "location": "84 km northeast of Ruteng, Manggarai, NTT",
+      "tsunami_statement": "Not tsunami-generating",
+      "source_url": "https://www.cnbcindonesia.com/news/20260816070252-4-759744/ntt-diserbu-gempa-susulan-m52-mengguncang-pagi-ini"
+    },
+    "bnpb_briefing_aftershock_count": {
+      "count": 341,
+      "source": "BNPB (Berton SP Panjaitan), same 00:00 WIB, 16 August briefing used elsewhere in this SitRep",
+      "note": "BNPB's own press statement cited 341 aftershocks, lower than BMKG's technical count of 611 by 02:00 WIB. Both figures are retained rather than reconciled, consistent with this SitRep's general approach to cross-agency discrepancies."
     }
   },
   "tsunami_monitoring": {
@@ -397,7 +407,8 @@
           "RSUD Ruteng (temporary tents)",
           "RS Pratama Reo (temporary tents)",
           "RS Santo Rafael Cancar (temporary tents)"
-        ]
+        ],
+        "decree_number_note": "Sources differ on the decree number: Pos Kupang/Tribunnews (15 Aug) cited 300.2.2/130/VIII/2026, while later reporting from Kompas, CNN Indonesia and Viva (16 Aug morning, all citing BNPB's Berton SP Panjaitan) cited 'Keputusan Bupati No. 319 Tahun 2026'. Both are shown as reported; this SitRep does not assume which is correct or whether they refer to the same decree."
       }
     ],
     "other_regencies_note": "BNPB stated several other NTT regencies were also in the process of declaring emergency-response status; this SitRep only has confirmed decree details for Manggarai.",
@@ -474,5 +485,8 @@
       ],
       "note": "Shaking and small tsunami observations were reported in this area. Neither BNPB's 00:00 WIB update nor this SitRep's sources detail structural damage here."
     }
-  }
+  },
+  "report_number": 8,
+  "report_label": "Situation Report No. 8",
+  "compiled_note": "This SitRep was compiled 16 August 2026, 12:30 WIB. The underlying casualty and damage figures below still reflect BNPB's 00:00 WIB, 16 August cut-off (the latest verified official figures at compile time); seismic and a few other fields have been refreshed further where a clearly newer, well-corroborated official figure was found."
 }

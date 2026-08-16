@@ -1,52 +1,58 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
-  "status_label": "Official Ministry of Health situation report dated 15 August 2026",
-  "updated_at": "2026-08-15",
-  "updated_display": "15 Aug 2026 · source report does not state a cut-off time",
+  "status_label": "Official Ministry of Health situation report, V1, dated 16 August 2026, 07:30 WIB",
+  "updated_at": "2026-08-16T07:30:00+07:00",
+  "updated_display": "16 Aug 2026 · 07:30 WIB / 08:30 WITA",
   "headline": {
     "affected_population": 2196745,
     "districts_affected": 8,
     "health_facilities_damaged": 77,
     "hospitals_damaged": 9,
     "puskesmas_damaged": 68,
-    "injured_serious": 36,
-    "injured_minor": 77,
-    "post_disaster_disease_events_reported": null
+    "injured_serious": 104,
+    "injured_minor": 50,
+    "post_disaster_disease_events_reported": null,
+    "injured_total_v1_20260816": 154,
+    "injury_figures_note": "The 16 August, 07:30 WIB Kemenkes report states (on its summary slide) Luka Ringan/Rawat Jalan (minor/outpatient) = 50 and Luka Berat/Rawat Inap (serious/inpatient) = 104. Its per-district table is headed 'MD LB LR PGS' but the column that sums to 50 appears where 'LB' is labelled and the column summing to 104 appears where 'LR' is labelled — the reverse pairing from the summary slide. This SitRep follows the summary slide's explicit labels (minor=50, serious=104) for headline figures, and flags this apparent table/label mismatch in the source document rather than silently resolving it. This report's totals (154 injured) also differ from the same day's BNPB figure (101 injured) and the previous 15 August Kemenkes report (113 injured, 36 serious/77 minor) — all three are preserved rather than combined."
   },
   "districts": [
     {
       "name": "Sikka Regency",
       "affected_population": 345319,
       "deaths": 3,
-      "injured_serious": 0,
-      "injured_minor": 6,
-      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+      "injured_serious": 15,
+      "injured_minor": 3,
+      "note_on_column_reading": "Per this SitRep's reading of the source table — see headline.injury_figures_note for the labelling ambiguity.",
+      "notes": "Several subdistrict roads disrupted; power outages in several subdistricts."
     },
     {
       "name": "Ende Regency",
       "affected_population": 284165,
       "deaths": 1,
-      "injured_serious": 0,
-      "injured_minor": 11,
-      "notes": "Ende–Bajawa and Ende–Maumere transport access disrupted; power outages reported."
+      "injured_serious": 15,
+      "injured_minor": 4,
+      "note_on_column_reading": "Per this SitRep's reading of the source table — see headline.injury_figures_note for the labelling ambiguity.",
+      "notes": "Ende-Bajawa and trans Ende-Maumere road access cut off; power outages in several subdistricts."
     },
     {
       "name": "East Manggarai Regency",
       "affected_population": 301525,
       "deaths": 17,
-      "injured_serious": 1,
-      "injured_minor": 18,
-      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+      "injured_serious": 18,
+      "injured_minor": 1,
+      "note_on_column_reading": "Per this SitRep's reading of the source table — see headline.injury_figures_note for the labelling ambiguity.",
+      "notes": "Several subdistrict roads disrupted; power outages in several subdistricts."
     },
     {
       "name": "Nagekeo Regency",
       "affected_population": 170669,
       "deaths": 1,
-      "injured_serious": 1,
-      "injured_minor": 14,
-      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+      "injured_serious": 18,
+      "injured_minor": 4,
+      "note_on_column_reading": "Per this SitRep's reading of the source table — see headline.injury_figures_note for the labelling ambiguity.",
+      "notes": "Several subdistrict roads disrupted; power outages in several subdistricts."
     },
     {
       "name": "West Manggarai Regency",
@@ -54,22 +60,25 @@
       "deaths": 2,
       "injured_serious": 9,
       "injured_minor": 9,
-      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+      "note_on_column_reading": "Per this SitRep's reading of the source table — see headline.injury_figures_note for the labelling ambiguity.",
+      "notes": "Several subdistrict roads disrupted; power outages in several subdistricts."
     },
     {
       "name": "Manggarai Regency",
       "affected_population": 340153,
       "deaths": 21,
-      "injured_serious": 23,
-      "injured_minor": 16,
-      "notes": "Several subdistrict roads disrupted; power outages reported in several subdistricts."
+      "injured_serious": 26,
+      "injured_minor": 27,
+      "note_on_column_reading": "Per this SitRep's reading of the source table — see headline.injury_figures_note for the labelling ambiguity.",
+      "notes": "Several subdistrict roads disrupted; power outages in several subdistricts."
     },
     {
       "name": "Ngada Regency",
       "affected_population": 176462,
       "deaths": 1,
-      "injured_serious": 2,
-      "injured_minor": 3,
+      "injured_serious": 3,
+      "injured_minor": 2,
+      "note_on_column_reading": "Per this SitRep's reading of the source table — see headline.injury_figures_note for the labelling ambiguity.",
       "notes": "Health logistics reported sufficient for the next five days."
     },
     {
@@ -78,18 +87,19 @@
       "deaths": 0,
       "injured_serious": 0,
       "injured_minor": 0,
+      "note_on_column_reading": "Per this SitRep's reading of the source table — see headline.injury_figures_note for the labelling ambiguity.",
       "notes": "No casualty report was available in the source table."
     }
   ],
   "district_impact_summary": [
-    "Sikka: 345,319 people affected; 3 deaths; 0 serious injuries; 6 minor injuries.",
-    "Ende: 284,165 people affected; 1 death; 0 serious injuries; 11 minor injuries.",
-    "East Manggarai: 301,525 people affected; 17 deaths; 1 serious injury; 18 minor injuries.",
-    "Nagekeo: 170,669 people affected; 1 death; 1 serious injury; 14 minor injuries.",
-    "West Manggarai: 281,692 people affected; 2 deaths; 9 serious injuries; 9 minor injuries.",
-    "Manggarai: 340,153 people affected; 21 deaths; 23 serious injuries; 16 minor injuries.",
-    "Ngada: 176,462 people affected; 1 death; 2 serious injuries; 3 minor injuries.",
-    "East Flores: 296,760 people affected; no casualty report available."
+    "Sikka: 345,319 people affected; 3 deaths; 15 seriously injured/hospitalised; 3 minor/outpatient injuries (per this SitRep's column reading).",
+    "Ende: 284,165 people affected; 1 death; 15 seriously injured/hospitalised; 4 minor/outpatient injuries; Ende-Bajawa and trans Ende-Maumere roads cut off.",
+    "East Manggarai: 301,525 people affected; 17 deaths; 18 seriously injured/hospitalised; 1 minor/outpatient injury.",
+    "Nagekeo: 170,669 people affected; 1 death; 18 seriously injured/hospitalised; 4 minor/outpatient injuries.",
+    "West Manggarai: 281,692 people affected; 2 deaths; 9 seriously injured/hospitalised; 9 minor/outpatient injuries.",
+    "Manggarai: 340,153 people affected; 21 deaths; 26 seriously injured/hospitalised; 27 minor/outpatient injuries.",
+    "Ngada: 176,462 people affected; 1 death; 3 seriously injured/hospitalised; 2 minor/outpatient injuries; logistics sufficient for 5 days.",
+    "East Flores: 296,760 people affected; no casualty report available in the source table."
   ],
   "facility_summary": {
     "hospitals": {
@@ -112,7 +122,8 @@
       "moderate_damage": 37,
       "severe_damage": 20,
       "building_condition_unclassified": 6
-    }
+    },
+    "cross_check_note": "The 16 August, 07:30 WIB Kemenkes report's hospital and puskesmas aggregate totals below match the 15 August report exactly (21 hospitals / 190 puskesmas with identical operational and structural splits), and now come with full district-level detail (see hospitals_by_district and puskesmas_by_district)."
   },
   "facilities": [
     {
@@ -169,35 +180,113 @@
     "Medicines, medical consumables, emergency kits, health-post tents and oxygen concentrators prepared for dispatch."
   ],
   "planned_logistics": {
-    "dispatch_date": "16 August 2026",
-    "items": [
+    "dispatch_date": "15–16 August 2026",
+    "by_source": [
       {
-        "label": "Basic medicine packages",
-        "status": "8 packages"
+        "agency": "Pusat Krisis Kesehatan (Health Crisis Center)",
+        "dispatched_15_august": [
+          {
+            "label": "Emergency kits",
+            "status": "5 packages"
+          },
+          {
+            "label": "Surgical masks",
+            "status": "200,000 pieces"
+          },
+          {
+            "label": "Gloves",
+            "status": "20,000 pieces"
+          },
+          {
+            "label": "Tent",
+            "status": "1 unit"
+          }
+        ],
+        "dispatched_16_august": [
+          {
+            "label": "Field hospital tent, 12x6 m",
+            "status": "4 units"
+          },
+          {
+            "label": "Field hospital tent, 8x6 m",
+            "status": "3 units"
+          },
+          {
+            "label": "Field hospital tent, 4x6 m",
+            "status": "1 unit"
+          },
+          {
+            "label": "Operating-theatre tent",
+            "status": "2 units"
+          }
+        ]
       },
       {
-        "label": "Emergency kits",
+        "agency": "NTT Provincial Health Office (Dinas Kesehatan Prov. NTT)",
+        "dispatched_16_august": [
+          {
+            "label": "Basic medicine packages",
+            "status": "8 packages"
+          },
+          {
+            "label": "Emergency kits",
+            "status": "5 packages"
+          },
+          {
+            "label": "Sterile gloves",
+            "status": "1,000 pieces"
+          },
+          {
+            "label": "Non-sterile gloves",
+            "status": "20,000 pieces"
+          },
+          {
+            "label": "Medical surgical masks",
+            "status": "20,000 pieces"
+          },
+          {
+            "label": "Oxygen concentrators",
+            "status": "10 units"
+          },
+          {
+            "label": "Health-post tents",
+            "status": "2 units; 8 more on standby if a fixed Type-1 EMT is needed"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "label": "Pusat Krisis Kesehatan — Emergency kits (15 Aug)",
         "status": "5 packages"
       },
       {
-        "label": "Sterile gloves",
-        "status": "1,000 pieces"
+        "label": "Pusat Krisis Kesehatan — Surgical masks (15 Aug)",
+        "status": "200,000 pieces"
       },
       {
-        "label": "Non-sterile gloves",
+        "label": "Pusat Krisis Kesehatan — Gloves (15 Aug)",
         "status": "20,000 pieces"
       },
       {
-        "label": "Medical surgical masks",
-        "status": "20,000 pieces"
+        "label": "Pusat Krisis Kesehatan — Field hospital tents 12x6/8x6/4x6 (16 Aug)",
+        "status": "4 + 3 + 1 units"
       },
       {
-        "label": "Oxygen concentrators",
+        "label": "Pusat Krisis Kesehatan — Operating-theatre tents (16 Aug)",
+        "status": "2 units"
+      },
+      {
+        "label": "Dinkes NTT — Basic medicine packages (16 Aug)",
+        "status": "8 packages"
+      },
+      {
+        "label": "Dinkes NTT — Oxygen concentrators (16 Aug)",
         "status": "10 units"
       },
       {
-        "label": "Health-post tents",
-        "status": "2 units; 8 additional tents on standby for fixed Type 1 EMT needs"
+        "label": "Dinkes NTT — Health-post tents (16 Aug)",
+        "status": "2 units; 8 more on standby"
       }
     ]
   },
@@ -251,17 +340,27 @@
       "agency": "BNPB",
       "title": "18 affected health facilities at the 17:00 WIB damage cut-off",
       "url": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia"
+    },
+    {
+      "agency": "Ministry of Health — Health Crisis Center",
+      "title": "SITUATION REPORT V1: Penanganan Bencana Gempa Bumi dan Tsunami di Nusa Tenggara Timur",
+      "url": "reports/Kemenkes_SitRep_V1_NTT_20260816_0730WIB.pdf",
+      "format": "PDF",
+      "pages": 24,
+      "publication_time": "2026-08-16T07:30:00+07:00"
     }
   ],
   "data_quality_notes": [
     "The report gives a date but no specific data cut-off time.",
     "The puskesmas building-condition categories total 184, six fewer than the stated total of 190; these six are recorded as unclassified rather than assumed to be undamaged.",
     "A dash in a district casualty cell is treated as no casualty report in the source table, not automatically as a verified zero.",
-    "BNPB reported 18 affected health facilities at 17:00 WIB, while the Ministry of Health report lists structural damage at 77 facilities. These are shown separately because definitions and cut-offs differ."
+    "BNPB reported 18 affected health facilities at 17:00 WIB, while the Ministry of Health report lists structural damage at 77 facilities. These are shown separately because definitions and cut-offs differ.",
+    "The 16 August, 07:30 WIB Kemenkes V1 report's per-district injury table appears to have its 'LB' (serious) and 'LR' (minor) columns in the opposite order from the report's own summary-slide labels; see headline.injury_figures_note.",
+    "Several figures in the 16 August V1 report's per-district table carry an asterisk in the source document with no visible footnote legend in the pages reviewed; this SitRep reproduces the numeric values without being able to confirm what the asterisk denotes."
   ],
   "disclaimer": "Ministry of Health figures remain the primary source for detailed health-sector status. BNPB's separate count of 18 affected health facilities at 17:00 WIB is retained for comparison and is not combined with the Ministry of Health's 77 structurally damaged facilities. All figures remain preliminary.",
-  "generated_at": "2026-08-16T00:04:55+07:00",
-  "generated_display": "16 Aug 2026 · 00:04 WIB / 01:04 WITA",
+  "generated_at": "2026-08-16T12:30:00+07:00",
+  "generated_display": "16 Aug 2026 · 12:30 WIB / 13:30 WITA",
   "cross_source_comparison": {
     "bnpb": {
       "source_url": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia",
@@ -276,5 +375,283 @@
       "total_facilities_with_structural_damage": 77
     },
     "interpretation": "Do not subtract or combine the figures. BNPB reports affected health facilities, while the Ministry of Health reports facilities classified with structural damage; definitions, source tables and cut-offs may differ."
-  }
+  },
+  "report_number": 8,
+  "report_label": "Situation Report No. 8",
+  "source_document": "Kemenkes SITUATION REPORT V1 — Penanganan Bencana Gempa Bumi dan Tsunami di Nusa Tenggara Timur",
+  "hospitals_by_district": [
+    {
+      "district": "Sikka Regency",
+      "total": 3,
+      "operating_fully": 3,
+      "operating_partially": 0,
+      "not_operating": 0,
+      "no_damage": 2,
+      "minor_damage": 1,
+      "severe_damage": 0
+    },
+    {
+      "district": "East Manggarai Regency",
+      "total": 2,
+      "operating_fully": 2,
+      "operating_partially": 0,
+      "not_operating": 0,
+      "no_damage": 1,
+      "minor_damage": 1,
+      "severe_damage": 0
+    },
+    {
+      "district": "Manggarai Regency",
+      "total": 4,
+      "operating_fully": 3,
+      "operating_partially": 0,
+      "not_operating": 1,
+      "no_damage": 3,
+      "minor_damage": 0,
+      "severe_damage": 1
+    },
+    {
+      "district": "Ngada Regency",
+      "total": 2,
+      "operating_fully": 0,
+      "operating_partially": 2,
+      "not_operating": 0,
+      "no_damage": 0,
+      "minor_damage": 2,
+      "severe_damage": 0
+    },
+    {
+      "district": "Nagekeo Regency",
+      "total": 2,
+      "operating_fully": 0,
+      "operating_partially": 2,
+      "not_operating": 0,
+      "no_damage": 0,
+      "minor_damage": 0,
+      "severe_damage": 2
+    },
+    {
+      "district": "Ende Regency",
+      "total": 3,
+      "operating_fully": 3,
+      "operating_partially": 0,
+      "not_operating": 0,
+      "no_damage": 2,
+      "minor_damage": 1,
+      "severe_damage": 0
+    },
+    {
+      "district": "West Manggarai Regency",
+      "total": 3,
+      "operating_fully": 3,
+      "operating_partially": 0,
+      "not_operating": 0,
+      "no_damage": 2,
+      "minor_damage": 1,
+      "severe_damage": 0
+    },
+    {
+      "district": "East Flores Regency",
+      "total": 2,
+      "operating_fully": 2,
+      "operating_partially": 0,
+      "not_operating": 0,
+      "no_damage": 2,
+      "minor_damage": 0,
+      "severe_damage": 0
+    }
+  ],
+  "puskesmas_by_district": [
+    {
+      "district": "Sikka Regency",
+      "total": 27,
+      "operating_fully": 18,
+      "operating_partially": 9,
+      "not_operating": 0,
+      "no_damage": 18,
+      "minor_damage": 5,
+      "moderate_damage": 4,
+      "severe_damage": 0
+    },
+    {
+      "district": "East Manggarai Regency",
+      "total": 29,
+      "operating_fully": 19,
+      "operating_partially": 7,
+      "not_operating": 3,
+      "no_damage": 19,
+      "minor_damage": 0,
+      "moderate_damage": 6,
+      "severe_damage": 4
+    },
+    {
+      "district": "Manggarai Regency",
+      "total": 24,
+      "operating_fully": 15,
+      "operating_partially": 4,
+      "not_operating": 5,
+      "no_damage": 15,
+      "minor_damage": 2,
+      "moderate_damage": 2,
+      "severe_damage": 5
+    },
+    {
+      "district": "Ngada Regency",
+      "total": 28,
+      "operating_fully": 18,
+      "operating_partially": 6,
+      "not_operating": 4,
+      "no_damage": 18,
+      "minor_damage": 2,
+      "moderate_damage": 4,
+      "severe_damage": 4
+    },
+    {
+      "district": "Nagekeo Regency",
+      "total": 9,
+      "operating_fully": 6,
+      "operating_partially": 0,
+      "not_operating": 3,
+      "no_damage": 0,
+      "minor_damage": 0,
+      "moderate_damage": 0,
+      "severe_damage": 3
+    },
+    {
+      "district": "Ende Regency",
+      "total": 26,
+      "operating_fully": 15,
+      "operating_partially": 11,
+      "not_operating": 0,
+      "no_damage": 15,
+      "minor_damage": 0,
+      "moderate_damage": 11,
+      "severe_damage": 0
+    },
+    {
+      "district": "West Manggarai Regency",
+      "total": 26,
+      "operating_fully": 10,
+      "operating_partially": 12,
+      "not_operating": 4,
+      "no_damage": 10,
+      "minor_damage": 2,
+      "moderate_damage": 10,
+      "severe_damage": 4
+    },
+    {
+      "district": "East Flores Regency",
+      "total": 21,
+      "operating_fully": 21,
+      "operating_partially": 0,
+      "not_operating": 0,
+      "no_damage": 21,
+      "minor_damage": 0,
+      "moderate_damage": 0,
+      "severe_damage": 0
+    }
+  ],
+  "workforce_by_district": [
+    {
+      "district": "Sikka Regency",
+      "doctors": 27,
+      "nurses": 926,
+      "midwives": 612,
+      "other": 261
+    },
+    {
+      "district": "Ende Regency",
+      "doctors": 19,
+      "nurses": 831,
+      "midwives": 594,
+      "other": 218
+    },
+    {
+      "district": "East Manggarai Regency",
+      "doctors": 11,
+      "nurses": 880,
+      "midwives": 761,
+      "other": 295
+    },
+    {
+      "district": "Nagekeo Regency",
+      "doctors": 17,
+      "nurses": 447,
+      "midwives": 294,
+      "other": 118
+    },
+    {
+      "district": "West Manggarai Regency",
+      "doctors": 20,
+      "nurses": 734,
+      "midwives": 498,
+      "other": 217
+    },
+    {
+      "district": "Manggarai Regency",
+      "doctors": 23,
+      "nurses": 911,
+      "midwives": 858,
+      "other": 358
+    },
+    {
+      "district": "Ngada Regency",
+      "doctors": 17,
+      "nurses": 577,
+      "midwives": 357,
+      "other": 225
+    },
+    {
+      "district": "East Flores Regency",
+      "doctors": 22,
+      "nurses": 673,
+      "midwives": 464,
+      "other": 298
+    }
+  ],
+  "province_wide_baseline": {
+    "scope_note": "Province-wide NTT totals — broader scope than the 8 affected regencies used elsewhere in this section. Not an affected/damaged count.",
+    "health_facilities": {
+      "hospitals": 70,
+      "puskesmas": 444,
+      "clinics": 142,
+      "balai_pengobatan": 5
+    },
+    "health_workforce": {
+      "doctors": 535,
+      "dentists": 131,
+      "nurses": 15176,
+      "midwives": 9249,
+      "pharmacy": 1265,
+      "public_health": 514,
+      "environmental_health": 790,
+      "nutrition": 1123,
+      "medical_lab_technologists": 1041
+    }
+  },
+  "reserve_workforce_standby": {
+    "scope_note": "Province-wide NTT reserve health workforce placed on standby for the response.",
+    "specialist_doctors": 8,
+    "general_doctors": 17,
+    "dentists": 2,
+    "nurses": 169,
+    "midwives": 272,
+    "health_epidemiologists": 39,
+    "public_health": 62,
+    "environmental_sanitation": 39,
+    "nutrition": 33,
+    "medical_technicians": 4,
+    "physiotherapists": 1,
+    "non_health_personnel": 182
+  },
+  "professional_organizations_support": [
+    {
+      "organization": "PABI (Perhimpunan Ahli Bedah Indonesia / Indonesian Surgeons Association)",
+      "activity": "Specific surgical and trauma procedures at RSUD Ende, RSUD Bajawa (Ngada), RSUD Aeramo (Nagekeo) and RSUD Ruteng (Manggarai)."
+    },
+    {
+      "organization": "PABOI (Indonesian Orthopaedic Association)",
+      "activity": "Deployed 2 specialist doctors together with orthopaedic equipment."
+    }
+  ]
 }
