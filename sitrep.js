@@ -213,10 +213,10 @@
       if (emergencyStatus && emergencyList) {
         const rows = [];
         if (emergencyStatus.provincial) {
-          rows.push([emergencyStatus.provincial.region, `${emergencyStatus.provincial.status}${emergencyStatus.provincial.planned_duration_days ? ` — ${emergencyStatus.provincial.planned_duration_days} days` : ""}`]);
+          rows.push([emergencyStatus.provincial.region, `${emergencyStatus.provincial.status}${emergencyStatus.provincial.duration ? ` \u00b7 ${emergencyStatus.provincial.duration}` : ""}`]);
         }
         (emergencyStatus.regency_level || []).forEach((entry) => {
-          rows.push([entry.region, `${entry.status} — ${entry.duration || ""}`]);
+          rows.push([entry.region, `${entry.status}${entry.duration ? ` \u00b7 ${entry.duration}` : ""}`]);
         });
         emergencyList.replaceChildren(
           ...rows.map(([label, value]) => {
@@ -312,6 +312,35 @@
           );
         }
       }
+      const regencyDamage = data.regency_damage_detail?.regencies;
+      const regencyDamageList = byId("regency-damage-houses-list");
+      if (regencyDamage && regencyDamageList) {
+        const rows = Object.entries(regencyDamage)
+          .map(([name, detail]) => {
+            if (detail.houses) {
+              const h = detail.houses;
+              return {
+                name,
+                sortKey: Number(h.heavy || 0),
+                status: `${formatNumber(h.heavy || 0)} heavy \u00b7 ${formatNumber(h.moderate || 0)} moderate \u00b7 ${formatNumber(h.light || 0)} light`
+              };
+            }
+            if (detail.houses_affected_undifferentiated !== undefined) {
+              return {
+                name,
+                sortKey: Number(detail.houses_affected_undifferentiated || 0),
+                status: `${formatNumber(detail.houses_affected_undifferentiated)} houses affected \u2014 not yet split by severity`
+              };
+            }
+            return null;
+          })
+          .filter(Boolean)
+          .sort((a, b) => b.sortKey - a.sortKey);
+        regencyDamageList.replaceChildren(
+          ...rows.map((row) => createSectorStatusRow({ label: row.name, status: row.status }))
+        );
+      }
+
     } catch (error) {
       console.error(error);
       setText("impact-validation-status", "Static fallback data shown");
@@ -322,15 +351,32 @@
   const mapValue = (value) =>
     value === undefined || value === null ? "Not reported" : formatNumber(value);
 
+  const bestDeathCount = (casualty) =>
+    casualty?.deaths_pusdalops_17aug ?? casualty?.deaths_bnpb ?? casualty?.deaths_kemenkes;
+
+  const bestInjuredTotal = (casualty) => {
+    const p = casualty?.injured_pusdalops_17aug;
+    if (p) {
+      if (p.total !== undefined && p.total !== null) return p.total;
+      const parts = [p.severe, p.moderate, p.minor].filter((v) => v !== undefined && v !== null);
+      if (parts.length) return parts.reduce((total, v) => total + Number(v || 0), 0);
+    }
+    const kemenkesValues = [casualty?.injured_serious_kemenkes, casualty?.injured_minor_kemenkes].filter(
+      (v) => v !== undefined && v !== null
+    );
+    return kemenkesValues.length ? kemenkesValues.reduce((total, v) => total + Number(v || 0), 0) : null;
+  };
+
   const createMapPopup = (location, impact, healthDistrict) => {
     const casualty = impact.casualties_by_location?.[location.key] || {};
-    const injuryValues = [
+    const totalInjured17aug = bestInjuredTotal(casualty);
+    const kemenkesInjuryValues = [
       casualty.injured_serious_kemenkes,
       casualty.injured_minor_kemenkes
     ].filter((value) => value !== undefined && value !== null);
-    const totalInjured =
-      injuryValues.length > 0
-        ? injuryValues.reduce((total, value) => total + Number(value || 0), 0)
+    const totalInjuredKemenkes =
+      kemenkesInjuryValues.length > 0
+        ? kemenkesInjuryValues.reduce((total, value) => total + Number(value || 0), 0)
         : null;
 
     const popup = document.createElement("div");
@@ -345,10 +391,15 @@
     const details = document.createElement("dl");
     const rows = [
       ["Population listed as affected", mapValue(healthDistrict?.affected_population)],
-      ["Deaths — BNPB", mapValue(casualty.deaths_bnpb)],
-      ["Deaths — Kemenkes", mapValue(casualty.deaths_kemenkes)],
-      ["Injured — Kemenkes", mapValue(totalInjured)]
+      ["Deaths — 17 Aug Pusdalops", mapValue(casualty.deaths_pusdalops_17aug)],
+      ["Injured — 17 Aug Pusdalops", mapValue(totalInjured17aug)],
+      ["Deaths — BNPB (16 Aug)", mapValue(casualty.deaths_bnpb)],
+      ["Deaths — Kemenkes (16 Aug)", mapValue(casualty.deaths_kemenkes)],
+      ["Injured — Kemenkes (16 Aug)", mapValue(totalInjuredKemenkes)]
     ];
+    if (casualty.injured_pusdalops_17aug_flag) {
+      rows.push(["Data-quality note", casualty.injured_pusdalops_17aug_flag]);
+    }
     rows.forEach(([label, value]) => {
       const term = document.createElement("dt");
       term.textContent = label;
@@ -368,7 +419,7 @@
   };
 
   const mapMarkerColour = (casualty) => {
-    const reported = casualty?.deaths_bnpb ?? casualty?.deaths_kemenkes;
+    const reported = bestDeathCount(casualty);
     if (reported === undefined || reported === null) return "#2a9d8f";
     if (Number(reported) >= 10) return "#c83f43";
     if (Number(reported) >= 1) return "#e58b2a";
@@ -409,7 +460,7 @@
 
       AFFECTED_AREA_LOCATIONS.forEach((location) => {
         const casualty = impact.casualties_by_location?.[location.key] || {};
-        const reported = casualty.deaths_bnpb ?? casualty.deaths_kemenkes ?? 0;
+        const reported = bestDeathCount(casualty) ?? 0;
         const marker = window.L.circleMarker([location.lat, location.lng], {
           radius: Math.max(8, Math.min(18, 8 + Number(reported) * 0.4)),
           color: "#ffffff",

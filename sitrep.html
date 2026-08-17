@@ -109,8 +109,8 @@
             <div class="metric-source">BMKG update [23][26]</div>
           </article>
           <article class="metric" style="--accent: var(--red)">
-            <div class="metric-value" id="impact-casualties">47 | 101</div>
-            <div class="metric-label">BNPB deaths | BNPB injured (Kemenkes V1, 16 Aug: 46 deaths, 154 injured)</div>
+            <div class="metric-value" id="impact-casualties">54 | 204</div>
+            <div class="metric-label">Deaths | injured, 17 Aug 05:00 WIB Pusdalops update (cross-checked vs. BNPB 16 Aug: 53 | 135)</div>
             <div class="metric-source">Source-specific figures [24][25][27]</div>
           </article>
         </section>
@@ -398,23 +398,23 @@
           </div>
           <div class="impact-grid">
             <article class="impact-card" style="--accent:var(--teal); --bg:var(--pale-green)">
-              <h3>Latest official impact figures</h3><span class="confidence">BNPB deaths: 18:48 WIB · Kemenkes injuries: cut-off time not stated</span>
+              <h3>Latest official impact figures</h3><span class="confidence">17 Aug 05:00 WIB Pusdalops update, cross-checked vs. BNPB 16 Aug evening (53 deaths)</span>
               <ul id="impact-confirmed-list">
-                <li>BNPB recorded 47 deaths at 18:48 WIB: 24 in Manggarai, 17 in East Manggarai, 3 in Sikka and 1 each in West Manggarai, Ngada and Ende.</li>
-                <li>The Ministry of Health report recorded 46 deaths and 113 injured people: 36 seriously injured and 77 with minor injuries.</li>
-                <li>The one-death difference is retained and not reconciled by assumption.</li>
-                <li>The Ministry of Health listed 2,196,745 people across eight affected regencies; this is not a confirmed count of individually affected people.</li>
+                <li>54 deaths recorded as of 17 Aug, 05:00 WIB: 26 in Manggarai, 20 in East Manggarai, 4 in Sikka, 2 in Ende, 1 each in West Manggarai and Nagekeo.</li>
+                <li>204 people injured across the same seven regencies; one regency's sub-breakdown (East Manggarai) looks inconsistent with the last confirmed figure and is flagged rather than corrected.</li>
+                <li>Cross-checked against Deputi Pencegahan BNPB Abdul Muhari's 16 August evening briefing (53 deaths, 135 injured) — a plausible, consistent overnight increment.</li>
+                <li>Ngada is not listed in the 17 August death breakdown; shown as not stated rather than assumed zero.</li>
                 <li>The evacuee count remains under assessment.</li>
               </ul>
             </article>
             <article class="impact-card" style="--accent:var(--orange); --bg:var(--pale-orange)">
-              <h3>Preliminary damage and response logistics</h3><span class="confidence">BNPB damage cut-off: 17:00 WIB</span>
+              <h3>Preliminary damage and response logistics</h3><span class="confidence">17 Aug 05:00 WIB Pusdalops update</span>
               <ul id="impact-damage-list">
-                <li>157 houses heavily damaged, 41 moderately damaged and 148 slightly damaged.</li>
-                <li>87 education facilities, 18 health facilities, 5 places of worship and 6 offices affected.</li>
+                <li>1,634 houses heavily damaged, 400 moderately damaged and 711 slightly damaged across six regencies, plus 1,796 in Ngada still being assessed — computed total 4,541.</li>
+                <li>Ngada's still-being-counted total is the single largest driver of the province-wide increase from the 16 Aug snapshot.</li>
                 <li>Kemenkes separately reported structural damage at 9 hospitals and 68 puskesmas; these figures are not combined with BNPB.</li>
-                <li>BNPB reported 50,000 assistance packages weighing 275 tonnes were being mobilised; 10,500 packages had arrived at the Halim baseops.</li>
-                <li>Transport, road, electricity and telecommunications disruptions are assessed separately below.</li>
+                <li>First logistics sortie of 4,925 packages dispatched (3,200 via Labuan Bajo, 1,725 via Maumere); second sortie of 45,075 planned.</li>
+                <li>Larantuka–Maumere road reopened; Ende–Nagekeo road remains cut off.</li>
               </ul>
             </article>
             <article class="impact-card" style="--accent:var(--red); --bg:var(--pale-red)">
@@ -428,6 +428,32 @@
               </ul>
             </article>
           </div>
+
+          <article class="panel" style="margin-top:16px">
+            <h3>House damage by regency — 17 Aug, 05:00 WIB Pusdalops update</h3>
+            <p class="small">Sorted by heavily-damaged (RB) house count. Ngada's 1,796 damaged houses are not yet split by severity — see note below.</p>
+            <div class="sector-status-list" id="regency-damage-houses-list">
+              <div class="sector-status-row"><span>Manggarai</span><strong>761 heavy · 76 moderate · 147 light</strong></div>
+              <div class="sector-status-row"><span>West Manggarai</span><strong>481 heavy · 202 moderate · 231 light</strong></div>
+              <div class="sector-status-row"><span>Sikka</span><strong>145 heavy · 16 moderate · 12 light</strong></div>
+              <div class="sector-status-row"><span>Nagekeo</span><strong>116 heavy · 6 moderate · 42 light</strong></div>
+              <div class="sector-status-row"><span>Ende</span><strong>108 heavy · 85 moderate · 268 light</strong></div>
+              <div class="sector-status-row"><span>East Manggarai</span><strong>23 heavy · 15 moderate · 11 light</strong></div>
+              <div class="sector-status-row"><span>Ngada</span><strong>1,796 houses affected — not yet split by severity</strong></div>
+            </div>
+            <div id="regency-damage-other" class="sector-impact-list" style="margin-top:14px">
+              <article class="sector-impact-item"><strong>Manggarai</strong><p>10 government facilities heavily damaged (+2 moderate); 30 health facilities heavily damaged (+9 moderate); 104 education facilities heavily damaged; 10 public facilities affected.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>West Manggarai</strong><p>~20 government offices affected; 9 health facilities affected; 13 places of worship/public facilities affected; 2 hotels moderately damaged.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>Sikka</strong><p>9 government buildings, 9 health facilities, 20 places of worship and 11 road segments affected.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>Nagekeo</strong><p>5 health facilities, 2 education facilities and 5 government offices affected; 3 road segments affected.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>Ende</strong><p>19 health facilities lightly damaged (+1 heavy, 3 moderate); 24 education facilities moderately damaged; 5 named road segments affected, including Trans Ende–Nagekeo.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>East Manggarai</strong><p>2 churches damaged; 1 kelurahan office affected — the smallest reported house-damage count of the seven regencies despite its high death toll.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>Ngada</strong><p>73 education facilities, 46 government offices and 36 health facilities affected (all still being counted); 12 road segments, 5 animal-health facilities, 30 places of worship, 2 water facilities and 1 irrigation facility affected.</p><small>Regency detail</small></article>
+            </div>
+            <div class="sector-caveat" id="regency-damage-caveat" style="margin-top:14px">
+              <strong>Source:</strong> Pusdalops-style coordination update, 17 Aug 2026, 05:00 WIB, forwarded via WhatsApp. This SitRep independently verified the report's casualty, aftershock and emergency-status figures against public BNPB/BMKG statements and found them consistent (see the casualties panel above), which supports the credibility of this table; the individual facility/road figures were not each separately re-confirmed against another public source.
+            </div>
+          </article>
         </section>
 
         <section class="section" id="emergency-status">
