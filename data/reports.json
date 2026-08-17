@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "updated_at": "2026-08-16T15:00:00+07:00",
+  "updated_at": "2026-08-17T09:00:00+07:00",
   "reports": [
     {
       "id": "kemenkes-sitrep-ntt-20260815",
@@ -62,6 +62,36 @@
       "file": "reports/Kemenkes_SitRep_V1_NTT_20260816_0730WIB.pdf",
       "description": "Updated official health-sector situation report: revised injury totals, full district-level hospital and puskesmas operational/structural status, district-level existing health workforce, province-wide health-system baseline, reserve/standby workforce mobilised, professional-association surgical support (PABI, PABOI), a two-source dated logistics dispatch plan, and field photographs of damaged facilities including RSUD Aeramo and RSUD Ruteng.",
       "status": "Archived official source document — web-optimised copy"
+    },
+    {
+      "id": "bnpb-infografis-20260816-2100wib",
+      "title": "Gempa Bumi M 7,7 Kab. Nagekeo, Nusa Tenggara Timur",
+      "subtitle": "BNPB Infographic — Update 16 Agustus 2026, Pkl. 21.00 WIB (Report No. 03/U2100/Gem-NgkNTT/BNPB/16082026)",
+      "publisher": "BNPB (Badan Nasional Penanggulangan Bencana)",
+      "date": "16 August 2026",
+      "cutoff": "21:00 WIB / 22:00 WITA",
+      "language": "Indonesian",
+      "pages": 1,
+      "format": "Image (JPEG)",
+      "size_bytes": 417092,
+      "file": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260816_2100WIB.jpg",
+      "description": "Official BNPB single-page infographic: 9 regencies + 1 city affected across NTT, NTB and South Sulawesi; 54 deaths, 199 injured, 9,963 displaced, 1,528 households affected; 2,403 houses damaged (1,543 heavy/328 moderate/532 light); province-wide facility damage (110 education, 65 places of worship, 211 health facilities, 105 government offices, 1 Bulog warehouse, 18 irrigation facilities, 42 public facilities, 34 road points); full emergency-status decree citations for 8 jurisdictions; and an itemised urgent-needs list for 7 regencies.",
+      "status": "Archived official source document"
+    },
+    {
+      "id": "bnpb-infografis-20260817-0700wib",
+      "title": "Gempa Bumi M 7,7 Kab. Nagekeo, Nusa Tenggara Timur",
+      "subtitle": "BNPB Infographic — Update 17 Agustus 2026, Pkl. 07.00 WIB (PUSDATINKOM BNPB Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026)",
+      "publisher": "BNPB (Badan Nasional Penanggulangan Bencana) — PUSDATINKOM",
+      "date": "17 August 2026",
+      "cutoff": "07:00 WIB / 08:00 WITA",
+      "language": "Indonesian",
+      "pages": 1,
+      "format": "Image (JPEG)",
+      "size_bytes": 398456,
+      "file": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg",
+      "description": "Newest official BNPB single-page infographic, superseding Report No. 03: 56 deaths, 277 injured, 11,675 displaced, 1,528 households affected; 4,674 houses damaged (2,806 heavy/727 moderate/1,141 light); province-wide facility damage (254 education, 96 places of worship, 211 health facilities [21 hospitals + 190 puskesmas], 106 government offices, 1 Bulog warehouse, 1 irrigation facility, 97 public facilities, 34 road points); 1,576 BMKG-recorded aftershocks; an eight-point 'Upaya' (measures) summary; a new precautionary coastal self-evacuation advisory; and confirmation of regency-level emergency-status decrees.",
+      "status": "Archived official source document"
     }
   ],
   "briefings": [
@@ -196,6 +226,6 @@
       "description": "BPBD Ngada Pusdalops district-level detail: 14 health facilities affected (puskesmas, RSUD, posyandu), including Puskesmas Maronggela reported in need of an emergency tent."
     }
   ],
-  "report_number": 9,
-  "report_label": "Situation Report 09"
+  "report_number": 11,
+  "report_label": "Situation Report 11"
 }

@@ -191,7 +191,7 @@
     "status_label": "Kemenkes hospital and puskesmas recovery targets, reported 16 August 2026",
     "sources": [
       {
-        "agency": "Kementerian Kesehatan \u2014 Pusat Krisis Kesehatan",
+        "agency": "Kementerian Kesehatan — Pusat Krisis Kesehatan",
         "spokesperson": "Agus Jamaludin, Kepala Pusat Krisis Kesehatan Kemenkes",
         "title": "Kemenkes targetkan RSUD terdampak gempa NTT pulih dalam sepekan",
         "url": "https://www.antaranews.com/berita/5696832/kemenkes-targetkan-rsud-terdampak-gempa-ntt-pulih-dalam-sepekan",
@@ -208,15 +208,26 @@
     "hospital_restoration": {
       "target_days": 7,
       "target_scope": "Basic services resumed at all earthquake-affected RSUD (regional public hospitals) in NTT",
-      "focus_services": ["Trauma surgery", "Maternal and child health services", "Haemodialysis"],
+      "focus_services": [
+        "Trauma surgery",
+        "Maternal and child health services",
+        "Haemodialysis"
+      ],
       "rsud_nagekeo": "The most severely damaged hospital per Kemenkes; a mobile hospital unit (RS Mobil), including operating-theatre facilities, is being sent to Nagekeo.",
-      "referral_hospitals_for_nagekeo": ["RSUD Borong", "RSUD Komodo"]
+      "referral_hospitals_for_nagekeo": [
+        "RSUD Borong",
+        "RSUD Komodo"
+      ]
     },
     "puskesmas_restoration": {
       "target_days": 14,
       "target_scope": "Damaged puskesmas (primary health centres) resume at least minimum operation",
-      "focus_services": ["Antenatal/maternal health", "Childbirth", "Immunisation"],
-      "note": "This is the specific, dated Kemenkes target for puskesmas service restoration \u2014 narrower in scope (maternal/child health and immunisation) than full pre-earthquake puskesmas services, and the clearest existing statement of the primary-health-care recovery pathway Dinkes will be executing."
+      "focus_services": [
+        "Antenatal/maternal health",
+        "Childbirth",
+        "Immunisation"
+      ],
+      "note": "This is the specific, dated Kemenkes target for puskesmas service restoration — narrower in scope (maternal/child health and immunisation) than full pre-earthquake puskesmas services, and the clearest existing statement of the primary-health-care recovery pathway Dinkes will be executing."
     },
     "heoc_status": {
       "formation": "Kemenkes formed the Health Emergency Operation Center (HEOC) the night of 15 August, after the Minister of Health led a virtual (Zoom) coordination meeting with all NTT provincial and regency/city Dinas Kesehatan (Dinkes) heads, all RSUD directors in NTT, and all puskesmas heads across the 8 affected regencies/cities; an advance team was also sent from Jakarta to assess conditions on the ground.",
@@ -233,7 +244,7 @@
     },
     "puskesmas_severe_damage_discrepancy": "Menkes Budi Gunadi Sadikin's 16 August verbal figure ('6 puskesmas rusak berat', dozens moderate, hundreds light) differs from the Health Crisis Center's tabulated 20 severely damaged / 37 moderately damaged / 11 lightly damaged puskesmas already used elsewhere in this SitRep (see facility_summary.puskesmas). Both are shown rather than reconciled, consistent with this SitRep's general approach to cross-statement discrepancies.",
     "dispatch_attribution_note": "The 16 August ANTARA report quotes Agus Jamaludin (Kemenkes' Pusat Krisis Kesehatan) describing a dispatch of 8 basic medicine packages, 5 emergency kits, 1,000 sterile gloves, 20,000 non-sterile gloves, 20,000 surgical masks, 10 oxygen concentrators and 2 health-post tents (plus 8 more on standby for a Type-1 fixed EMT) as his own centre's shipment. This SitRep's planned_logistics section separately attributes an identical list to the NTT Provincial Health Office (Dinas Kesehatan Prov. NTT). This most likely reflects the same national-to-provincial dispatch described from two vantage points (sending agency vs. receiving/coordinating provincial office) rather than two separate shipments; it is not double-counted in this SitRep.",
-    "ngada_facility_note": "BPBD Ngada's Pusdalops recorded 14 health facilities affected in Ngada Regency alone (puskesmas, RSUD and posyandu combined \u2014 a broader mix than the puskesmas-only figures above), alongside 8 injuries (7 minor, 1 moderate), as of its 15 August, 19:00 WITA update. Puskesmas Maronggela (Kecamatan Riung Barat) was reported severely damaged and in need of an emergency tent \u2014 see facilities below."
+    "ngada_facility_note": "BPBD Ngada's Pusdalops recorded 14 health facilities affected in Ngada Regency alone (puskesmas, RSUD and posyandu combined — a broader mix than the puskesmas-only figures above), alongside 8 injuries (7 minor, 1 moderate), as of its 15 August, 19:00 WITA update. Puskesmas Maronggela (Kecamatan Riung Barat) was reported severely damaged and in need of an emergency tent — see facilities below."
   },
   "planned_logistics": {
     "dispatch_date": "15–16 August 2026",
@@ -437,13 +448,22 @@
     "Several figures in the 16 August V1 report's per-district table carry an asterisk in the source document with no visible footnote legend in the pages reviewed; this SitRep reproduces the numeric values without being able to confirm what the asterisk denotes."
   ],
   "disclaimer": "Ministry of Health figures remain the primary source for detailed health-sector status. BNPB's separate count of 18 affected health facilities at 17:00 WIB is retained for comparison and is not combined with the Ministry of Health's 77 structurally damaged facilities. All figures remain preliminary.",
-  "generated_at": "2026-08-16T15:00:00+07:00",
-  "generated_display": "16 Aug 2026 · 15:00 WIB / 16:00 WITA",
+  "generated_at": "2026-08-17T09:00:00+07:00",
+  "generated_display": "17 Aug 2026 · 09:00 WIB / 10:00 WITA",
   "cross_source_comparison": {
     "bnpb": {
-      "source_url": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia",
-      "data_cutoff_display": "15 Aug 2026 · 17:00 WIB / 18:00 WITA",
-      "health_facilities_affected": 18
+      "source_url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260816_2100WIB.jpg",
+      "source_title": "BNPB official infographic, Report No. 03/U2100/Gem-NgkNTT/BNPB/16082026",
+      "data_cutoff_display": "16 Aug 2026 · 21:00 WIB / 22:00 WITA",
+      "health_facilities_affected": 211,
+      "hospitals_affected": 21,
+      "puskesmas_affected": 190,
+      "previous_bnpb_figure_20260815_1700wib": 18,
+      "previous_note": "BNPB's own reported total rose from 18 (15 Aug, 17:00 WIB) to 211 (16 Aug, 21:00 WIB) as province-wide data collection continued.",
+      "reading_correction_note": "The 16 Aug 21:00 WIB infographic's breakdown was initially misread in this SitRep as '2 hospitals + 199 puskesmas'; on re-inspection at higher resolution, and confirmed by the 17 Aug 07:00 WIB infographic restating the identical 21/190 split, the correct breakdown is 21 hospitals + 190 puskesmas — which matches the Ministry of Health's own province-wide facility baseline (21 hospitals, 190 puskesmas) exactly. This resolves the apparent 'puskesmas affected exceeds puskesmas that exist' inconsistency flagged in the previous pass.",
+      "latest_source_url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg",
+      "latest_data_cutoff_display": "17 Aug 2026 · 07:00 WIB / 08:00 WITA",
+      "previous_bnpb_figure_20260816_2100wib": 211
     },
     "ministry_of_health": {
       "report_date": "2026-08-15",
@@ -452,10 +472,10 @@
       "puskesmas_with_structural_damage": 68,
       "total_facilities_with_structural_damage": 77
     },
-    "interpretation": "Do not subtract or combine the figures. BNPB reports affected health facilities, while the Ministry of Health reports facilities classified with structural damage; definitions, source tables and cut-offs may differ."
+    "interpretation": "Do not subtract or combine the figures. BNPB reports affected health facilities on its own, broader definition — 211 (21 hospitals + 190 puskesmas), unchanged between BNPB's 16 Aug 21:00 WIB and 17 Aug 07:00 WIB infographics — while the Ministry of Health reports facilities specifically classified with structural damage (77: 9 hospitals + 68 puskesmas, see facility_summary above). BNPB's 21/190 breakdown exactly matches the total number of hospitals and puskesmas in the Ministry of Health's own province-wide baseline below, which suggests BNPB is counting essentially every health facility in the affected area as 'terdampak' (affected, in some way) — a much broader threshold than the Ministry of Health's 'structural damage' classification. Source, source table and cut-off all differ; this SitRep flags rather than resolves the gap."
   },
-  "report_number": 9,
-  "report_label": "Situation Report 09",
+  "report_number": 11,
+  "report_label": "Situation Report 11",
   "source_document": "Kemenkes SITUATION REPORT V1 — Penanganan Bencana Gempa Bumi dan Tsunami di Nusa Tenggara Timur",
   "hospitals_by_district": [
     {
