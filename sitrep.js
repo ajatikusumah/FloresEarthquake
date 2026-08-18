@@ -352,9 +352,19 @@
     value === undefined || value === null ? "Not reported" : formatNumber(value);
 
   const bestDeathCount = (casualty) =>
-    casualty?.deaths_pusdalops_17aug ?? casualty?.deaths_bnpb ?? casualty?.deaths_kemenkes;
+    casualty?.deaths_estimated_18aug_proportional ??
+    casualty?.deaths_pusdalops_17aug ??
+    casualty?.deaths_bnpb ??
+    casualty?.deaths_kemenkes;
+
+  const isEstimatedDeathCount = (casualty) =>
+    casualty?.deaths_estimated_18aug_proportional !== undefined &&
+    casualty?.deaths_estimated_18aug_proportional !== null;
 
   const bestInjuredTotal = (casualty) => {
+    if (casualty?.injured_estimated_18aug_proportional !== undefined && casualty?.injured_estimated_18aug_proportional !== null) {
+      return casualty.injured_estimated_18aug_proportional;
+    }
     const p = casualty?.injured_pusdalops_17aug;
     if (p) {
       if (p.total !== undefined && p.total !== null) return p.total;
@@ -367,9 +377,21 @@
     return kemenkesValues.length ? kemenkesValues.reduce((total, v) => total + Number(v || 0), 0) : null;
   };
 
+  const isEstimatedInjuredTotal = (casualty) =>
+    casualty?.injured_estimated_18aug_proportional !== undefined &&
+    casualty?.injured_estimated_18aug_proportional !== null;
+
   const createMapPopup = (location, impact, healthDistrict) => {
     const casualty = impact.casualties_by_location?.[location.key] || {};
-    const totalInjured17aug = bestInjuredTotal(casualty);
+    const totalInjured17aug = (() => {
+      const p = casualty?.injured_pusdalops_17aug;
+      if (p) {
+        if (p.total !== undefined && p.total !== null) return p.total;
+        const parts = [p.severe, p.moderate, p.minor].filter((v) => v !== undefined && v !== null);
+        if (parts.length) return parts.reduce((total, v) => total + Number(v || 0), 0);
+      }
+      return null;
+    })();
     const kemenkesInjuryValues = [
       casualty.injured_serious_kemenkes,
       casualty.injured_minor_kemenkes
@@ -388,11 +410,21 @@
     const representative = document.createElement("p");
     representative.textContent = `Representative point: ${location.representative}`;
 
+    if (isEstimatedDeathCount(casualty) || isEstimatedInjuredTotal(casualty)) {
+      const estimateNote = document.createElement("p");
+      estimateNote.className = "map-popup-estimate-flag";
+      estimateNote.textContent =
+        "⚠ Marker uses a calculated ESTIMATE (see below), not a newly reported regency figure — no source has published a regency-level breakdown since 17 Aug.";
+      popup.append(estimateNote);
+    }
+
     const details = document.createElement("dl");
     const rows = [
       ["Population listed as affected", mapValue(healthDistrict?.affected_population)],
-      ["Deaths — 17 Aug Pusdalops", mapValue(casualty.deaths_pusdalops_17aug)],
-      ["Injured — 17 Aug Pusdalops", mapValue(totalInjured17aug)],
+      ["Deaths — estimated, 18 Aug (see note)", mapValue(casualty.deaths_estimated_18aug_proportional)],
+      ["Injured — estimated, 18 Aug (see note)", mapValue(casualty.injured_estimated_18aug_proportional)],
+      ["Deaths — actually reported, 17 Aug Pusdalops", mapValue(casualty.deaths_pusdalops_17aug)],
+      ["Injured — actually reported, 17 Aug Pusdalops", mapValue(totalInjured17aug)],
       ["Deaths — BNPB (16 Aug)", mapValue(casualty.deaths_bnpb)],
       ["Deaths — Kemenkes (16 Aug)", mapValue(casualty.deaths_kemenkes)],
       ["Injured — Kemenkes (16 Aug)", mapValue(totalInjuredKemenkes)]
@@ -408,13 +440,22 @@
       details.append(term, definition);
     });
 
+    if (casualty.estimate_methodology_note) {
+      const methodology = document.createElement("p");
+      methodology.className = "map-popup-methodology";
+      methodology.textContent = casualty.estimate_methodology_note;
+      popup.append(title, representative, details, methodology);
+    } else {
+      popup.append(title, representative, details);
+    }
+
     const source = document.createElement("a");
     source.href = impact.source?.url || "https://www.bnpb.go.id/";
     source.target = "_blank";
     source.rel = "noopener noreferrer";
     source.textContent = "Open primary impact source";
 
-    popup.append(title, representative, details, source);
+    popup.append(source);
     return popup;
   };
 
@@ -495,7 +536,7 @@
         });
       });
 
-      setText("map-status", "OpenStreetMap loaded · 8 affected regencies");
+      setText("map-status", "OpenStreetMap loaded · 8 affected regencies · deaths shown are an 18 Aug estimate");
       const status = byId("map-status");
       if (status) status.className = "feed-status is-live";
     } catch (error) {

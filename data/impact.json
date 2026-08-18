@@ -114,7 +114,10 @@
       "injured_pusdalops_17aug": {
         "severe": 1,
         "minor": 16
-      }
+      },
+      "deaths_estimated_18aug_proportional": 5,
+      "injured_estimated_18aug_proportional": 55,
+      "estimate_methodology_note": "NOT an officially reported regency-level figure. Calculated by this SitRep by scaling the last known regency breakdown (17 Aug 2026, 05:00 WIB Pusdalops report) by the ratio of that report's total to the current 18 Aug 2026, 09:00 WIB province-wide BNPB headline (deaths ×1.296, injured ×3.260). This assumes each regency's count grew at the same rate as the province-wide total, which is very unlikely to be exactly true in practice — real growth is probably concentrated unevenly (e.g. around specific building collapses or newly-reached areas) rather than spread proportionally. The injured estimate in particular rests on a much larger scaling factor (×3.26) than the death estimate (×1.30) and should be treated as considerably less reliable. Ngada and East Flores regencies have no reported regency-level baseline for this field and are therefore not estimated — shown as not stated rather than assumed unchanged or zero."
     },
     "Ende Regency": {
       "deaths_bnpb": 1,
@@ -125,7 +128,10 @@
       "injured_pusdalops_17aug": {
         "severe": 3,
         "minor": 15
-      }
+      },
+      "deaths_estimated_18aug_proportional": 3,
+      "injured_estimated_18aug_proportional": 59,
+      "estimate_methodology_note": "NOT an officially reported regency-level figure. Calculated by this SitRep by scaling the last known regency breakdown (17 Aug 2026, 05:00 WIB Pusdalops report) by the ratio of that report's total to the current 18 Aug 2026, 09:00 WIB province-wide BNPB headline (deaths ×1.296, injured ×3.260). This assumes each regency's count grew at the same rate as the province-wide total, which is very unlikely to be exactly true in practice — real growth is probably concentrated unevenly (e.g. around specific building collapses or newly-reached areas) rather than spread proportionally. The injured estimate in particular rests on a much larger scaling factor (×3.26) than the death estimate (×1.30) and should be treated as considerably less reliable. Ngada and East Flores regencies have no reported regency-level baseline for this field and are therefore not estimated — shown as not stated rather than assumed unchanged or zero."
     },
     "East Manggarai Regency": {
       "deaths_bnpb": 17,
@@ -137,7 +143,10 @@
         "severe": 3,
         "minor": 21
       },
-      "injured_pusdalops_17aug_flag": "This sub-figure (3 severe/21 minor = 24) looks inconsistent with the last confirmed figure for this regency (21 severe/59 minor = 80, per Abdul Muhari's 16 Aug evening briefing) — see casualties.data_quality_flag."
+      "injured_pusdalops_17aug_flag": "This sub-figure (3 severe/21 minor = 24) looks inconsistent with the last confirmed figure for this regency (21 severe/59 minor = 80, per Abdul Muhari's 16 Aug evening briefing) — see casualties.data_quality_flag.",
+      "deaths_estimated_18aug_proportional": 26,
+      "injured_estimated_18aug_proportional": 78,
+      "estimate_methodology_note": "NOT an officially reported regency-level figure. Calculated by this SitRep by scaling the last known regency breakdown (17 Aug 2026, 05:00 WIB Pusdalops report) by the ratio of that report's total to the current 18 Aug 2026, 09:00 WIB province-wide BNPB headline (deaths ×1.296, injured ×3.260). This assumes each regency's count grew at the same rate as the province-wide total, which is very unlikely to be exactly true in practice — real growth is probably concentrated unevenly (e.g. around specific building collapses or newly-reached areas) rather than spread proportionally. The injured estimate in particular rests on a much larger scaling factor (×3.26) than the death estimate (×1.30) and should be treated as considerably less reliable. Ngada and East Flores regencies have no reported regency-level baseline for this field and are therefore not estimated — shown as not stated rather than assumed unchanged or zero."
     },
     "Nagekeo Regency": {
       "deaths_bnpb": 1,
@@ -148,7 +157,10 @@
       "deaths_pusdalops_17aug": 1,
       "injured_pusdalops_17aug": {
         "severe": 2
-      }
+      },
+      "deaths_estimated_18aug_proportional": 1,
+      "injured_estimated_18aug_proportional": 7,
+      "estimate_methodology_note": "NOT an officially reported regency-level figure. Calculated by this SitRep by scaling the last known regency breakdown (17 Aug 2026, 05:00 WIB Pusdalops report) by the ratio of that report's total to the current 18 Aug 2026, 09:00 WIB province-wide BNPB headline (deaths ×1.296, injured ×3.260). This assumes each regency's count grew at the same rate as the province-wide total, which is very unlikely to be exactly true in practice — real growth is probably concentrated unevenly (e.g. around specific building collapses or newly-reached areas) rather than spread proportionally. The injured estimate in particular rests on a much larger scaling factor (×3.26) than the death estimate (×1.30) and should be treated as considerably less reliable. Ngada and East Flores regencies have no reported regency-level baseline for this field and are therefore not estimated — shown as not stated rather than assumed unchanged or zero."
     },
     "West Manggarai Regency": {
       "deaths_bnpb": 1,
@@ -159,7 +171,10 @@
       "injured_pusdalops_17aug": {
         "total": 6,
         "breakdown_not_given": true
-      }
+      },
+      "deaths_estimated_18aug_proportional": 1,
+      "injured_estimated_18aug_proportional": 20,
+      "estimate_methodology_note": "NOT an officially reported regency-level figure. Calculated by this SitRep by scaling the last known regency breakdown (17 Aug 2026, 05:00 WIB Pusdalops report) by the ratio of that report's total to the current 18 Aug 2026, 09:00 WIB province-wide BNPB headline (deaths ×1.296, injured ×3.260). This assumes each regency's count grew at the same rate as the province-wide total, which is very unlikely to be exactly true in practice — real growth is probably concentrated unevenly (e.g. around specific building collapses or newly-reached areas) rather than spread proportionally. The injured estimate in particular rests on a much larger scaling factor (×3.26) than the death estimate (×1.30) and should be treated as considerably less reliable. Ngada and East Flores regencies have no reported regency-level baseline for this field and are therefore not estimated — shown as not stated rather than assumed unchanged or zero."
     },
     "Manggarai Regency": {
       "deaths_bnpb": 23,
@@ -171,7 +186,10 @@
       "injured_pusdalops_17aug": {
         "severe": 31,
         "minor": 88
-      }
+      },
+      "deaths_estimated_18aug_proportional": 34,
+      "injured_estimated_18aug_proportional": 388,
+      "estimate_methodology_note": "NOT an officially reported regency-level figure. Calculated by this SitRep by scaling the last known regency breakdown (17 Aug 2026, 05:00 WIB Pusdalops report) by the ratio of that report's total to the current 18 Aug 2026, 09:00 WIB province-wide BNPB headline (deaths ×1.296, injured ×3.260). This assumes each regency's count grew at the same rate as the province-wide total, which is very unlikely to be exactly true in practice — real growth is probably concentrated unevenly (e.g. around specific building collapses or newly-reached areas) rather than spread proportionally. The injured estimate in particular rests on a much larger scaling factor (×3.26) than the death estimate (×1.30) and should be treated as considerably less reliable. Ngada and East Flores regencies have no reported regency-level baseline for this field and are therefore not estimated — shown as not stated rather than assumed unchanged or zero."
     },
     "Ngada Regency": {
       "deaths_bnpb": null,
@@ -185,7 +203,9 @@
         "severe": 7,
         "moderate": 1,
         "minor": 10
-      }
+      },
+      "injured_estimated_18aug_proportional": 59,
+      "estimate_methodology_note": "NOT an officially reported regency-level figure. Calculated by this SitRep by scaling the last known regency breakdown (17 Aug 2026, 05:00 WIB Pusdalops report) by the ratio of that report's total to the current 18 Aug 2026, 09:00 WIB province-wide BNPB headline (deaths ×1.296, injured ×3.260). This assumes each regency's count grew at the same rate as the province-wide total, which is very unlikely to be exactly true in practice — real growth is probably concentrated unevenly (e.g. around specific building collapses or newly-reached areas) rather than spread proportionally. The injured estimate in particular rests on a much larger scaling factor (×3.26) than the death estimate (×1.30) and should be treated as considerably less reliable. Ngada and East Flores regencies have no reported regency-level baseline for this field and are therefore not estimated — shown as not stated rather than assumed unchanged or zero."
     },
     "East Flores Regency": {
       "deaths_bnpb": null,
@@ -503,7 +523,7 @@
     "BNPB's 16 Aug, 21:00 WIB infographic additionally itemises urgent logistics needs by regency for all 7 regencies with an active posko (tents, rice, medicines, bedding, water tanks, generators, radios and more) — see response_logistics.urgent_needs_by_regency_16aug_infographic."
   ],
   "information_gaps": [
-    "Regency-level breakdown for the newest 70-deaths/665-injured and 12,153-houses-damaged province-wide totals (18 Aug 09:00 WIB infographic) — not given in that source.",
+    "An officially-reported regency-level breakdown for the current 70-deaths/665-injured province-wide totals (18 Aug 09:00 WIB infographic) — no source has published one. The affected-regencies map now uses a calculated proportional estimate instead (see casualties_by_location_note and each regency's estimate_methodology_note), clearly labelled as an estimate rather than a new report.",
     "A single, reconciled evacuee total broken out by site across all nine affected regencies (currently detailed for three, against a new province-wide total of 31,220).",
     "Reconciled casualty records across BNPB, the Ministry of Health, BPBD, Basarnas/QRSAR and district authorities — the Ngada/Nagekeo discrepancy between BNPB's two 16 August updates is not yet resolved.",
     "Reconciled definitions and facility-level lists for BNPB's 211 affected-health-facility figure versus the Ministry of Health's 77 facilities with structural damage (see health.json cross_source_comparison).",
@@ -515,8 +535,8 @@
     "Whether BNPB's health-facility-affected definition changed between the 17 and 18 August infographics (211 → 83), and whether 'KK Terdampak' was redefined between the same two editions (1,528 → 16,411) — neither infographic states a methodology change explicitly."
   ],
   "disclaimer": "BNPB's 18:48 WIB update is used for the consolidated death headline and its 17:00 WIB update for general damage. Ministry of Health figures are retained for injuries and detailed health-sector status, with the source's unstated cut-off shown explicitly. All figures remain preliminary and subject to reconciliation.",
-  "generated_at": "2026-08-18T12:30:00+07:00",
-  "generated_display": "18 Aug 2026 · 12:30 WIB / 13:30 WITA",
+  "generated_at": "2026-08-18T13:15:00+07:00",
+  "generated_display": "18 Aug 2026 · 13:15 WIB / 14:15 WITA",
   "seismic_monitoring": {
     "source": {
       "agency": "BMKG",
@@ -1292,7 +1312,8 @@
       "first_7_days_priorities": "The Pusdalops update frames the first 7 days of the tanggap darurat period as prioritising: search and rescue; meeting basic needs; and the gradual restoration of infrastructure, communications, electricity, water, fuel and social services."
     }
   },
-  "report_number": 13,
-  "report_label": "Situation Report 13",
-  "compiled_note": "This SitRep was updated 18 August 2026, 12:30 WIB, incorporating BNPB's newest official infographic, dated 18 August 2026, 09:00 WIB (PUSDATINKOM BNPB Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026, archived at reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260818_0900WIB.jpg), the third edition of this series now incorporated (after 03/U2100, 16 Aug 21:00 WIB, and 04/U0700, 17 Aug 07:00 WIB). Headline figures: deaths 56→70, injured 277→665, displaced 11,675→31,220, households (KK) affected 1,528→16,411, total house damage 4,674→12,153. Most facility totals continued rising (education 254→264, worship 96→157, offices 106→171, public facilities 97→116, irrigation facilities partially recovered from 1→7), and two new categories were introduced (1 market, 5 bridges affected). Two figures moved against the overall trend and are flagged rather than resolved: health facilities affected fell sharply (211→83, with the new 9-hospital+74-puskesmas breakdown now close to Kemenkes's own long-standing structural-damage count — a possible definitional convergence rather than genuine recovery), and the KK-affected figure grew roughly 4x faster than displacement (×10.7 vs. ×2.7), which may indicate 'KK Terdampak' was redefined to a broader category more in line with houses damaged. Road points affected held at exactly 34 for a third consecutive report, further suggesting this specific field may not be getting re-verified each edition. The aftershock count (1,576) was not refreshed in this edition — its narrative text is identical to the 17 August edition. Substantial new operational detail was added: NTT provincial and national Ministry of Health medical-team deployments, 13 excavators deployed by BBWS Nusa Tenggara II, telecom BTS-site recovery (95.4%) and electricity distribution-substation recovery (93.1%). The confirmed, damage_reports and information_gaps headline lists were updated to match."
+  "report_number": 14,
+  "report_label": "Situation Report 14",
+  "compiled_note": "This SitRep was updated 18 August 2026, 12:30 WIB, incorporating BNPB's newest official infographic, dated 18 August 2026, 09:00 WIB (PUSDATINKOM BNPB Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026, archived at reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260818_0900WIB.jpg), the third edition of this series now incorporated (after 03/U2100, 16 Aug 21:00 WIB, and 04/U0700, 17 Aug 07:00 WIB). Headline figures: deaths 56→70, injured 277→665, displaced 11,675→31,220, households (KK) affected 1,528→16,411, total house damage 4,674→12,153. Most facility totals continued rising (education 254→264, worship 96→157, offices 106→171, public facilities 97→116, irrigation facilities partially recovered from 1→7), and two new categories were introduced (1 market, 5 bridges affected). Two figures moved against the overall trend and are flagged rather than resolved: health facilities affected fell sharply (211→83, with the new 9-hospital+74-puskesmas breakdown now close to Kemenkes's own long-standing structural-damage count — a possible definitional convergence rather than genuine recovery), and the KK-affected figure grew roughly 4x faster than displacement (×10.7 vs. ×2.7), which may indicate 'KK Terdampak' was redefined to a broader category more in line with houses damaged. Road points affected held at exactly 34 for a third consecutive report, further suggesting this specific field may not be getting re-verified each edition. The aftershock count (1,576) was not refreshed in this edition — its narrative text is identical to the 17 August edition. Substantial new operational detail was added: NTT provincial and national Ministry of Health medical-team deployments, 13 excavators deployed by BBWS Nusa Tenggara II, telecom BTS-site recovery (95.4%) and electricity distribution-substation recovery (93.1%). The confirmed, damage_reports and information_gaps headline lists were updated to match. ADDENDUM, 18 Aug 2026, 13:15 WIB: the affected-regencies map was found to be relying on the increasingly stale 17 Aug 05:00 WIB regency-level breakdown (summing to 54 deaths / 204 injured) for marker colour, size and popups, with no newer regency-level source available to replace it — all three BNPB infographics since have given province-wide totals only. Rather than leave the map silently understating the toll by 16 deaths (23%), or fabricate an unlabelled replacement, this SitRep added a proportionally-scaled estimate (deaths ×1.30, injured ×3.26) to each regency, explicitly labelled as a calculated estimate — not a new report — in the map popup, legend and a dedicated caveat, with the original reported figures preserved and shown alongside. No marker changed colour band as a result of this change. Ngada and East Flores, which have no reported baseline, remain unestimated.",
+  "casualties_by_location_note": "Per-regency figures in this section (and the map they drive) were last directly reported by name in the 17 August 2026, 05:00 WIB Pusdalops update (54 deaths / 204 injured across the regencies listed). No source since then has published a regency-level breakdown — all three subsequent BNPB infographics (16 Aug 21:00 WIB, 17 Aug 07:00 WIB, 18 Aug 09:00 WIB) gave province-wide totals only. Each regency entry below therefore now also carries a deaths_estimated_18aug_proportional and/or injured_estimated_18aug_proportional field: a proportional scaling of the last reported breakdown to the current 70-death/665-injured province-wide totals, clearly distinguished from directly-reported figures and explained in each entry's estimate_methodology_note. These estimates are used for the affected-regencies map's marker colour, size and popup display in place of the increasingly stale raw 17 Aug figures; the original reported figures remain fully intact below for inspection."
 }

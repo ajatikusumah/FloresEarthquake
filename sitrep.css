@@ -1449,6 +1449,20 @@ h2 {
   font-size: 0.7rem;
 }
 
+.map-popup-estimate-flag {
+  color: var(--orange) !important;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.map-popup-methodology {
+  margin-top: 9px !important;
+  padding-top: 9px;
+  border-top: 1px dashed var(--line);
+  line-height: 1.4;
+  font-size: 0.66rem !important;
+}
+
 .map-popup dl {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

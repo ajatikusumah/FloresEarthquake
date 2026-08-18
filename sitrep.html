@@ -8,7 +8,7 @@
       content="Preliminary situation report for the M7.7 Flores earthquake on 15 August 2026. Data remain evolving and subject to BNPB validation."
     />
     <meta name="theme-color" content="#0b2545" />
-    <title>Flores Earthquake Situation Report 13 | 18 August 2026</title>
+    <title>Flores Earthquake Situation Report 14 | 18 August 2026</title>
     <link rel="stylesheet" href="vendor/leaflet.css" />
     <link rel="stylesheet" href="sitrep.css" />
     <script
@@ -23,9 +23,9 @@
     <header class="topbar">
       <div class="topbar-inner">
         <div class="brand">
-          <span id="topbar-report-number">Situation Report 13</span>
-          <time id="topbar-generated-time" datetime="2026-08-18T12:30:00+07:00">
-            Generated: 18 August 2026 · 12:30 WIB / 13:30 WITA
+          <span id="topbar-report-number">Situation Report 14</span>
+          <time id="topbar-generated-time" datetime="2026-08-18T13:15:00+07:00">
+            Generated: 18 August 2026 · 13:15 WIB / 14:15 WITA
           </time>
         </div>
         <nav class="topnav" aria-label="Situation report sections">
@@ -221,7 +221,7 @@
               </div>
 
               <div class="map-legend" aria-label="Map marker legend">
-                <strong>Reported deaths</strong>
+                <strong>Deaths (18 Aug estimate — see caveat below)</strong>
                 <span><i class="map-swatch map-swatch-high"></i>10 or more</span>
                 <span><i class="map-swatch map-swatch-medium"></i>1–9</span>
                 <span><i class="map-swatch map-swatch-pending"></i>None listed / not reported</span>
@@ -244,6 +244,17 @@
             Marker points use representative regency-capital locations for orientation. They do not
             depict exact administrative boundaries, the full geographic extent of impact, or a
             verified impact footprint. Click a marker or regency name for source-specific figures.
+          </p>
+          <p class="map-caveat" id="map-recency-caveat">
+            <strong>Data-recency note:</strong> no source has published a regency-level breakdown since the
+            17 August 2026, 05:00 WIB Pusdalops report (54 deaths / 204 injured across the regencies listed).
+            To keep marker colour, size and the province-wide total in sync with the current 70-death/665-injured
+            headline (18 Aug 2026, 09:00 WIB BNPB infographic), this SitRep now shows a <strong>calculated
+            estimate</strong> \u2014 the 17 August breakdown scaled proportionally to the new totals \u2014 clearly
+            labelled as such in each marker&rsquo;s popup, alongside the original, actually-reported figures.
+            This assumes every regency grew at the same rate, which real-world growth is unlikely to follow
+            exactly; treat marker positions as directional, not precise. Ngada and East Flores have no reported
+            baseline to scale and remain shown as not stated.
           </p>
         </section>
 
@@ -1190,7 +1201,7 @@
 
       <footer class="footer">
         <span>Preliminary open-source SitRep · Data remain evolving and subject to BNPB validation.</span>
-        <span>Situation Report 13 · Compiled 18 Aug 2026 · 12:30 WIB / 13:30 WITA · BNPB 18 Aug 09:00 WIB infographic data cut-off · Health · SAR · Child protection · Animal health · Economic impacts · Emergency status</span>
+        <span>Situation Report 14 · Compiled 18 Aug 2026 · 13:15 WIB / 14:15 WITA · BNPB 18 Aug 09:00 WIB infographic data cut-off · Health · SAR · Child protection · Animal health · Economic impacts · Emergency status · Map now uses labelled 18 Aug estimates</span>
       </footer>
     </main>
   </body>
