@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "event_id": "flores-ntt-2026-08-15-m7.7",
-  "updated_at": "2026-08-17T09:00:00+07:00",
+  "updated_at": "2026-08-18T12:30:00+07:00",
   "reports": [
     {
       "id": "kemenkes-sitrep-ntt-20260815",
@@ -91,6 +91,21 @@
       "size_bytes": 398456,
       "file": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg",
       "description": "Newest official BNPB single-page infographic, superseding Report No. 03: 56 deaths, 277 injured, 11,675 displaced, 1,528 households affected; 4,674 houses damaged (2,806 heavy/727 moderate/1,141 light); province-wide facility damage (254 education, 96 places of worship, 211 health facilities [21 hospitals + 190 puskesmas], 106 government offices, 1 Bulog warehouse, 1 irrigation facility, 97 public facilities, 34 road points); 1,576 BMKG-recorded aftershocks; an eight-point 'Upaya' (measures) summary; a new precautionary coastal self-evacuation advisory; and confirmation of regency-level emergency-status decrees.",
+      "status": "Archived official source document"
+    },
+    {
+      "id": "bnpb-infografis-20260818-0900wib",
+      "title": "Gempa Bumi M 7,7 Kab. Nagekeo, Nusa Tenggara Timur",
+      "subtitle": "BNPB Infographic — Update 18 Agustus 2026, Pkl. 09.00 WIB (PUSDATINKOM BNPB Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026)",
+      "publisher": "BNPB (Badan Nasional Penanggulangan Bencana) — PUSDATINKOM",
+      "date": "18 August 2026",
+      "cutoff": "09:00 WIB / 10:00 WITA",
+      "language": "Indonesian",
+      "pages": 1,
+      "format": "Image (JPEG)",
+      "size_bytes": 403255,
+      "file": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260818_0900WIB.jpg",
+      "description": "Newest official BNPB single-page infographic, third in this series: 70 deaths, 665 injured, 31,220 displaced, 16,411 households affected; 12,153 houses damaged (6,578 heavy/1,660 moderate/3,915 light); province-wide facility damage (264 education, 157 places of worship, 83 health facilities [9 hospitals + 74 puskesmas — a sharp drop from 211], 171 government offices, 1 Bulog warehouse, 7 irrigation facilities, 116 public facilities, 34 road points, plus newly-tracked 1 market and 5 bridges); a nine-point 'Upaya' summary including new health-team deployments, excavator deployments, telecom (95.4% BTS operational) and electricity (93.1% distribution substations restored) recovery status.",
       "status": "Archived official source document"
     }
   ],
@@ -226,6 +241,6 @@
       "description": "BPBD Ngada Pusdalops district-level detail: 14 health facilities affected (puskesmas, RSUD, posyandu), including Puskesmas Maronggela reported in need of an emergency tent."
     }
   ],
-  "report_number": 11,
-  "report_label": "Situation Report 11"
+  "report_number": 12,
+  "report_label": "Situation Report 12"
 }

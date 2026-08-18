@@ -2,9 +2,9 @@
   "schema_version": 7,
   "event_id": "flores-ntt-2026-08-15-m7.7",
   "status": "preliminary",
-  "status_label": "BNPB's own official infographic, Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026, timestamped 17 August 2026, 07:00 WIB — the newest available official source, now used for the headline casualty and damage figures. Cross-checked against the 16 August 21:00 WIB BNPB infographic (previous report) and the 17 August 05:00 WIB Pusdalops coordination update; largely consistent, with two flagged anomalies (a likely provincial decree-duration typo, and a sharp drop in the irrigation-facility count) rather than silently resolved. Verification and reconciliation continue.",
-  "updated_at": "2026-08-17T07:00:00+07:00",
-  "updated_display": "17 Aug 2026 · 07:00 WIB / 08:00 WITA",
+  "status_label": "BNPB's own official infographic, Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026, timestamped 18 August 2026, 09:00 WIB — the newest available official source, now used for the headline casualty and damage figures. This is the third consecutive edition of this BNPB infographic series incorporated into this SitRep. Two figures moved in unexpected directions this round (health facilities affected fell sharply; the KK-affected figure grew far faster than displacement) and are flagged rather than silently resolved.",
+  "updated_at": "2026-08-18T09:00:00+07:00",
+  "updated_display": "18 Aug 2026 · 09:00 WIB / 10:00 WITA",
   "validated_by": "BNPB/BPBD and field-response authorities; this update additionally cross-checked by this SitRep against independently published BNPB/BMKG statements (see compiled_note)",
   "source": {
     "agency": "Kompas.com",
@@ -39,7 +39,7 @@
     "previous_source_url_20260815_1848wib": "https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia"
   },
   "casualties": {
-    "deaths": 56,
+    "deaths": 70,
     "deaths_by_regency": {
       "Manggarai Regency": 26,
       "East Manggarai Regency": 20,
@@ -48,7 +48,7 @@
       "West Manggarai Regency": 1,
       "Nagekeo Regency": 1
     },
-    "injured": 277,
+    "injured": 665,
     "injured_by_regency": {
       "Manggarai Regency": {
         "severe": 31,
@@ -81,7 +81,7 @@
     },
     "missing": null,
     "source": "Pusdalops-style coordination situation update, Monday 17 August 2026, 05:00 WIB, forwarded via WhatsApp and cross-checked by this SitRep against public BNPB statements",
-    "cross_check_note": "The death toll (54) and its regency breakdown were cross-checked against Deputi Pencegahan BNPB Abdul Muhari's 16 August evening press conference (53 deaths: Manggarai 25, East Manggarai 20, Sikka 4, Ende 2, West Manggarai 1, Nagekeo 1, reported by Kompas and Tribunnews) — the 17 August figures are a plausible, internally consistent +1 (Manggarai 25→26) over that confirmed baseline, matching the steady overnight increment pattern (43→47→51→53→54) seen throughout this event. Aftershock, emergency-status-decree and press-briefing details in the same forwarded report independently checked out (see seismic_monitoring and emergency_status), which increases confidence in the rest of the document. UPDATE, 17 Aug 2026: BNPB's own official infographic dated 17 Aug 2026, 07:00 WIB (Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026) now reports 56 deaths and 277 injured, superseding the 54/204 figures used above; this SitRep has adopted 56/277 as the new headline. The regency-level breakdown was not restated in the newer infographic, so casualties_by_location still reflects the 17 Aug 05:00 WIB Pusdalops breakdown and no longer sums to the new province-wide total.",
+    "cross_check_note": "The death toll (54) and its regency breakdown were cross-checked against Deputi Pencegahan BNPB Abdul Muhari's 16 August evening press conference (53 deaths: Manggarai 25, East Manggarai 20, Sikka 4, Ende 2, West Manggarai 1, Nagekeo 1, reported by Kompas and Tribunnews) — the 17 August figures are a plausible, internally consistent +1 (Manggarai 25→26) over that confirmed baseline, matching the steady overnight increment pattern (43→47→51→53→54) seen throughout this event. Aftershock, emergency-status-decree and press-briefing details in the same forwarded report independently checked out (see seismic_monitoring and emergency_status), which increases confidence in the rest of the document. UPDATE, 17 Aug 2026: BNPB's own official infographic dated 17 Aug 2026, 07:00 WIB (Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026) now reports 56 deaths and 277 injured, superseding the 54/204 figures used above; this SitRep has adopted 56/277 as the new headline. The regency-level breakdown was not restated in the newer infographic, so casualties_by_location still reflects the 17 Aug 05:00 WIB Pusdalops breakdown and no longer sums to the new province-wide total. FURTHER UPDATE, 18 Aug 2026: BNPB's official infographic dated 18 Aug 2026, 09:00 WIB (Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026) now reports 70 deaths and 665 injured, superseding the 56/277 figures from the 17 Aug 07:00 WIB edition; this SitRep has adopted 70/665 as the new headline. Regency-level breakdown was again not restated, so casualties_by_location remains the older Pusdalops breakdown and now understates the province-wide total considerably.",
     "data_quality_flag": "The East Manggarai (Manggarai Timur) injured breakdown in the forwarded report (3 severe, 21 minor = 24) does not reconcile with the last independently confirmed figure for that regency (21 severe, 59 minor = 80, from Abdul Muhari's 16 August evening briefing, cited by Kompas and Tribunnews). A drop of this size in an active response is unusual and looks more consistent with a transcription error in the forwarded message than a genuine revision. This SitRep shows the forwarded figure but flags it as unverified pending an official correction — the province-wide total of 204 is retained as reported since it is internally consistent with the report's own regency sum.",
     "source_note": "Deaths (47) and the 101-injured total are both from BNPB's 00:00 WIB, 16 August update. The 101 figure supersedes BNPB's earlier 113-injured figure. The 36 serious / 77 minor severity split still comes only from the Ministry of Health report dated 15 August (which totalled 113 injured and did not state a cut-off time). BNPB's 101 and the Ministry of Health's 113 are different counts from different agencies — do not add them together or assume one supersedes the other. These 16 August figures are retained below in casualties_by_location's deaths_bnpb/deaths_kemenkes fields for the historical record; the current top-level deaths/injured figures above are the 17 August update.",
     "official_infographic_16aug_2100wib": {
@@ -95,6 +95,12 @@
       "deaths": 56,
       "injured": 277,
       "note": "This is the newest available official figure — later than both the 16 Aug 21:00 WIB infographic (54 deaths/199 injured) and the 17 Aug 05:00 WIB Pusdalops forward (54/204) — and is now treated as the headline casualty figure. Regency-level breakdown is not given in this infographic; the deaths_by_regency/injured_by_regency detail above is retained from the Pusdalops report and is now understated relative to this newer province-wide total by 2 deaths and 73 injuries."
+    },
+    "official_infographic_18aug_0900wib": {
+      "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 18 Agustus 2026 Pkl. 09.00 WIB,” Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026",
+      "deaths": 70,
+      "injured": 665,
+      "note": "Newest available official figure, superseding the 17 Aug 07:00 WIB infographic (56 deaths/277 injured). The injured count nearly tripled between the two reports; this SitRep shows the figure as reported rather than questioning the jump, since large upward revisions are common as district-level injury data continues to be consolidated."
     }
   },
   "casualties_by_location": {
@@ -191,10 +197,10 @@
     }
   },
   "displacement": {
-    "status": "11,675 people displaced and 1,528 households (KK) affected, per BNPB's newest official infographic, 17 August 2026, 07:00 WIB — up from 9,963 people in the 16 Aug, 21:00 WIB infographic; the household count is unchanged at 1,528.",
-    "total_reported": 11675,
-    "households_affected_kk": 1528,
-    "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 17 Agustus 2026 Pkl. 07.00 WIB,” Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026",
+    "status": "31,220 people displaced and 16,411 households (KK) affected, per BNPB's newest official infographic, 18 August 2026, 09:00 WIB — up from 11,675 people / 1,528 households on 17 Aug, 07:00 WIB.",
+    "total_reported": 31220,
+    "households_affected_kk": 16411,
+    "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 18 Agustus 2026 Pkl. 09.00 WIB,” Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026",
     "by_location": {
       "Sikka Regency": {
         "total": 3356,
@@ -214,8 +220,11 @@
     ],
     "earlier_preliminary_approx": 2000,
     "previous_total_reported_approx_20260816_0000wib": 5000,
-    "note": "BNPB's 17 Aug, 07:00 WIB infographic figures above are the most recent available. The per-site breakdown below predates both infographics and is retained only as historical/illustrative context (see by_location_note).",
-    "previous_total_reported_20260816_2100wib": 9963
+    "note": "BNPB's 18 Aug, 09:00 WIB infographic figures above are the most recent available. The per-site breakdown below predates all three infographics and is retained only as historical/illustrative context (see by_location_note).",
+    "previous_total_reported_20260816_2100wib": 9963,
+    "previous_total_reported_20260817_0700wib": 11675,
+    "previous_households_affected_kk_20260817_0700wib": 1528,
+    "kk_growth_rate_note": "The households-affected (KK) figure grew far faster (1,528 → 16,411, ×10.7) than the displaced-people figure (11,675 → 31,220, ×2.7) between the 17 and 18 August infographics, flipping the implied household size from an implausibly high ~7.6 people/KK to an implausibly low ~1.9 people/KK. This SitRep's working interpretation — offered as a plausible explanation, not a confirmed one — is that 'KK Terdampak' may have been redefined between editions, from something closer to 'households currently sheltering/evacuated' to a broader 'households affected by the disaster in any way' (which would track more closely with houses damaged: 16,411 KK vs. 12,153 damaged houses this round is a far more plausible ratio). This is not stated explicitly in either infographic and is shown as a caveat rather than fact."
   },
   "affected": {
     "people": 2196745,
@@ -232,16 +241,16 @@
     ]
   },
   "damage": {
-    "snapshot_status": "Updated to BNPB's newest official infographic, 17 August 2026, 07:00 WIB (Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026), which now supersedes both the 16 Aug 21:00 WIB infographic and the 17 Aug 05:00 WIB Pusdalops-forwarded coordination update for province-wide totals. All three snapshots are preserved below for the historical trend.",
-    "houses_heavily_damaged": 2806,
-    "houses_moderately_damaged": 727,
-    "houses_slightly_damaged": 1141,
-    "houses_damaged_methodology_note": "17 Aug 07:00 WIB BNPB infographic province-wide total (2,806 heavy / 727 moderate / 1,141 light = 4,674), which now supersedes both the 17 Aug 05:00 WIB Pusdalops-computed total (4,541, see previous_snapshot_20260817_0500wib_pusdalops) and the 16 Aug 21:00 WIB official total (2,403, see official_infographic_snapshot_20260816_2100wib). The new official figure (4,674) is close to, and now slightly exceeds, the Pusdalops estimate — a reassuring convergence after the two figures diverged sharply in the previous update.",
-    "education_facilities_affected": 254,
-    "health_facilities_affected_bnpb": 211,
-    "places_of_worship_affected": 96,
-    "government_offices_affected": 106,
-    "places_of_worship_note": "65 (16 Aug 21:00 WIB infographic) rose to 96 (17 Aug 07:00 WIB infographic); this SitRep treats the newer figure as current.",
+    "snapshot_status": "Updated to BNPB's newest official infographic, 18 August 2026, 09:00 WIB (Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026), the third in this infographic series and now the primary source for all province-wide damage figures. The 16 and 17 August snapshots are preserved below for the historical trend.",
+    "houses_heavily_damaged": 6578,
+    "houses_moderately_damaged": 1660,
+    "houses_slightly_damaged": 3915,
+    "houses_damaged_methodology_note": "18 Aug 09:00 WIB BNPB infographic province-wide total (6,578 heavy / 1,660 moderate / 3,915 light = 12,153), which now supersedes the 17 Aug 07:00 WIB official total (4,674, see official_infographic_snapshot_20260817_0700wib). Roughly a 2.6× rise in one day, consistent with the similarly-scaled rise in displacement and casualties over the same period.",
+    "education_facilities_affected": 264,
+    "health_facilities_affected_bnpb": 83,
+    "places_of_worship_affected": 157,
+    "government_offices_affected": 171,
+    "places_of_worship_note": "96 (17 Aug 07:00 WIB) rose to 157 (18 Aug 09:00 WIB); this SitRep treats the newer figure as current.",
     "previous_snapshot_20260816_0000wib": {
       "houses_heavily_damaged": 914,
       "houses_moderately_damaged": 126,
@@ -261,16 +270,16 @@
       "government_offices_affected": 6
     },
     "total_houses_damaged_check": {
-      "computed_total": 4674,
-      "note": "17 Aug 07:00 WIB BNPB infographic states this total directly (2,806 + 727 + 1,141 = 4,674); no longer a SitRep-computed figure. This is now close to, and slightly above, the 17 Aug 05:00 WIB Pusdalops-computed total of 4,541 (see previous_snapshot_20260817_0500wib_pusdalops) and well above the 16 Aug 21:00 WIB official total of 2,403 (see official_infographic_snapshot_20260816_2100wib)."
+      "computed_total": 12153,
+      "note": "18 Aug 09:00 WIB BNPB infographic states this total directly (6,578 + 1,660 + 3,915 = 12,153). Prior totals: 4,674 (17 Aug 07:00 WIB) and 2,403 (16 Aug 21:00 WIB) — see the two official_infographic_snapshot_* entries above."
     },
-    "education_facilities_breakdown": "Per the 17 Aug 07:00 WIB BNPB infographic (up from 110 on 16 Aug 21:00 WIB); no rusak/terdampak sub-split given this round.",
-    "health_facilities_breakdown_bnpb": "21 rumah sakit + 190 puskesmas, per the 17 Aug 07:00 WIB BNPB infographic — identical total and breakdown to the 16 Aug 21:00 WIB infographic (once corrected — see above), a good stability check. Still far above the Ministry of Health's own structurally-focused count (see health.json cross_source_comparison).",
-    "irrigation_facilities_affected": 1,
-    "public_facilities_affected": 97,
+    "education_facilities_breakdown": "Per the 18 Aug 09:00 WIB BNPB infographic (up from 254 on 17 Aug 07:00 WIB).",
+    "health_facilities_breakdown_bnpb": "9 rumah sakit + 74 puskesmas, per the 18 Aug 09:00 WIB BNPB infographic — a sharp DROP from 211 (21 hospitals + 190 puskesmas) on both the 16 Aug and 17 Aug infographics. This is the only sector figure across three consecutive BNPB infographics to fall rather than rise. Notably, 9 hospitals exactly matches, and 74 puskesmas is close to, the Ministry of Health's own long-standing 'structural damage' count (9 hospitals + 68 puskesmas = 77, unchanged since 15–16 Aug — see health.json). This SitRep's working interpretation is that BNPB's methodology may have shifted from a broad 'any facility affected in the region' definition to one closer to Kemenkes's narrower 'structural damage' definition, rather than 128 facilities genuinely having recovered overnight — but this is not stated in the source and is offered as a caveat, not a fact.",
+    "irrigation_facilities_affected": 7,
+    "public_facilities_affected": 116,
     "road_points_affected": 34,
     "bulog_warehouses_affected": 1,
-    "facility_totals_source_note": "The education/health/worship/office/irrigation/public-facility/road-point figures above are all from BNPB's official infographic, 17 Aug 2026, 07:00 WIB (reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg), Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026, the newest in a series that has now also produced the 16 Aug 21:00 WIB snapshot below.",
+    "facility_totals_source_note": "The education/health/worship/office/irrigation/public-facility/road-point/market/bridge figures above are all from BNPB's official infographic, 18 Aug 2026, 09:00 WIB (reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260818_0900WIB.jpg), Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026, the newest in a now three-edition series.",
     "official_infographic_snapshot_20260816_2100wib": {
       "source": "BNPB official infographic, “Update 16 Agustus 2026 Pkl. 21.00 WIB,” Report No. 03/U2100/Gem-NgkNTT/BNPB/16082026",
       "houses_heavily_damaged": 1543,
@@ -290,8 +299,8 @@
       "puskesmas_affected": 190
     },
     "previous_official_snapshot_note": "See official_infographic_snapshot_20260816_2100wib (2,403 houses; 110/211/65/105 facilities) and the Pusdalops-derived computed_total of 4,541 above for the two prior data points superseded below.",
-    "irrigation_facilities_note": "Down sharply from 18 on the 16 Aug 21:00 WIB infographic to 1 on the 17 Aug 07:00 WIB infographic. Unlike every other sector figure in this update, this one decreased; this SitRep shows it as reported rather than assuming which figure is correct — possibly a reclassification or correction rather than a genuine improvement.",
-    "road_points_note": "Unchanged from the 16 Aug 21:00 WIB infographic (34 in both), despite most other figures roughly doubling — shown as reported.",
+    "irrigation_facilities_note": "18 → 1 → 7 across the three BNPB infographics (16 Aug, 17 Aug, 18 Aug respectively). The partial recovery to 7 (still below the original 18) is consistent with the 17 Aug figure of 1 having been transitional or incomplete rather than a real drop, but this SitRep has not seen an explicit explanation from BNPB and continues to show all three figures rather than picking one as correct.",
+    "road_points_note": "Unchanged at exactly 34 across all three consecutive BNPB infographics (16, 17 and 18 August), despite most other sector figures roughly doubling or more over the same period — shown as reported. This level of stability, now three-for-three, makes a simple reporting oversight look more likely than a genuinely static road-damage count in an evolving disaster.",
     "previous_snapshot_20260817_0500wib_pusdalops": {
       "houses_heavily_damaged": 1634,
       "houses_moderately_damaged": 400,
@@ -301,7 +310,6 @@
       "note": "Pusdalops-derived computed total; Ngada's 1,796 houses were still 'dalam pendataan' (being assessed) and not split by severity at that update."
     },
     "official_infographic_snapshot_20260817_0700wib": {
-      "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 17 Agustus 2026 Pkl. 07.00 WIB,” Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026",
       "houses_heavily_damaged": 2806,
       "houses_moderately_damaged": 727,
       "houses_slightly_damaged": 1141,
@@ -317,10 +325,34 @@
       "road_points_affected": 34,
       "bulog_warehouses_affected": 1,
       "note": "Newest and now-primary official damage snapshot; see irrigation_facilities_note and road_points_note above for two figures that did not follow the general upward trend."
+    },
+    "health_facilities_previous_breakdown_note": "21 rumah sakit + 190 puskesmas, per the 17 Aug 07:00 WIB BNPB infographic — identical total and breakdown to the 16 Aug 21:00 WIB infographic (once corrected — see above), a good stability check. Still far above the Ministry of Health's own structurally-focused count (see health.json cross_source_comparison).",
+    "markets_affected": 1,
+    "bridges_affected": 5,
+    "markets_bridges_note": "Newly tracked categories, first reported in the 18 Aug 09:00 WIB infographic: 1 traditional market (pasar) and 5 bridges (jembatan) affected. No prior data exists to compare against.",
+    "official_infographic_snapshot_20260818_0900wib": {
+      "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 18 Agustus 2026 Pkl. 09.00 WIB,” Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026",
+      "houses_heavily_damaged": 6578,
+      "houses_moderately_damaged": 1660,
+      "houses_slightly_damaged": 3915,
+      "total_houses_damaged": 12153,
+      "education_facilities_affected": 264,
+      "health_facilities_affected": 83,
+      "hospitals_affected": 9,
+      "puskesmas_affected": 74,
+      "places_of_worship_affected": 157,
+      "government_offices_affected": 171,
+      "irrigation_facilities_affected": 7,
+      "public_facilities_affected": 116,
+      "road_points_affected": 34,
+      "bulog_warehouses_affected": 1,
+      "markets_affected": 1,
+      "bridges_affected": 5,
+      "note": "Newest and now-primary official damage snapshot; see health_facilities_breakdown_bnpb, irrigation_facilities_note and road_points_note above for the figures that did not follow the general upward trend."
     }
   },
   "regency_damage_detail": {
-    "status_label": "Regency-level preliminary damage, Pusdalops coordination update, 17 August 2026, 05:00 WIB Note: BNPB's newer 17 Aug 07:00 WIB infographic gives higher province-wide totals than this regency table sums to, but does not itself provide a regency-level breakdown, so this table has not been rescaled.",
+    "status_label": "Regency-level preliminary damage, Pusdalops coordination update, 17 August 2026, 05:00 WIB Note: BNPB's newer 17 Aug 07:00 WIB infographic gives higher province-wide totals than this regency table sums to, but does not itself provide a regency-level breakdown, so this table has not been rescaled. BNPB's 18 Aug 09:00 WIB infographic gives still-higher province-wide totals but, like its predecessors, no regency-level breakdown, so this table remains unrescaled.",
     "source_caveat": "This table comes from a WhatsApp-forwarded Pusdalops-style report. This SitRep independently verified the report's casualty, aftershock and emergency-status figures (see casualties.cross_check_note and seismic_monitoring) and found them consistent with public BNPB/BMKG statements, which supports the credibility of this table, but the individual facility/road/office figures below were not each separately re-confirmed against another public source.",
     "regencies": {
       "Nagekeo": {
@@ -444,18 +476,20 @@
     "abbreviation_key": "heavy = rusak berat (RB), moderate = rusak sedang (RS), light = rusak ringan (RR) — Indonesian government damage-severity categories used consistently throughout this SitRep."
   },
   "confirmed": [
-    "56 deaths and 277 injured as of BNPB's newest official infographic, 17 Aug 2026, 07:00 WIB (Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026) — up from 54 deaths / 199–204 injured in the previous update.",
-    "Injured count progression across sources: 199 (BNPB infographic, 16 Aug 21:00 WIB) → 204 (Pusdalops, 17 Aug 05:00 WIB) → 277 (BNPB infographic, 17 Aug 07:00 WIB, now the headline figure above) — a steady rise consistent with continued casualty-data collection, shown in full rather than only stating the latest number.",
-    "11,675 people displaced and 1,528 households (KK) affected, per the same 17 Aug 07:00 WIB infographic (displacement count up from 9,963; households unchanged).",
+    "70 deaths and 665 injured as of BNPB's newest official infographic, 18 Aug 2026, 09:00 WIB (Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026) — up from 56 deaths / 277 injured the previous day.",
+    "Injured-count progression across four consecutive readings: 199 → 204 → 277 → 665, roughly tripling between the 17 and 18 August infographics alone.",
+    "31,220 people displaced and 16,411 households (KK) affected, per the 18 Aug 09:00 WIB infographic. The KK figure grew far faster than the displaced-people figure between the 17 and 18 August editions (×10.7 vs. ×2.7), suggesting a possible definitional change rather than a literal 10× jump in affected households — see displacement.kk_growth_rate_note.",
     "9 regencies and 1 city are formally listed as affected across three provinces: NTT (Manggarai, East Manggarai, West Manggarai, Ngada, Sikka, Nagekeo, Ende), NTB (Bima Regency and Bima City) and South Sulawesi (Kepulauan Selayar).",
     "Emergency-response status has now been formally declared in all 7 priority NTT regencies plus the province: NTT Province, Manggarai, Ngada, East Manggarai (Siaga Darurat), West Manggarai, Ende and Sikka, plus a separate Pernyataan Bencana in Nagekeo — see emergency_status for decree numbers and durations.",
-    "Province-wide sector damage per the 17 Aug 07:00 WIB infographic: 4,674 houses damaged (2,806 heavy / 727 moderate / 1,141 light), 254 education facilities, 211 health facilities (21 hospitals + 190 puskesmas), 96 places of worship, 106 government offices, 97 public facilities, 1 irrigation facility (down sharply from 18 — flagged), 34 road points (unchanged) and 1 Bulog warehouse affected.",
+    "Province-wide sector damage per the 18 Aug 09:00 WIB infographic: 12,153 houses damaged (6,578 heavy / 1,660 moderate / 3,915 light), 264 education facilities, 157 places of worship, 171 government offices, 116 public facilities, 7 irrigation facilities, 34 road points (unchanged for a third consecutive report), 1 Bulog warehouse, plus newly-tracked 1 market and 5 bridges affected. Health facilities affected fell sharply to 83 (9 hospitals + 74 puskesmas) from 211 — the only sector figure to drop, and now close to Kemenkes's own long-standing structural-damage count; see damage.health_facilities_breakdown_bnpb.",
     "BMKG recorded 1,576 aftershocks by Monday, 17 August 2026 (specific cut-off time not stated) — up sharply from 731 the previous day; BNPB is advising Flores residents to stay calm and self-evacuate away from coastal areas as a precaution.",
     "PLN reported 88% of affected customers in Flores had power restored as of its early-morning 16 August briefing, with 58 of 59 feeders (98.3%) and all 11 affected primary substations back in operation.",
     "Badan Geologi (Ministry of Energy and Mineral Resources) reported a preliminary, low-confidence indication of liquefaction (sand boils) at Waekokak, Mbay, Nagekeo, assessed as low-to-moderate impact pending field verification.",
-    "At a 16 August coordination meeting in Manggarai Barat, BNPB's Head set out an eight-point strategic directive: same-day emergency-status declarations, a posko command structure split between Labuan Bajo (national) and Maumere (tactical), a national logistics posko at Halim Perdanakusuma, Basarnas-led SAR, a 7-day basic-service restoration target with parallel house-damage data collection, cross-agency air/sea logistics assets, and daily 17:00 WITA media briefings (see response_coordination)."
+    "At a 16 August coordination meeting in Manggarai Barat, BNPB's Head set out an eight-point strategic directive: same-day emergency-status declarations, a posko command structure split between Labuan Bajo (national) and Maumere (tactical), a national logistics posko at Halim Perdanakusuma, Basarnas-led SAR, a 7-day basic-service restoration target with parallel house-damage data collection, cross-agency air/sea logistics assets, and daily 17:00 WITA media briefings (see response_coordination).",
+    "New response detail from the 18 Aug infographic: NTT's provincial health office and the Ministry of Health (2 teams + an Emergency Medical Team to Sikka/Ende) have deployed medical aid; BBWS Nusa Tenggara II has deployed 13 excavators across four sites; 701 of 735 BTS telecom sites (95.4%) are operational as of 17 Aug 15:00 WIB; and 3,237 of 3,478 distribution substations (93.1%) are back online as of 16 Aug 15:00 WITA."
   ],
   "damage_reports": [
+    "BNPB's newest official infographic (18 Aug 2026, 09:00 WIB, Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026) states a province-wide total of 12,153 damaged houses (6,578 heavy / 1,660 moderate / 3,915 light), up from 4,674 the previous day. Most facility totals rose similarly (education 254→264, worship 96→157, offices 106→171, public facilities 97→116, irrigation 1→7), and two new categories were introduced (1 market, 5 bridges). Health facilities affected fell sharply from 211 to 83 (9 hospitals + 74 puskesmas) — the only figure to drop — while road points affected held at exactly 34 for a third consecutive report.",
     "BNPB's newest official infographic (17 Aug 2026, 07:00 WIB, Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026) states a province-wide total of 4,674 damaged houses (2,806 heavy / 727 moderate / 1,141 light) — now the primary figure, superseding both the 16 Aug 21:00 WIB official total (2,403) and the 17 Aug 05:00 WIB Pusdalops-computed total (4,541), which it now closely exceeds. The same infographic gives updated facility totals (254 education, 211 health [21 hospitals + 190 puskesmas], 96 worship, 106 offices, 97 public facilities, 34 road points) and a sharp drop in the irrigation-facility count (18 → 1, shown as reported).",
     "BNPB's own official infographic (16 Aug 2026, 21:00 WIB, Report No. 03/U2100/Gem-NgkNTT/BNPB/16082026) states a province-wide total of 2,403 damaged houses (1,543 heavy / 328 moderate / 532 light) — lower than the 17 August Pusdalops-computed total of 4,541 below, plausibly because Ngada's still-being-assessed count had not yet been added at 21:00 WIB the previous evening. The same infographic gives the first re-summed province-wide facility totals since the 00:00 WIB, 16 August snapshot: 110 education facilities, 211 health facilities (2 hospitals + 199 puskesmas), 65 places of worship and 105 government offices affected, plus newly-tracked totals of 42 public facilities, 18 irrigation facilities and 34 road points.",
     "The 17 August, 05:00 WIB Pusdalops update puts province-wide house damage at 1,634 heavily damaged, 400 moderately damaged and 711 slightly damaged across six regencies, plus 1,796 houses in Ngada still being assessed without a severity split yet — a computed total of 4,541, up substantially from BNPB's 00:00 WIB, 16 August snapshot of 914 / 126 / 317 (1,357 total). See regency_damage_detail for the full per-regency figures; Ngada's still-being-counted total is the single largest driver of the increase.",
@@ -469,19 +503,20 @@
     "BNPB's 16 Aug, 21:00 WIB infographic additionally itemises urgent logistics needs by regency for all 7 regencies with an active posko (tents, rice, medicines, bedding, water tanks, generators, radios and more) — see response_logistics.urgent_needs_by_regency_16aug_infographic."
   ],
   "information_gaps": [
-    "Regency-level breakdown for the newest 56-deaths/277-injured and 4,674-houses-damaged province-wide totals (17 Aug 07:00 WIB infographic) — not given in that source, so casualties_by_location and regency_damage_detail still reflect the older 17 Aug 05:00 WIB Pusdalops breakdown and now understate the province-wide totals.",
-    "A single, reconciled evacuee total broken out by site across all nine affected regencies (currently detailed for three, against a new province-wide total of 11,675).",
+    "Regency-level breakdown for the newest 70-deaths/665-injured and 12,153-houses-damaged province-wide totals (18 Aug 09:00 WIB infographic) — not given in that source.",
+    "A single, reconciled evacuee total broken out by site across all nine affected regencies (currently detailed for three, against a new province-wide total of 31,220).",
     "Reconciled casualty records across BNPB, the Ministry of Health, BPBD, Basarnas/QRSAR and district authorities — the Ngada/Nagekeo discrepancy between BNPB's two 16 August updates is not yet resolved.",
     "Reconciled definitions and facility-level lists for BNPB's 211 affected-health-facility figure versus the Ministry of Health's 77 facilities with structural damage (see health.json cross_source_comparison).",
     "East Manggarai's specific posko-formation decree number, and Nagekeo's precise emergency-status duration (not stated in the 16 Aug infographic).",
     "Field confirmation of the preliminary liquefaction indication at Waekokak, Mbay.",
     "Verified, earthquake-specific agricultural and livestock impact data from the Ministry of Agriculture (Kementan) — none has been published as of this update; see sector-impact.json.",
     "Official monetary damage-and-loss estimate, and a reconciled district-by-district road/bridge damage list from the Ministry of Public Works (Kementerian PU) — the new 34 road points affected (BNPB infographic) is a count, not a named list.",
-    "Whether the sharp drop in BNPB's reported irrigation-facility count (18 on 16 Aug 21:00 WIB → 1 on 17 Aug 07:00 WIB) reflects a genuine correction/reclassification or a reporting error; and why the road-points-affected count (34) has not moved at all between the same two updates despite most other figures roughly doubling."
+    "Whether the sharp drop in BNPB's reported irrigation-facility count (18 on 16 Aug 21:00 WIB → 1 on 17 Aug 07:00 WIB) reflects a genuine correction/reclassification or a reporting error; and why the road-points-affected count (34) has not moved at all between the same two updates despite most other figures roughly doubling.",
+    "Whether BNPB's health-facility-affected definition changed between the 17 and 18 August infographics (211 → 83), and whether 'KK Terdampak' was redefined between the same two editions (1,528 → 16,411) — neither infographic states a methodology change explicitly."
   ],
   "disclaimer": "BNPB's 18:48 WIB update is used for the consolidated death headline and its 17:00 WIB update for general damage. Ministry of Health figures are retained for injuries and detailed health-sector status, with the source's unstated cut-off shown explicitly. All figures remain preliminary and subject to reconciliation.",
-  "generated_at": "2026-08-17T09:00:00+07:00",
-  "generated_display": "17 Aug 2026 · 09:00 WIB / 10:00 WITA",
+  "generated_at": "2026-08-18T12:30:00+07:00",
+  "generated_display": "18 Aug 2026 · 12:30 WIB / 13:30 WITA",
   "seismic_monitoring": {
     "source": {
       "agency": "BMKG",
@@ -492,7 +527,7 @@
     },
     "data_cutoff": "2026-08-16T13:00:00+07:00",
     "data_cutoff_display": "17 Aug 2026 · (Monday) · specific clock time not stated in source",
-    "data_cutoff_note": "Sources give slightly different cut-off times for the same 731 count: BMKG Kupang's Arief Tyastama cited 07:00 WIB (Kompas.com), Kepala BNPB Suharyanto separately cited 08:13 WITA at the same day's coordination meeting, and the 17 August 05:00 WIB Pusdalops report cites 13:00 WIB, 16 August. The count itself (731) is identical and independently corroborated across all three, which is the figure retained here; the exact cut-off clock time is shown as reported without resolving the discrepancy. UPDATE: BNPB's 17 Aug 07:00 WIB infographic states BMKG recorded 1,576 aftershocks as of Monday, 17 August 2026, without a specific clock-time cut-off; magnitude range and felt/above-M5 breakdowns were not restated for this count, so the M1.9–M6.2 range and 16-above-M5/42-felt figures below are retained from the previous (731) snapshot and may now be understated.",
+    "data_cutoff_note": "Sources give slightly different cut-off times for the same 731 count: BMKG Kupang's Arief Tyastama cited 07:00 WIB (Kompas.com), Kepala BNPB Suharyanto separately cited 08:13 WITA at the same day's coordination meeting, and the 17 August 05:00 WIB Pusdalops report cites 13:00 WIB, 16 August. The count itself (731) is identical and independently corroborated across all three, which is the figure retained here; the exact cut-off clock time is shown as reported without resolving the discrepancy. UPDATE: BNPB's 17 Aug 07:00 WIB infographic states BMKG recorded 1,576 aftershocks as of Monday, 17 August 2026, without a specific clock-time cut-off; magnitude range and felt/above-M5 breakdowns were not restated for this count, so the M1.9–M6.2 range and 16-above-M5/42-felt figures below are retained from the previous (731) snapshot and may now be understated. The 18 Aug 09:00 WIB BNPB infographic repeats the same narrative text as the 17 Aug edition verbatim ('Senin (17/8) telah terjadi 1.576 gempa susulan'), so the aftershock count has not been refreshed in this SitRep pass — 1,576 remains the latest confirmed figure, now potentially a day stale.",
     "aftershocks_recorded": 1576,
     "magnitude_range": {
       "minimum": 1.9,
@@ -660,6 +695,13 @@
       "url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg",
       "publication_date": "2026-08-17",
       "data_cutoff_display": "17 Aug 2026 · 07:00 WIB / 08:00 WITA"
+    },
+    {
+      "agency": "BNPB (PUSDATINKOM)",
+      "title": "Gempa Bumi M 7,7 Kab. Nagekeo, Nusa Tenggara Timur — Update 18 Agustus 2026 Pkl. 09.00 WIB (official infographic, Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026)",
+      "url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260818_0900WIB.jpg",
+      "publication_date": "2026-08-18",
+      "data_cutoff_display": "18 Aug 2026 · 09:00 WIB / 10:00 WITA"
     }
   ],
   "source_reconciliation": {
@@ -875,6 +917,36 @@
     "upaya_17aug_summary": {
       "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 17 Agustus 2026 Pkl. 07.00 WIB,” Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026",
       "note": "An eight-point 'Upaya' (measures) list in the 17 Aug 07:00 WIB infographic broadly corroborates response_coordination's 16 Aug eight-point directive (Pospenas at Labuan Bajo/Maumere, Halim national logistics posko, Basarnas-led SAR, 7-day first-response focus, accelerated Huntara data collection) and adds: continued SAR for residents not yet found; and the media center will additionally operate from BNPB TV's Jakarta studio alongside the National Assistance Post at Labuan Bajo."
+    },
+    "health_sector_response_18aug": {
+      "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 18 Agustus 2026 Pkl. 09.00 WIB,” Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026",
+      "items": [
+        "NTT Provincial Health Office (Dinas Kesehatan Prov. NTT) has sent medicine and medical-equipment aid packages.",
+        "Ministry of Health has mobilised 2 health-management teams and an Emergency Medical Team (EMT) to Sikka and Ende regencies."
+      ]
+    },
+    "infrastructure_response_18aug": {
+      "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 18 Agustus 2026 Pkl. 09.00 WIB,” Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026",
+      "items": [
+        "Ministry of Public Works (Kementerian PU), via BPJN, is accelerating recovery of affected roads and bridges.",
+        "BBWS Nusa Tenggara II has deployed 13 excavator units: 3 in Sikka Regency, 8 at the Mbay dam/weir (Bendung Mbay), 1 in West Manggarai Regency and 1 in Nangaroro."
+      ]
+    },
+    "telecom_status_18aug": {
+      "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 18 Agustus 2026 Pkl. 09.00 WIB,” Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026",
+      "as_of": "17 August 2026, 15:00 WIB",
+      "total_bts_sites": 735,
+      "operational_sites": 701,
+      "operational_pct": 95.4,
+      "down_sites": 34,
+      "down_pct": 4.6
+    },
+    "electricity_status_18aug": {
+      "source": "BNPB official infographic (PUSDATINKOM BNPB), “Update 18 Agustus 2026 Pkl. 09.00 WIB,” Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026",
+      "as_of": "16 August 2026, 15:00 WITA",
+      "primary_substations_restored": "All 11 affected gardu induk (primary substations) back online",
+      "distribution_substations_restored": "3,237 of 3,478 affected gardu distribusi (distribution substations) back online (~93.1%)",
+      "cross_reference_note": "This restates PLN figures already summarised elsewhere in this SitRep (all 11 primary substations, 58/59 feeders = 98.3%) using a different metric — gardu distribusi (distribution substations) rather than feeders — so the 93.1% and 98.3% figures are not directly comparable. Both are shown rather than reconciled."
     }
   },
   "geological_hazards": {
@@ -920,7 +992,7 @@
     ]
   },
   "emergency_status": {
-    "status_label": "Formal disaster emergency-response status declarations; cross-checked 17 Aug 07:00 WIB against BNPB's newest official infographic, which confirms every regency-level entry below except one flagged anomaly (see provincial.note_17aug)",
+    "status_label": "Formal disaster emergency-response status declarations; independently confirmed, unchanged, across three consecutive BNPB infographics (16, 17 and 18 August 2026), except one recurring flagged anomaly (see provincial.note_17aug)",
     "provincial": {
       "region": "East Nusa Tenggara (NTT) Province",
       "status": "Declared — Tanggap Darurat (emergency response)",
@@ -928,7 +1000,7 @@
       "duration": "14 days, 15–28 August 2026",
       "issued_by": "Governor of NTT, Melkiades Laka Lena",
       "note": "Confirmed issued as of 16 August (Kompas, iNews, Bisnis.com); this SitRep previously showed this decree as 'in process' and has updated it to confirmed.",
-      "note_17aug": "BNPB's 17 Aug 07:00 WIB infographic restates NTT Province's status but labels the window 'TANGGAP DARURAT 15-18 AGUSTUS 2026' — inconsistent with the well-established 14-day, 15–28 August decree (305/KEP/HK/2026) confirmed by Kompas, iNews, Bisnis.com and this same BNPB infographic series' own 16 Aug 21:00 WIB edition. This SitRep treats '15-18' as a likely typo for '15-28' in this specific infographic rather than a real change to the decreed duration, but shows it here rather than silently discarding it."
+      "note_17aug": "BNPB's 17 Aug 07:00 WIB infographic restates NTT Province's status but labels the window 'TANGGAP DARURAT 15-18 AGUSTUS 2026' — inconsistent with the well-established 14-day, 15–28 August decree (305/KEP/HK/2026) confirmed by Kompas, iNews, Bisnis.com and this same BNPB infographic series' own 16 Aug 21:00 WIB edition. This SitRep treats '15-18' as a likely typo for '15-28' in this specific infographic rather than a real change to the decreed duration, but shows it here rather than silently discarding it. UPDATE: the identical '15-18 AGUSTUS 2026' text has now appeared in all three BNPB infographics (16, 17 and 18 Aug), which makes a simple one-off typo somewhat less likely and a persistent template error (or an abbreviation this SitRep is not correctly interpreting) more likely. The well-established 14-day, 15–28 August decree (305/KEP/HK/2026) is still retained as the operative figure above."
     },
     "regency_level": [
       {
@@ -1037,6 +1109,11 @@
         "agency": "BNPB (PUSDATINKOM)",
         "title": "Gempa Bumi M 7,7 Kab. Nagekeo, Nusa Tenggara Timur — Update 17 Agustus 2026 Pkl. 07.00 WIB (infographic, Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026)",
         "url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg"
+      },
+      {
+        "agency": "BNPB (PUSDATINKOM)",
+        "title": "Gempa Bumi M 7,7 Kab. Nagekeo, Nusa Tenggara Timur — Update 18 Agustus 2026 Pkl. 09.00 WIB (infographic, Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026)",
+        "url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260818_0900WIB.jpg"
       }
     ]
   },
@@ -1215,7 +1292,7 @@
       "first_7_days_priorities": "The Pusdalops update frames the first 7 days of the tanggap darurat period as prioritising: search and rescue; meeting basic needs; and the gradual restoration of infrastructure, communications, electricity, water, fuel and social services."
     }
   },
-  "report_number": 12,
-  "report_label": "Situation Report 12",
-  "compiled_note": "This SitRep was updated 17 August 2026, 09:00 WIB, incorporating BNPB's newest official infographic, dated 17 August 2026, 07:00 WIB (PUSDATINKOM BNPB Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026, archived at reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg). This is now the most current official source and supersedes the previous update's headline figures: deaths rose 54→56, injured 199–204→277, displaced 9,963→11,675 (households steady at 1,528), and total house damage 2,403/4,541(computed)→4,674 — a reassuring convergence of the two previously-diverging damage estimates. Province-wide facility totals also rose (education 110→254, worship 65→96, offices 105→106) except health facilities, which held exactly at 211 (21 hospitals + 190 puskesmas — note this breakdown corrects a misreading of '2+199' in the previous pass) and irrigation facilities, which fell sharply (18→1, flagged rather than explained) while road points held exactly flat (34→34, also flagged). BMKG's aftershock count rose to 1,576 (from 731), accompanied by a new precautionary public advisory to self-evacuate away from coastal areas. Emergency-status decrees for Ende, Sikka, West Manggarai, Ngada and Nagekeo were independently re-confirmed; the provincial NTT decree's duration was restated as '15–18 August', which this SitRep treats as a likely typo for the well-established 15–28 August window rather than a real change. A new itemised 16 August aid-distribution breakdown (bread, water, sembako) was also added. The confirmed, damage_reports and information_gaps headline lists were updated to match."
+  "report_number": 13,
+  "report_label": "Situation Report 13",
+  "compiled_note": "This SitRep was updated 18 August 2026, 12:30 WIB, incorporating BNPB's newest official infographic, dated 18 August 2026, 09:00 WIB (PUSDATINKOM BNPB Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026, archived at reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260818_0900WIB.jpg), the third edition of this series now incorporated (after 03/U2100, 16 Aug 21:00 WIB, and 04/U0700, 17 Aug 07:00 WIB). Headline figures: deaths 56→70, injured 277→665, displaced 11,675→31,220, households (KK) affected 1,528→16,411, total house damage 4,674→12,153. Most facility totals continued rising (education 254→264, worship 96→157, offices 106→171, public facilities 97→116, irrigation facilities partially recovered from 1→7), and two new categories were introduced (1 market, 5 bridges affected). Two figures moved against the overall trend and are flagged rather than resolved: health facilities affected fell sharply (211→83, with the new 9-hospital+74-puskesmas breakdown now close to Kemenkes's own long-standing structural-damage count — a possible definitional convergence rather than genuine recovery), and the KK-affected figure grew roughly 4x faster than displacement (×10.7 vs. ×2.7), which may indicate 'KK Terdampak' was redefined to a broader category more in line with houses damaged. Road points affected held at exactly 34 for a third consecutive report, further suggesting this specific field may not be getting re-verified each edition. The aftershock count (1,576) was not refreshed in this edition — its narrative text is identical to the 17 August edition. Substantial new operational detail was added: NTT provincial and national Ministry of Health medical-team deployments, 13 excavators deployed by BBWS Nusa Tenggara II, telecom BTS-site recovery (95.4%) and electricity distribution-substation recovery (93.1%). The confirmed, damage_reports and information_gaps headline lists were updated to match."
 }

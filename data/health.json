@@ -448,22 +448,24 @@
     "Several figures in the 16 August V1 report's per-district table carry an asterisk in the source document with no visible footnote legend in the pages reviewed; this SitRep reproduces the numeric values without being able to confirm what the asterisk denotes."
   ],
   "disclaimer": "Ministry of Health figures remain the primary source for detailed health-sector status. BNPB's separate count of 18 affected health facilities at 17:00 WIB is retained for comparison and is not combined with the Ministry of Health's 77 structurally damaged facilities. All figures remain preliminary.",
-  "generated_at": "2026-08-17T09:00:00+07:00",
-  "generated_display": "17 Aug 2026 · 09:00 WIB / 10:00 WITA",
+  "generated_at": "2026-08-18T12:30:00+07:00",
+  "generated_display": "18 Aug 2026 · 12:30 WIB / 13:30 WITA",
   "cross_source_comparison": {
     "bnpb": {
-      "source_url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260816_2100WIB.jpg",
-      "source_title": "BNPB official infographic, Report No. 03/U2100/Gem-NgkNTT/BNPB/16082026",
-      "data_cutoff_display": "16 Aug 2026 · 21:00 WIB / 22:00 WITA",
-      "health_facilities_affected": 211,
-      "hospitals_affected": 21,
-      "puskesmas_affected": 190,
+      "source_url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260818_0900WIB.jpg",
+      "source_title": "BNPB official infographic, Report No. 05/U0900/Gem-NgkNTT/BNPB/18082026",
+      "data_cutoff_display": "18 Aug 2026 · 09:00 WIB / 10:00 WITA",
+      "health_facilities_affected": 83,
+      "hospitals_affected": 9,
+      "puskesmas_affected": 74,
       "previous_bnpb_figure_20260815_1700wib": 18,
       "previous_note": "BNPB's own reported total rose from 18 (15 Aug, 17:00 WIB) to 211 (16 Aug, 21:00 WIB) as province-wide data collection continued.",
       "reading_correction_note": "The 16 Aug 21:00 WIB infographic's breakdown was initially misread in this SitRep as '2 hospitals + 199 puskesmas'; on re-inspection at higher resolution, and confirmed by the 17 Aug 07:00 WIB infographic restating the identical 21/190 split, the correct breakdown is 21 hospitals + 190 puskesmas — which matches the Ministry of Health's own province-wide facility baseline (21 hospitals, 190 puskesmas) exactly. This resolves the apparent 'puskesmas affected exceeds puskesmas that exist' inconsistency flagged in the previous pass.",
       "latest_source_url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg",
       "latest_data_cutoff_display": "17 Aug 2026 · 07:00 WIB / 08:00 WITA",
-      "previous_bnpb_figure_20260816_2100wib": 211
+      "previous_bnpb_figure_20260816_2100wib": 211,
+      "previous_bnpb_figure_20260817_0700wib": 211,
+      "convergence_note": "BNPB's 18 Aug figure (9 hospitals + 74 puskesmas = 83) is a sharp drop from 211 on both the 16 and 17 August infographics, and now sits close to — rather than far above — the Ministry of Health's own structural-damage count directly below (9 hospitals + 68 puskesmas = 77). The hospital counts now match exactly. This looks like a possible convergence in definition/methodology between the two agencies rather than a literal overnight recovery of 128 facilities; neither source states this explicitly, so it is shown as a working interpretation, not a confirmed fact."
     },
     "ministry_of_health": {
       "report_date": "2026-08-15",
@@ -472,10 +474,10 @@
       "puskesmas_with_structural_damage": 68,
       "total_facilities_with_structural_damage": 77
     },
-    "interpretation": "Do not subtract or combine the figures. BNPB reports affected health facilities on its own, broader definition — 211 (21 hospitals + 190 puskesmas), unchanged between BNPB's 16 Aug 21:00 WIB and 17 Aug 07:00 WIB infographics — while the Ministry of Health reports facilities specifically classified with structural damage (77: 9 hospitals + 68 puskesmas, see facility_summary above). BNPB's 21/190 breakdown exactly matches the total number of hospitals and puskesmas in the Ministry of Health's own province-wide baseline below, which suggests BNPB is counting essentially every health facility in the affected area as 'terdampak' (affected, in some way) — a much broader threshold than the Ministry of Health's 'structural damage' classification. Source, source table and cut-off all differ; this SitRep flags rather than resolves the gap."
+    "interpretation": "Do not subtract or combine the figures. Historically, BNPB reported affected health facilities on a much broader definition (211, unchanged across its 16 Aug and 17 Aug infographics: 21 hospitals + 190 puskesmas — essentially the entire regional facility count) than the Ministry of Health's narrower structural-damage classification (77: 9 hospitals + 68 puskesmas, see facility_summary above). BNPB's newest infographic (18 Aug, 09:00 WIB) has now dropped sharply to 83 (9 hospitals + 74 puskesmas) — much closer to the Ministry of Health's figure, and identical on the hospital count — suggesting the two sources may now be converging on a similar definition (see bnpb.convergence_note). This SitRep still does not combine the two figures, and continues to flag rather than resolve the apparent methodology shift."
   },
-  "report_number": 11,
-  "report_label": "Situation Report 11",
+  "report_number": 12,
+  "report_label": "Situation Report 12",
   "source_document": "Kemenkes SITUATION REPORT V1 — Penanganan Bencana Gempa Bumi dan Tsunami di Nusa Tenggara Timur",
   "hospitals_by_district": [
     {
