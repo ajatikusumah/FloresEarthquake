@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Affected-regency map, confirmed impacts, damage reports, information gaps and emergency status for the M7.7 Flores earthquake."
+    />
+    <meta name="theme-color" content="#0b2545" />
+    <title>Dampak & Kerusakan — Flores Earthquake SitRep 14</title>
+    <link rel="stylesheet" href="vendor/leaflet.css" />
+    <link rel="stylesheet" href="sitrep.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="sitrep.js" defer></script>
+  </head>
+  <body data-page="impact">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <span id="topbar-report-number">Situation Report 14</span>
+          <time id="topbar-generated-time" datetime="2026-08-18T13:15:00+07:00">
+            Generated: 18 August 2026 · 13:15 WIB / 14:15 WITA
+          </time>
+        </div>
+        <nav class="topnav" aria-label="Situation report pages">
+          <a href="index.html">Overview</a>
+          <a href="hazards.html">Hazards &amp; Geology</a>
+          <a href="impact.html" class="active">Impact &amp; Damage</a>
+          <a href="response.html">Response &amp; Coordination</a>
+          <a href="health.html">Health</a>
+          <a href="economy.html">Economy &amp; Services</a>
+          <a href="reports.html">Reports &amp; Methodology</a>
+          <button class="print-btn" type="button" onclick="window.print()">
+            Print / Save PDF
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="page-header">
+        <div class="eyebrow">Dampak &amp; Kerusakan</div>
+        <h1>Impact &amp; Damage</h1>
+        <p class="summary" style="margin-top:8px">Affected-regency map, confirmed impacts and remaining information gaps, plus emergency status and cross-province reports.</p>
+      </div>
+      <div class="content">
+        <section class="section map-section" id="affected-map">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Geographic overview</div>
+              <h2>Affected regencies</h2>
+            </div>
+            <div class="live-feed-meta">
+              <span class="feed-status is-loading" id="map-status">Loading OpenStreetMap…</span>
+              <span class="source-note">BNPB [25] and Ministry of Health [24]</span>
+            </div>
+          </div>
+
+          <div class="map-layout">
+            <div class="map-frame">
+              <div
+                id="disaster-map"
+                role="application"
+                aria-label="Interactive OpenStreetMap showing eight affected regencies in Flores"
+              ></div>
+            </div>
+
+            <aside class="map-panel" aria-label="Map legend and affected-area selector">
+              <div class="map-stat">
+                <strong>8</strong>
+                <span>Affected regencies listed in the Ministry of Health report</span>
+              </div>
+
+              <div class="map-legend" aria-label="Map marker legend">
+                <strong>Deaths (18 Aug estimate — see caveat below)</strong>
+                <span><i class="map-swatch map-swatch-high"></i>10 or more</span>
+                <span><i class="map-swatch map-swatch-medium"></i>1–9</span>
+                <span><i class="map-swatch map-swatch-pending"></i>None listed / not reported</span>
+              </div>
+
+              <div class="map-area-list" aria-label="Select an affected regency">
+                <button type="button" data-map-area="Sikka Regency">Sikka</button>
+                <button type="button" data-map-area="Ende Regency">Ende</button>
+                <button type="button" data-map-area="East Manggarai Regency">East Manggarai</button>
+                <button type="button" data-map-area="Nagekeo Regency">Nagekeo</button>
+                <button type="button" data-map-area="West Manggarai Regency">West Manggarai</button>
+                <button type="button" data-map-area="Manggarai Regency">Manggarai</button>
+                <button type="button" data-map-area="Ngada Regency">Ngada</button>
+                <button type="button" data-map-area="East Flores Regency">East Flores</button>
+              </div>
+            </aside>
+          </div>
+
+          <p class="map-caveat">
+            Marker points use representative regency-capital locations for orientation. They do not
+            depict exact administrative boundaries, the full geographic extent of impact, or a
+            verified impact footprint. Click a marker or regency name for source-specific figures.
+          </p>
+          <p class="map-caveat" id="map-recency-caveat">
+            <strong>Data-recency note:</strong> no source has published a regency-level breakdown since the
+            17 August 2026, 05:00 WIB Pusdalops report (54 deaths / 204 injured across the regencies listed).
+            To keep marker colour, size and the province-wide total in sync with the current 70-death/665-injured
+            headline (18 Aug 2026, 09:00 WIB BNPB infographic), this SitRep now shows a <strong>calculated
+            estimate</strong> \u2014 the 17 August breakdown scaled proportionally to the new totals \u2014 clearly
+            labelled as such in each marker&rsquo;s popup, alongside the original, actually-reported figures.
+            This assumes every regency grew at the same rate, which real-world growth is unlikely to follow
+            exactly; treat marker positions as directional, not precise. Ngada and East Flores have no reported
+            baseline to scale and remain shown as not stated.
+          </p>
+        </section>
+        <section class="section" id="impacts">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Official preliminary impact update</div>
+              <h2>Reported impacts and remaining information gaps</h2>
+            </div>
+            <div class="source-note">
+              <span id="impact-validation-status">BNPB preliminary impact update at 18:48 WIB — reconciliation continues</span><br />
+              <span id="impact-validation-time">Cut-off: 15 Aug 2026 · 18:48 WIB / 19:48 WITA</span>
+              · <a id="impact-source-link" href="https://www.bnpb.go.id/berita/update-dampak-gempa-m77-ntt-lebih-dari-40-warga-meninggal-dunia" target="_blank" rel="noopener noreferrer">BNPB</a>
+            </div>
+          </div>
+          <div class="impact-highlight">
+            <div><strong id="impact-displacement">Under assessment</strong><span>Latest evacuee-count status</span></div>
+            <p>Impact figures are loaded from <code>data/impact.json</code> and remain preliminary.</p>
+          </div>
+          <div class="impact-grid">
+            <article class="impact-card" style="--accent:var(--teal); --bg:var(--pale-green)">
+              <h3>Latest official impact figures</h3><span class="confidence">BNPB's newest official infographic, 18 Aug 2026, 09:00 WIB</span>
+              <ul id="impact-confirmed-list">
+                <li>70 deaths and 665 injured — up from 56 deaths / 277 injured the previous day.</li>
+                <li>31,220 people displaced and 16,411 households (KK) affected — the KK figure grew far faster than displacement, possibly reflecting a broader definition rather than a literal 10× jump.</li>
+                <li>12,153 houses damaged (6,578 heavy / 1,660 moderate / 3,915 light) — up from 4,674 the previous day.</li>
+                <li>Health facilities affected fell sharply to 83 (9 hospitals + 74 puskesmas) from 211 — the only sector figure to drop, now close to Kemenkes's own long-standing count.</li>
+                <li>Emergency-response status confirmed unchanged for a third consecutive report across all 7 priority regencies plus NTT Province.</li>
+              </ul>
+            </article>
+            <article class="impact-card" style="--accent:var(--orange); --bg:var(--pale-orange)">
+              <h3>Preliminary damage and response logistics</h3><span class="confidence">BNPB 18 Aug 09:00 WIB infographic (newest)</span>
+              <ul id="impact-damage-list">
+                <li>12,153 houses damaged province-wide (6,578 heavy / 1,660 moderate / 3,915 light) — roughly 2.6× the previous day's total of 4,674.</li>
+                <li>264 education, 157 worship, 171 government-office, 116 public facilities and 34 road points (unchanged for a third report) affected; 1 market and 5 bridges newly tracked this round.</li>
+                <li>New response detail: NTT's health office and Kemenkes (2 teams + an EMT to Sikka/Ende) sent medical aid; BBWS Nusa Tenggara II deployed 13 excavators across 4 sites.</li>
+                <li>Telecom: 701 of 735 BTS sites (95.4%) operational as of 17 Aug 15:00 WIB. Electricity: all 11 primary substations and 3,237 of 3,478 distribution substations (93.1%) restored as of 16 Aug 15:00 WITA.</li>
+                <li>Larantuka–Maumere road reopened; Ende–Nagekeo road remains cut off.</li>
+              </ul>
+            </article>
+            <article class="impact-card" style="--accent:var(--red); --bg:var(--pale-red)">
+              <h3>Not yet available</h3><span class="confidence">Critical information gaps</span>
+              <ul id="impact-gaps-list">
+                <li>Regency-level breakdown for the newest 70-deaths/665-injured and 12,153-houses totals (not given in the 18 Aug infographic).</li>
+                <li>Whether BNPB's health-facility definition changed (211→83) and whether "KK Terdampak" was redefined (1,528→16,411) between the 17 and 18 August editions.</li>
+                <li>Reconciled casualty records across BNPB, Kemenkes, BPBD, Basarnas and districts.</li>
+                <li>Why road points affected has held at exactly 34 for three consecutive reports.</li>
+                <li>Post-disaster disease-surveillance, animal-health and official monetary damage-and-loss estimates.</li>
+              </ul>
+            </article>
+          </div>
+
+          <article class="panel" style="margin-top:16px">
+            <h3>House damage by regency — 17 Aug, 05:00 WIB Pusdalops update</h3>
+            <p class="small">Sorted by heavily-damaged (RB) house count. Ngada's 1,796 damaged houses are not yet split by severity — see note below.</p>
+            <div class="sector-status-list" id="regency-damage-houses-list">
+              <div class="sector-status-row"><span>Manggarai</span><strong>761 heavy · 76 moderate · 147 light</strong></div>
+              <div class="sector-status-row"><span>West Manggarai</span><strong>481 heavy · 202 moderate · 231 light</strong></div>
+              <div class="sector-status-row"><span>Sikka</span><strong>145 heavy · 16 moderate · 12 light</strong></div>
+              <div class="sector-status-row"><span>Nagekeo</span><strong>116 heavy · 6 moderate · 42 light</strong></div>
+              <div class="sector-status-row"><span>Ende</span><strong>108 heavy · 85 moderate · 268 light</strong></div>
+              <div class="sector-status-row"><span>East Manggarai</span><strong>23 heavy · 15 moderate · 11 light</strong></div>
+              <div class="sector-status-row"><span>Ngada</span><strong>1,796 houses affected — not yet split by severity</strong></div>
+            </div>
+            <div id="regency-damage-other" class="sector-impact-list" style="margin-top:14px">
+              <article class="sector-impact-item"><strong>Manggarai</strong><p>10 government facilities heavily damaged (+2 moderate); 30 health facilities heavily damaged (+9 moderate); 104 education facilities heavily damaged; 10 public facilities affected.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>West Manggarai</strong><p>~20 government offices affected; 9 health facilities affected; 13 places of worship/public facilities affected; 2 hotels moderately damaged.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>Sikka</strong><p>9 government buildings, 9 health facilities, 20 places of worship and 11 road segments affected.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>Nagekeo</strong><p>5 health facilities, 2 education facilities and 5 government offices affected; 3 road segments affected.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>Ende</strong><p>19 health facilities lightly damaged (+1 heavy, 3 moderate); 24 education facilities moderately damaged; 5 named road segments affected, including Trans Ende–Nagekeo.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>East Manggarai</strong><p>2 churches damaged; 1 kelurahan office affected — the smallest reported house-damage count of the seven regencies despite its high death toll.</p><small>Regency detail</small></article>
+              <article class="sector-impact-item"><strong>Ngada</strong><p>73 education facilities, 46 government offices and 36 health facilities affected (all still being counted); 12 road segments, 5 animal-health facilities, 30 places of worship, 2 water facilities and 1 irrigation facility affected.</p><small>Regency detail</small></article>
+            </div>
+            <div class="sector-caveat" id="regency-damage-caveat" style="margin-top:14px">
+              <strong>Source:</strong> Pusdalops-style coordination update, 17 Aug 2026, 05:00 WIB, forwarded via WhatsApp. This SitRep independently verified the report's casualty, aftershock and emergency-status figures against public BNPB/BMKG statements and found them consistent (see the casualties panel above), which supports the credibility of this table; the individual facility/road figures were not each separately re-confirmed against another public source.
+            </div>
+          </article>
+        </section>
+        <section class="section" id="emergency-status">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Administrative response</div>
+              <h2>Emergency status, BPBD reports and cross-province impact</h2>
+            </div>
+            <div class="source-note" id="emergency-status-source-note">Reported 16 August 2026, confirmed unchanged through 18 Aug 09:00 WIB · [27][30][31][33][38][39][40]</div>
+          </div>
+          <div class="sector-layout">
+            <article class="panel">
+              <h3>Emergency-response (tanggap darurat) status</h3>
+              <div class="sector-status-list" id="emergency-status-list">
+                <div class="sector-status-row"><span>NTT Province</span><strong>14-day decree in process</strong></div>
+                <div class="sector-status-row"><span>Manggarai Regency</span><strong>Declared — 90 days, 15 Aug–13 Nov 2026</strong></div>
+              </div>
+              <p class="small" style="margin-top:12px" id="emergency-status-note">
+                Manggarai's declaration (decree 300.2.2/130/VIII/2026, issued by Regent Herybertus G. L. Nabit)
+                enabled temporary field hospitals at RSUD Ruteng, RS Pratama Reo and RS Santo Rafael Cancar.
+                BNPB's Head urged other affected regencies to declare emergency status to speed up unified
+                command and emergency-fund access; this SitRep does not yet have confirmed decree details
+                beyond Manggarai.
+              </p>
+            </article>
+            <article class="panel">
+              <h3>Regional agency (BPBD) reports</h3>
+              <div class="sector-status-list" id="bpbd-reports-list">
+                <div class="sector-status-row"><span>BPBD NTT</span><strong>Early damage confirmed; verification ongoing</strong></div>
+                <div class="sector-status-row"><span>BPBD NTB (Bima)</span><strong>Building damage documented, see below</strong></div>
+                <div class="sector-status-row"><span>BPBD Kota Bima</span><strong>Field data collection ongoing</strong></div>
+              </div>
+              <p class="small" style="margin-top:12px">
+                No separate, independently reconciled BPBD NTT casualty/damage dataset has been published
+                beyond the BNPB and Ministry of Health figures already shown above.
+              </p>
+            </article>
+          </div>
+
+          <div class="sector-layout" style="margin-top:16px">
+            <article class="panel">
+              <h3>Cross-province impact — West Nusa Tenggara (Bima)</h3>
+              <ul class="sector-priority-list" id="cross-province-ntb-list">
+                <li>One house moderately damaged, Kelurahan Rabangodu Selatan, Kecamatan Raba, Bima City</li>
+                <li>Wall damage at a Bulog food-logistics warehouse; stored rice sacks fell</li>
+                <li>Ceiling damage at the Mutmainnah Hotel mosque</li>
+                <li>Light wall cracking at the Lambitu district office, Bima Regency</li>
+              </ul>
+              <p class="small" style="margin-top:10px">Conditions described by BPBD NTB as generally conducive. Urgent needs: ready-to-eat food, bottled water, blankets, tarpaulins, mattresses, family kits.</p>
+            </article>
+            <article class="panel">
+              <h3>Cross-province impact — South Sulawesi</h3>
+              <p class="small">Shaking and small tsunami observations were reported in Kepulauan Selayar Regency. Neither BNPB's 00:00 WIB update nor the sources reviewed for this SitRep detail structural damage there.</p>
+              <div class="sector-caveat" style="margin-top:14px">
+                <strong>Note:</strong> displacement was also reported in Bima and Kepulauan Selayar
+                (see the impacts section above); this SitRep does not have a confirmed count for either.
+              </div>
+            </article>
+          </div>
+        </section>
+
+    </div>
+      <footer class="footer">
+        <span>Preliminary open-source SitRep · Data remain evolving and subject to BNPB validation.</span>
+        <span>Situation Report 14 · Compiled 18 Aug 2026 · 13:15 WIB / 14:15 WITA · BNPB 18 Aug 09:00 WIB infographic data cut-off · Health · SAR · Child protection · Animal health · Economic impacts · Emergency status · Map now uses labelled 18 Aug estimates</span>
+      </footer>
+    </main>
+  </body>
+</html>

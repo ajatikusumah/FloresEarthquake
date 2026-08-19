@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Live aftershock feed, shaking intensity, liquefaction, fault context and the observed tsunami for the M7.7 Flores earthquake."
+    />
+    <meta name="theme-color" content="#0b2545" />
+    <title>Kebencanaan & Geologi — Flores Earthquake SitRep 14</title>
+    <link rel="stylesheet" href="sitrep.css" />
+    <script src="sitrep.js" defer></script>
+  </head>
+  <body data-page="hazards">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <span id="topbar-report-number">Situation Report 14</span>
+          <time id="topbar-generated-time" datetime="2026-08-18T13:15:00+07:00">
+            Generated: 18 August 2026 · 13:15 WIB / 14:15 WITA
+          </time>
+        </div>
+        <nav class="topnav" aria-label="Situation report pages">
+          <a href="index.html">Overview</a>
+          <a href="hazards.html" class="active">Hazards &amp; Geology</a>
+          <a href="impact.html">Impact &amp; Damage</a>
+          <a href="response.html">Response &amp; Coordination</a>
+          <a href="health.html">Health</a>
+          <a href="economy.html">Economy &amp; Services</a>
+          <a href="reports.html">Reports &amp; Methodology</a>
+          <button class="print-btn" type="button" onclick="window.print()">
+            Print / Save PDF
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="page-header">
+        <div class="eyebrow">Kebencanaan &amp; Geologi</div>
+        <h1>Hazards &amp; Geology</h1>
+        <p class="summary" style="margin-top:8px">Live regional earthquake feed, the aftershock sequence, liquefaction indications and the observed local tsunami.</p>
+      </div>
+      <div class="content">
+        <section class="section live-feed-section" id="live-data">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Near-real-time monitoring</div>
+              <h2>Latest regional M5+ earthquake</h2>
+            </div>
+            <div class="live-feed-meta">
+              <span class="feed-status is-loading" id="feed-status">Connecting to BMKG feed…</span>
+              <span class="source-note" id="feed-last-checked">Automatic refresh every 5 minutes</span>
+            </div>
+          </div>
+          <div class="live-feed-shell">
+            <div class="live-data-grid">
+              <article class="live-data-card">
+                <div class="live-data-value" id="live-magnitude">M5.1</div>
+                <div class="live-data-label">Latest regional magnitude</div>
+              </article>
+              <article class="live-data-card">
+                <div class="live-data-value" id="live-depth">10 km</div>
+                <div class="live-data-label">Depth</div>
+              </article>
+              <article class="live-data-card live-location-card">
+                <div class="live-data-value live-location" id="live-location">82 km northeast of Ruteng, Manggarai, NTT</div>
+                <div class="live-data-label">
+                  <span id="live-event-time">15 Aug 2026 · 14:39:41 WIB</span>
+                  · <span id="live-coordinates">-7.94,120.79</span>
+                </div>
+              </article>
+              <article class="live-data-card">
+                <div class="live-data-value live-potential" id="live-potential">Not tsunami-generating</div>
+                <div class="live-data-label">BMKG potential statement</div>
+              </article>
+            </div>
+            <div class="live-recent">
+              <div class="live-recent-head">
+                <strong>Recent regional M5+ events</strong>
+                <a href="https://data.bmkg.go.id/gempabumi/" target="_blank" rel="noopener noreferrer">Official BMKG data</a>
+              </div>
+              <div id="recent-quakes" class="recent-quakes" aria-live="polite">
+                <div class="live-quake-row"><strong>M5.1</strong><span>82 km northeast of Ruteng, Manggarai, NTT</span><time>15 Aug 2026 · 14:39:41 WIB</time></div>
+                <div class="live-quake-row"><strong>M5.0</strong><span>33 km northeast of Mbay, Nagekeo, NTT</span><time>15 Aug 2026 · 12:45:09 WIB</time></div>
+                <div class="live-quake-row"><strong>M5.0</strong><span>42 km northeast of Mbay, Nagekeo, NTT</span><time>15 Aug 2026 · 10:54:14 WIB</time></div>
+              </div>
+            </div>
+          </div>
+          <p class="live-disclaimer">
+            The feed displays BMKG's latest M5+ records for Flores and surrounding NTT. It is
+            refreshed in the viewer's browser every five minutes. BMKG remains the authoritative
+            source; impact figures below are maintained separately from official BNPB/BPBD updates.
+          </p>
+        </section>
+        <section class="section" id="hazards">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Hazard profile</div>
+              <h2>Shaking and aftershock sequence</h2>
+            </div>
+            <div class="source-note">BMKG shakemap estimate and aftershock updates [1][4][15][23][26]</div>
+          </div>
+          <div class="two-col">
+            <article class="panel">
+              <h3>Main-shock intensity</h3>
+              <div class="mmi-list">
+                <div class="mmi-row" style="--accent: var(--red)">
+                  <div class="mmi">VII</div><div><strong>Very strong</strong><div class="small">Aesesa, Riung, Mbay City</div></div>
+                </div>
+                <div class="mmi-row" style="--accent: var(--orange)">
+                  <div class="mmi">VI</div><div><strong>Strong</strong><div class="small">Wolowae, Bajawa City</div></div>
+                </div>
+                <div class="mmi-row" style="--accent: var(--gold)">
+                  <div class="mmi">V</div><div><strong>Moderate–strong</strong><div class="small">Ende City, Borong, Ruteng</div></div>
+                </div>
+              </div>
+            </article>
+            <article class="panel">
+              <h3>Aftershock sequence</h3>
+              <div class="aftershock-stat"><b id="aftershock-total">1,576</b><span><strong id="aftershock-window">events by 17 Aug (Monday), specific cut-off time not stated</strong><br /><span class="small" id="aftershock-range">M1.9–M6.2; 16 events above M5; 30 felt by residents (as of the previous 731 count \u2014 not restated); sequence not yet showing clear decay · BNPB/BMKG [39]</span></span></div>
+              <div class="aftershock-list">
+                <div class="aftershock"><strong>05:13</strong><strong>M6.2</strong><span>46 km NE of Labuan Bajo</span></div>
+                <div class="aftershock"><strong>05:27</strong><strong>M5.5</strong><span>56 km NE of Ruteng</span></div>
+                <div class="aftershock"><strong>05:28</strong><strong>M6.2</strong><span>45 km NE of Mbay</span></div>
+                <div class="aftershock"><strong>05:37</strong><strong>M5.6</strong><span>49 km NE of Labuan Bajo</span></div>
+                <div class="aftershock"><strong>19:14</strong><strong>M5.1</strong><span>47 km NW of Mbay, Nagekeo</span></div>
+              </div>
+              <p class="small" style="margin-top:10px">BMKG estimates typical decay for a sequence like this at 2–3 weeks, based on comparison with a recent North Maluku sequence.</p>
+              <p class="small" id="aftershock-bnpb-note" style="margin-top:6px">BNPB's own 00:00 WIB briefing separately cited 341 aftershocks — lower than BMKG's technical count above; both are shown rather than reconciled.</p>
+            </article>
+          </div>
+        </section>
+        <section class="section" id="geohazards">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Secondary hazards</div>
+              <h2>Liquefaction and fault context</h2>
+            </div>
+            <div class="source-note">Badan Geologi, Ministry of Energy and Mineral Resources (ESDM) [28][29]</div>
+          </div>
+          <div class="two-col">
+            <article class="panel">
+              <h3>Liquefaction indication</h3>
+              <div class="sector-status-list">
+                <div class="sector-status-row"><span>Evidence</span><strong>Sand boils reported at Waekokak, Mbay, Nagekeo</strong></div>
+                <div class="sector-status-row"><span>Assessed severity</span><strong>Low to moderate</strong></div>
+                <div class="sector-status-row"><span>Comparison</span><strong>Not Palu-type (2018); limited lateral spreading expected</strong></div>
+                <div class="sector-status-row"><span>Verification</span><strong>Preliminary — field team dispatched</strong></div>
+              </div>
+              <p class="small" style="margin-top:12px">Badan Geologi also flagged ground movement/landslides and ground cracking as hazards requiring continued monitoring, in addition to the tsunami observations above.</p>
+            </article>
+            <article class="panel">
+              <h3>Fault and historical context</h3>
+              <p class="small">Source parameters associate the mainshock with the Flores Back-Arc Thrust, assessed capable of up to M7.8–M7.9.</p>
+              <ul class="sector-priority-list">
+                <li>1961 North Flores earthquake</li>
+                <li>1992 Flores earthquake and tsunami — widely cited at roughly 2,500 deaths, one of Indonesia's deadliest modern tsunami disasters</li>
+                <li>1982 Solor earthquake</li>
+                <li>2003 Manggarai earthquake</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <div class="section-kicker">Sea-level observations</div>
+              <h2>Observed tsunami</h2>
+            </div>
+            <div class="source-note">Measured sea-level observation, not run-up or inundation depth · BMKG [2][8][23]; Pota observation via Badan Geologi [29]</div>
+          </div>
+          <div class="panel tsunami-list">
+            <div class="tsunami-row"><strong>Reo/Manggarai coast</strong><div class="bar-track"><div class="bar" style="--size:100%; --accent:var(--red)"></div></div><strong>1.61 m</strong></div>
+            <div class="tsunami-row"><strong>Pota, East Manggarai</strong><div class="bar-track"><div class="bar" style="--size:100%; --accent:var(--red)"></div></div><strong>1.67 m</strong></div>
+            <div class="tsunami-row"><strong>Maurole–Ende</strong><div class="bar-track"><div class="bar" style="--size:58%; --accent:var(--orange)"></div></div><strong>0.94 m</strong></div>
+            <div class="tsunami-row"><span>Bulukumba</span><div class="bar-track"><div class="bar" style="--size:34%; --accent:var(--red)"></div></div><strong>0.54 m</strong></div>
+            <div class="tsunami-row"><span>Kewapante Port–Sikka</span><div class="bar-track"><div class="bar" style="--size:24%"></div></div><strong>0.38 m</strong></div>
+            <div class="tsunami-row"><span>Labuan Bajo</span><div class="bar-track"><div class="bar" style="--size:22%"></div></div><strong>0.36 m</strong></div>
+            <div class="tsunami-row"><span>Baubau</span><div class="bar-track"><div class="bar" style="--size:19%"></div></div><strong>0.30 m</strong></div>
+            <div class="tsunami-row"><span>East Flores</span><div class="bar-track"><div class="bar" style="--size:16%; --accent:var(--blue)"></div></div><strong>0.25 m</strong></div>
+            <div class="tsunami-row"><span>Kolaka</span><div class="bar-track"><div class="bar" style="--size:14%; --accent:var(--blue)"></div></div><strong>0.23 m</strong></div>
+            <div class="tsunami-row"><span>Sikka</span><div class="bar-track"><div class="bar" style="--size:12%; --accent:var(--blue)"></div></div><strong>0.19 m</strong></div>
+            <div class="tsunami-row"><span>Dompu</span><div class="bar-track"><div class="bar" style="--size:11%; --accent:var(--blue)"></div></div><strong>0.17 m</strong></div>
+            <div class="tsunami-row"><span>Bakalang–Alor</span><div class="bar-track"><div class="bar" style="--size:9%; --accent:var(--blue)"></div></div><strong>0.14 m</strong></div>
+          </div>
+        </section>
+
+    </div>
+      <footer class="footer">
+        <span>Preliminary open-source SitRep · Data remain evolving and subject to BNPB validation.</span>
+        <span>Situation Report 14 · Compiled 18 Aug 2026 · 13:15 WIB / 14:15 WITA · BNPB 18 Aug 09:00 WIB infographic data cut-off · Health · SAR · Child protection · Animal health · Economic impacts · Emergency status · Map now uses labelled 18 Aug estimates</span>
+      </footer>
+    </main>
+  </body>
+</html>

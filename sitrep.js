@@ -170,6 +170,13 @@
         "impact-displacement",
         displacement.status || formatNumber(displacement.self_evacuated_approx)
       );
+      if (displacement.total_reported !== undefined) {
+        setText("hero-displaced", formatNumber(displacement.total_reported));
+      }
+      const houseTotal = data.damage?.total_houses_damaged_check?.computed_total;
+      if (houseTotal !== undefined) {
+        setText("hero-houses-damaged", formatNumber(houseTotal));
+      }
 
       renderList("impact-confirmed-list", data.confirmed);
       renderList("impact-damage-list", data.damage_reports);
@@ -861,11 +868,27 @@
     }
   };
 
+  // Page-aware loading: only fetch the JSON/live feeds a given page actually
+  // renders. impact.json is fetched everywhere for the shared masthead
+  // (report number, generated time) and, on several pages, headline figures.
+  const page = document.body?.dataset?.page || "index";
+
   loadImpactData();
-  loadAffectedAreaMap();
-  loadHealthData();
-  loadSectorImpactData();
-  loadReportsData();
-  loadBmkgFeed();
-  window.setInterval(loadBmkgFeed, REFRESH_MS);
+
+  if (page === "hazards") {
+    loadBmkgFeed();
+    window.setInterval(loadBmkgFeed, REFRESH_MS);
+  }
+  if (page === "impact") {
+    loadAffectedAreaMap();
+  }
+  if (page === "health") {
+    loadHealthData();
+  }
+  if (page === "health" || page === "response" || page === "economy") {
+    loadSectorImpactData();
+  }
+  if (page === "reports") {
+    loadReportsData();
+  }
 })();

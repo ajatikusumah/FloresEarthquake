@@ -92,11 +92,28 @@ a {
   align-items: center;
   gap: 9px;
   font-size: 0.72rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  max-width: 100%;
+}
+
+.topnav::-webkit-scrollbar {
+  display: none;
 }
 
 .topnav a {
   color: #dcecf3;
   text-decoration: none;
+  white-space: nowrap;
+  padding: 5px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.topnav a.active {
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom-color: currentColor;
 }
 
 .print-btn {
@@ -230,9 +247,68 @@ h1 {
 
 .metrics {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 11px;
   margin: 32px 0 46px;
+}
+
+.page-header {
+  padding: 30px 0 8px;
+}
+
+.page-header .eyebrow {
+  color: var(--muted);
+}
+
+.page-header h1 {
+  margin: 6px 0 0;
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+}
+
+.topic-nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 8px 0 46px;
+}
+
+.topic-card {
+  display: block;
+  border: 1px solid var(--line);
+  border-top: 5px solid var(--accent, var(--blue));
+  border-radius: 12px;
+  background: white;
+  padding: 18px 18px 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.topic-card:hover,
+.topic-card:focus-visible {
+  box-shadow: 0 6px 18px rgba(11, 37, 69, 0.12);
+  transform: translateY(-1px);
+}
+
+.topic-card h3 {
+  margin: 4px 0 6px;
+  font-size: 1rem;
+  color: var(--navy);
+}
+
+.topic-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.topic-card .topic-kicker {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent, var(--blue));
 }
 
 .metric {
@@ -1516,16 +1592,13 @@ h2 {
   }
 
   .metrics {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .area-grid,
-  .health-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .topnav a {
-    display: none;
+  .area-grid,
+  .health-grid,
+  .topic-nav {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1642,7 +1715,8 @@ h2 {
 
   .metrics,
   .area-grid,
-  .health-grid {
+  .health-grid,
+  .topic-nav {
     grid-template-columns: 1fr;
   }
 
