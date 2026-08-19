@@ -253,7 +253,11 @@ h1 {
 }
 
 .page-header {
-  padding: 30px 0 8px;
+  padding: 44px 56px 32px;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(42, 157, 143, 0.16), transparent 25%),
+    linear-gradient(135deg, #f9fbfc, #ffffff 64%);
+  border-bottom: 1px solid var(--line);
 }
 
 .page-header .eyebrow {
@@ -261,8 +265,15 @@ h1 {
 }
 
 .page-header h1 {
-  margin: 6px 0 0;
+  margin: 8px 0 0;
   font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  color: var(--navy);
+  letter-spacing: -0.01em;
+}
+
+.page-header .summary {
+  margin-top: 16px;
+  max-width: 720px;
 }
 
 .topic-nav {
