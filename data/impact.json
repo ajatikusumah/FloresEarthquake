@@ -539,24 +539,24 @@
   "generated_display": "18 Aug 2026 · 13:15 WIB / 14:15 WITA",
   "seismic_monitoring": {
     "source": {
-      "agency": "BMKG",
-      "title": "731 Kali Gempa Susulan di NTT, Terbesar M 6,2",
-      "url": "https://www.viva.co.id/berita/nasional/1921852-731-kali-gempa-susulan-di-ntt-terbesar-m-62",
-      "publication_date": "2026-08-16",
-      "spokesperson": "Arief Tyastama, Kepala BMKG Stasiun Geofisika Kupang; count also cited independently by Kepala BNPB Letjen TNI Suharyanto at the 16 August coordination meeting in Manggarai Barat"
+      "agency": "BMKG via ANTARA",
+      "title": "BMKG records 2,768 aftershocks following the M7.7 Flores earthquake",
+      "url": "https://kalbar.antaranews.com/berita/709960/bmkg-catat-2768-gempa-susulan-m77-terjadi-di-flores",
+      "publication_time": "2026-08-19T10:39:00+07:00",
+      "spokesperson": "Arief Tyasmata, Head of BMKG Kupang Geophysical Station"
     },
-    "data_cutoff": "2026-08-16T13:00:00+07:00",
-    "data_cutoff_display": "17 Aug 2026 · (Monday) · specific clock time not stated in source",
-    "data_cutoff_note": "Sources give slightly different cut-off times for the same 731 count: BMKG Kupang's Arief Tyastama cited 07:00 WIB (Kompas.com), Kepala BNPB Suharyanto separately cited 08:13 WITA at the same day's coordination meeting, and the 17 August 05:00 WIB Pusdalops report cites 13:00 WIB, 16 August. The count itself (731) is identical and independently corroborated across all three, which is the figure retained here; the exact cut-off clock time is shown as reported without resolving the discrepancy. UPDATE: BNPB's 17 Aug 07:00 WIB infographic states BMKG recorded 1,576 aftershocks as of Monday, 17 August 2026, without a specific clock-time cut-off; magnitude range and felt/above-M5 breakdowns were not restated for this count, so the M1.9–M6.2 range and 16-above-M5/42-felt figures below are retained from the previous (731) snapshot and may now be understated. The 18 Aug 09:00 WIB BNPB infographic repeats the same narrative text as the 17 Aug edition verbatim ('Senin (17/8) telah terjadi 1.576 gempa susulan'), so the aftershock count has not been refreshed in this SitRep pass — 1,576 remains the latest confirmed figure, now potentially a day stale.",
-    "aftershocks_recorded": 1576,
+    "data_cutoff": "2026-08-19T05:00:00+07:00",
+    "data_cutoff_display": "19 Aug 2026 · 05:00 WIB / 06:00 WITA",
+    "data_cutoff_note": "Named BMKG official Arief Tyasmata reported 2,768 aftershocks through 19 August 2026 at 05:00 WIB / 06:00 WITA. ANTARA and a second published report carry the same statement and figures. A later media-only claim of 2,928 events at 11:00 WIB was not adopted because it could not be corroborated through an authoritative or independently reliable source at publication time.",
+    "aftershocks_recorded": 2768,
     "magnitude_range": {
-      "minimum": 1.9,
+      "minimum": 1.1,
       "maximum": 6.2
     },
-    "aftershocks_above_m5": 16,
-    "aftershocks_felt_by_residents": 42,
+    "aftershocks_above_m5": 24,
+    "aftershocks_felt_by_residents": 81,
     "concentration": "Still concentrated in the northern part of Flores Island.",
-    "trend_note": "As of 16–17 August, activity remains fluctuating with no clear decay pattern yet visible; BMKG's Kepala BMKG separately estimated the sequence would begin to stabilise in roughly 2–3 weeks. BNPB's Head cautioned the public not to trust unverified claims of an imminent larger aftershock.",
+    "trend_note": "BMKG reported that activity remained fluctuating and that the decay curve had not yet shown a clear downward pattern at the 19 August, 05:00 WIB cut-off. BMKG Kupang estimated that the sequence may require another 2–3 weeks to become more stable.",
     "previous_snapshot_20260816_0200wib": {
       "aftershocks_recorded": 611,
       "magnitude_range": {
@@ -596,6 +596,19 @@
       "title": "BNPB official infographic (PUSDATINKOM BNPB), “Update 17 Agustus 2026 Pkl. 07.00 WIB,” Report No. 04/U0700/Gem-NgkNTT/BNPB/17082026",
       "url": "reports/BNPB_Infografis_GempaM77_Nagekeo_NTT_20260817_0700WIB.jpg",
       "publication_date": "2026-08-17"
+    },
+    "previous_snapshot_20260817_unspecified": {
+      "aftershocks_recorded": 1576,
+      "source": "BNPB official infographic dated 17 August 2026, 07:00 WIB; no specific seismic cut-off clock time stated."
+    },
+    "source_19aug": {
+      "agency": "BMKG via ANTARA",
+      "title": "BMKG records 2,768 M7.7 aftershocks in Flores",
+      "url": "https://kalbar.antaranews.com/berita/709960/bmkg-catat-2768-gempa-susulan-m77-terjadi-di-flores",
+      "publication_time": "2026-08-19T10:39:00+07:00",
+      "data_cutoff": "2026-08-19T05:00:00+07:00",
+      "corroborating_url": "https://www.infomase.id/daerah/632957740/bmkg-catat-2768-gempa-susulan-usai-gempa-m-77-flores",
+      "verification_note": "Both reports attribute the same figures to Arief Tyasmata, Head of BMKG Kupang Geophysical Station. This is recorded as a media-reported official BMKG statement, not a direct BMKG web release."
     }
   },
   "tsunami_monitoring": {
